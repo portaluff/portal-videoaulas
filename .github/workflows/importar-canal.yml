@@ -1,0 +1,60 @@
+name: Importar vídeos do canal do YouTube
+
+# Lista todos os vídeos públicos do canal @videoaulasuff e cadastra os que ainda não estão no site.
+# Roda todo dia (antes da geração de resumo/quiz) e manualmente pela aba Actions.
+on:
+  schedule:
+    - cron: '47 5 * * *'   # 02:47 no horário de Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: importar-canal
+  cancel-in-progress: false
+
+env:
+  CANAL: UCGwAgbhQ_GImSAF7G2QrRUQ
+
+jobs:
+  importar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v7
+
+      - name: Listar os vídeos do canal
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          if [ -n "$YOUTUBE_API_KEY" ]; then
+            echo "Usando a YouTube Data API."
+          else
+            pipx run yt-dlp --flat-playlist -J "https://www.youtube.com/channel/${CANAL}/videos" > "$RUNNER_TEMP/canal.json"
+            echo "Lista obtida com o yt-dlp ($(wc -c < "$RUNNER_TEMP/canal.json") bytes)."
+          fi
+
+      - name: Cadastrar os vídeos novos como aulas
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: node scripts/importar-canal.mjs "$RUNNER_TEMP/canal.json"
+
+      - name: Salvar no repositório, republicar e gerar resumo/quiz
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain -- src/data/aulas)" ]; then
+            echo "Nenhum vídeo novo."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/aulas
+          git commit -m "Canal do YouTube: vídeos novos cadastrados como aulas"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          # Commits da própria automação não disparam outros workflows; pedimos explicitamente.
+          gh workflow run deploy.yml --ref main
+          gh workflow run gerar-conteudo-ia.yml --ref main

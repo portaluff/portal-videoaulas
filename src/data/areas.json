@@ -120,7 +120,7 @@
     },
     {
       "slug": "outros",
-      "nome": "Tutoriais",
+      "nome": "Outros",
       "cor": "#4A5568",
       "disciplinas": [
         {
@@ -128,6 +128,12 @@
           "nome": "Tutoriais",
           "cor": "#4A5568",
           "descricao": "Guias e conteúdos de apoio."
+        },
+        {
+          "slug": "a-classificar",
+          "nome": "Outros vídeos",
+          "cor": "#4A5568",
+          "descricao": "Vídeos do canal que ainda não foram classificados em uma disciplina."
         }
       ]
     }

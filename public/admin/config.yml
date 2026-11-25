@@ -46,7 +46,8 @@ collections:
           - { label: "Matemática (Ciências Exatas)", value: "matematica" }
           - { label: "Antropologia (Humanas e Sociais)", value: "antropologia" }
           - { label: "Administração (Humanas e Sociais)", value: "administracao" }
-          - { label: "Tutoriais (Tutoriais)", value: "tutoriais" }
+          - { label: "Tutoriais (Outros)", value: "tutoriais" }
+          - { label: "Outros vídeos — a classificar (Outros)", value: "a-classificar" }
       - { label: "Tema (ex.: sistema do corpo, capítulo)", name: tema, widget: string, required: false }
       - { label: ID do vídeo no YouTube, name: youtube, widget: string, required: false, hint: "O código depois de v= no link. Ex.: em youtube.com/watch?v=abc123XYZ, o ID é abc123XYZ" }
       - { label: Professor(a) responsável, name: professor, widget: string, required: false }
@@ -77,6 +78,8 @@ collections:
       - { label: "Não gerar resumo/quiz com IA para esta aula", name: iaIgnorar, widget: boolean, default: false, required: false }
       - { label: Gerado por IA em, name: iaGeradoEm, widget: hidden, required: false }
       - { label: Modelo de IA, name: iaModelo, widget: hidden, required: false }
+      - { label: Duração (segundos), name: duracao, widget: hidden, required: false }
+      - { label: Origem, name: origem, widget: hidden, required: false }
 
   - name: organizacao
     label: Organização

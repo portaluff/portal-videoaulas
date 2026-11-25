@@ -8,8 +8,9 @@
 // Variáveis de ambiente:
 //   GEMINI_API_KEY   (obrigatória) chave criada no Google AI Studio — guardada como secret no GitHub
 //   GEMINI_MODEL     (opcional) modelo a usar; padrão abaixo
-//   MAX_AULAS        (opcional) máximo de aulas por execução (padrão 8) — a faixa gratuita
+//   MAX_HORAS        (opcional) horas de vídeo por execução (padrão 7,5) — a faixa gratuita
 //                    aceita até 8 horas de vídeo do YouTube por dia
+//   MAX_AULAS        (opcional) máximo de aulas por execução (padrão 30)
 //   GEMINI_ENDPOINT  (opcional) só para testes
 //
 // Uso: node scripts/gerar-conteudo-ia.mjs [slug-da-aula ...]
@@ -23,7 +24,9 @@ import { fileURLToPath } from 'node:url';
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const PASTA_AULAS = path.join(RAIZ, 'src/data/aulas');
 const MODELO = process.env.GEMINI_MODEL || 'gemini-3.6-flash';
-const MAX_AULAS = Number(process.env.MAX_AULAS || 8);
+const MAX_AULAS = Number(process.env.MAX_AULAS || 30);
+const MAX_HORAS = Number(process.env.MAX_HORAS || 7.5);
+const DURACAO_ESTIMADA_S = 20 * 60; // quando a duração do vídeo não é conhecida
 const ENDPOINT = process.env.GEMINI_ENDPOINT || 'https://generativelanguage.googleapis.com/v1beta';
 const CHAVE = process.env.GEMINI_API_KEY;
 const PAUSA_MS = Number(process.env.PAUSA_MS ?? 8000);
@@ -204,10 +207,21 @@ async function main() {
     if (aula.youtube && (faltaResumo || faltaQuiz) && !aula.iaIgnorar) pendentes.push({ arq, slug, aula, faltaResumo, faltaQuiz });
   }
 
-  console.log(`${pendentes.length} aula(s) com vídeo e sem resumo/quiz. Processando até ${MAX_AULAS} com o modelo ${MODELO}.`);
+  // Começa pelas aulas mais assistidas e respeita o limite de horas de vídeo por dia
+  pendentes.sort((a, b) => (b.aula.views ?? -1) - (a.aula.views ?? -1) || String(b.aula.data).localeCompare(String(a.aula.data)));
+  const selecionadas = [];
+  let segundos = 0;
+  for (const p of pendentes) {
+    const d = p.aula.duracao || DURACAO_ESTIMADA_S;
+    if (selecionadas.length >= MAX_AULAS) break;
+    if (selecionadas.length > 0 && segundos + d > MAX_HORAS * 3600) continue;
+    selecionadas.push(p);
+    segundos += d;
+  }
+  console.log(`${pendentes.length} aula(s) com vídeo e sem resumo/quiz. Nesta execução: ${selecionadas.length} aula(s), cerca de ${(segundos / 3600).toFixed(1)} h de vídeo, modelo ${MODELO}.`);
   let feitas = 0;
 
-  for (const p of pendentes.slice(0, MAX_AULAS)) {
+  for (const p of selecionadas) {
     const { arq, slug, aula } = p;
     console.log(`→ ${slug} (${aula.titulo})`);
     let gerado;

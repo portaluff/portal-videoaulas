@@ -12,7 +12,7 @@ on:
     inputs:
       max_aulas:
         description: 'Máximo de aulas nesta execução'
-        default: '8'
+        default: '30'
       aulas:
         description: 'Só estas aulas (endereços separados por espaço, opcional)'
         default: ''
@@ -36,7 +36,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
-          MAX_AULAS: ${{ inputs.max_aulas || '8' }}
+          MAX_AULAS: ${{ inputs.max_aulas || '30' }}
           AULAS: ${{ inputs.aulas }}
         run: node scripts/gerar-conteudo-ia.mjs $AULAS
 

@@ -77,12 +77,22 @@ Para o login funcionar no GitHub Pages, o TI precisa:
 
 Quem edita pelo painel precisa de uma conta no GitHub com permissão de escrita neste repositório.
 
+## Vídeos do canal do YouTube
+
+O workflow `.github/workflows/importar-canal.yml` lista todos os vídeos públicos do canal [@videoaulasuff](https://youtube.com/@videoaulasuff) e cadastra como aula cada vídeo que ainda não está no site. Roda todo dia às 02:47 e manualmente em **Actions → Importar vídeos do canal do YouTube → Run workflow**. Assim, **basta publicar um vídeo no canal** para ele aparecer no site no dia seguinte, já com resumo e quiz gerados para revisão.
+
+- A disciplina vem da etiqueta no título do vídeo: `[ANATOMIA] Rins` → Anatomia; `[Termodinâmica] Cap. ...` → Física (tema Termodinâmica); `[Medicina Veterinária] Fisiologia: ...` → Fisiologia veterinária. Para a classificação automática funcionar, mantenha esse padrão nos títulos novos.
+- Vídeos sem etiqueta reconhecível vão para **Outros → Outros vídeos**; classifique-os pelo painel (campo Disciplina).
+- Se já existir uma aula com o mesmo título e sem vídeo, o vídeo é vinculado a ela em vez de criar outra.
+- Aulas que já têm vídeo nunca são alteradas pela importação.
+- A lista é obtida com o `yt-dlp`. Se o YouTube bloquear a listagem, crie uma chave da **YouTube Data API v3** no Google Cloud e salve como secret `YOUTUBE_API_KEY`: a importação passa a usar a API oficial.
+
 ## Resumo e quiz com IA (Gemini)
 
 O workflow `.github/workflows/gerar-conteudo-ia.yml` gera automaticamente o **resumo** e o **quiz** de cada aula que tenha vídeo no YouTube e ainda esteja sem esse conteúdo. Ele envia o link do vídeo para a API do Gemini (Google), que analisa a aula diretamente — não é preciso transcrição.
 
 - **Quando roda:** sempre que uma aula é cadastrada ou alterada, todo dia às 03:17 (para ir processando o acervo aos poucos) e manualmente em **Actions → Gerar resumo e quiz com IA → Run workflow**.
-- **Custo:** usa a faixa gratuita do Gemini, que aceita até 8 horas de vídeo do YouTube por dia. Por isso cada execução processa no máximo 8 aulas (`MAX_AULAS`). Só funciona com vídeos **públicos**.
+- **Custo:** usa a faixa gratuita do Gemini, que aceita até 8 horas de vídeo do YouTube por dia. Cada execução soma a duração dos vídeos e para em 7,5 h (`MAX_HORAS`) ou 30 aulas (`MAX_AULAS`), começando pelas aulas mais assistidas. Se o limite diário estourar antes, o restante fica para o dia seguinte. Só funciona com vídeos **públicos**.
 - **Revisão:** tudo o que a IA gera entra como *aguardando revisão* (`resumoRevisado` e `quizRevisado` = `false`). O professor confere no painel e marca como revisado.
 - **Exibição:** em `src/data/config.json` (ou no painel, em *Organização → Configurações*), `mostrarConteudoNaoRevisado`:
   - `true` — mostra o conteúdo ainda não revisado com o aviso "Aguardando revisão" (útil na fase de testes);
@@ -113,8 +123,9 @@ npm run build    # gera o site em dist/
 
 ## Próximas etapas
 
-- [ ] Migrar todas as aulas do Drupal (backup `.sql` do banco) para `src/data/aulas/`.
-- [ ] Conferir no canal do YouTube se nenhum vídeo ficou de fora.
+- [x] Importar os vídeos do canal do YouTube.
+- [ ] Completar disciplina, professor e visualizações com o backup `.sql` do Drupal.
+- [ ] Classificar os vídeos que ficaram em *Outros vídeos*.
 - [ ] Configurar o login do painel do professor (OAuth).
 - [ ] Apontar o domínio próprio.
 - [ ] Configurar a chave do Gemini (`GEMINI_API_KEY`).
