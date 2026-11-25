@@ -129,6 +129,24 @@ async function chamarGemini(aula, disciplina, { comResolucaoBaixa = true } = {})
   return JSON.parse(parte.text);
 }
 
+// O Gemini às vezes responde 503 ("alta demanda") ou cai a conexão: espera e tenta de novo
+// (30 s, 2 min, 5 min). Erro 400 costuma ser a opção de resolução baixa: repete sem ela.
+async function chamarComNovasTentativas(aula, disciplina) {
+  const esperas = [30, 120, 300];
+  let opcoes = { comResolucaoBaixa: true };
+  for (let tentativa = 0; ; tentativa++) {
+    try {
+      return await chamarGemini(aula, disciplina, opcoes);
+    } catch (e) {
+      if (e.status === 400 && opcoes.comResolucaoBaixa) { opcoes = { comResolucaoBaixa: false }; continue; }
+      const temporario = !e.status || e.status >= 500;
+      if (!temporario || tentativa >= esperas.length) throw e;
+      console.error(`  ! ${e.message.split('\n')[0]} — tentando de novo em ${esperas[tentativa]} s`);
+      await esperar(esperas[tentativa] * 1000);
+    }
+  }
+}
+
 // Embaralha as alternativas (de forma reproduzível) para a correta não ficar sempre na mesma posição.
 function embaralhar(lista, semente) {
   const r = [...lista];
@@ -194,16 +212,7 @@ async function main() {
     console.log(`→ ${slug} (${aula.titulo})`);
     let gerado;
     try {
-      try {
-        gerado = await chamarGemini(aula, disciplinas[aula.disciplina]);
-      } catch (e) {
-        if (e.status === 400) gerado = await chamarGemini(aula, disciplinas[aula.disciplina], { comResolucaoBaixa: false });
-        else if (!e.status || e.status >= 500) {
-          console.error(`  ! ${e.message} — tentando de novo em 30 s`);
-          await esperar(30000);
-          gerado = await chamarGemini(aula, disciplinas[aula.disciplina]);
-        } else throw e;
-      }
+      gerado = await chamarComNovasTentativas(aula, disciplinas[aula.disciplina]);
     } catch (e) {
       console.error(`  ✗ ${e.message}`);
       if (e.status === 429) { console.error('  Limite diário da faixa gratuita atingido; o restante fica para a próxima execução.'); break; }
