@@ -15,6 +15,8 @@
 // Uso: node scripts/gerar-conteudo-ia.mjs [slug-da-aula ...]
 
 import { readdir, readFile, writeFile } from 'node:fs/promises';
+import http from 'node:http';
+import https from 'node:https';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -75,6 +77,28 @@ Regras:
 }
 
 const esperar = (ms) => new Promise((r) => setTimeout(r, ms));
+const TEMPO_MAXIMO_MS = Number(process.env.TEMPO_MAXIMO_MS || 20 * 60 * 1000);
+
+// O Gemini pode levar vários minutos para analisar uma aula longa. O fetch do Node desiste após
+// 5 minutos sem resposta, então usamos http(s) direto, com tempo máximo configurável (padrão 20 min).
+function postarJSON(url, corpo, cabecalhos) {
+  return new Promise((resolve, reject) => {
+    const u = new URL(url);
+    const dados = JSON.stringify(corpo);
+    const req = (u.protocol === 'http:' ? http : https).request(u, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(dados), ...cabecalhos },
+    }, (res) => {
+      let texto = '';
+      res.setEncoding('utf8');
+      res.on('data', (c) => { texto += c; });
+      res.on('end', () => resolve({ status: res.statusCode, ok: res.statusCode >= 200 && res.statusCode < 300, texto }));
+    });
+    req.setTimeout(TEMPO_MAXIMO_MS, () => req.destroy(new Error(`sem resposta do Gemini em ${Math.round(TEMPO_MAXIMO_MS / 60000)} minutos`)));
+    req.on('error', reject);
+    req.end(dados);
+  });
+}
 
 async function chamarGemini(aula, disciplina, { comResolucaoBaixa = true } = {}) {
   const corpo = {
@@ -92,12 +116,8 @@ async function chamarGemini(aula, disciplina, { comResolucaoBaixa = true } = {})
       ...(comResolucaoBaixa ? { mediaResolution: 'MEDIA_RESOLUTION_LOW' } : {}),
     },
   };
-  const resp = await fetch(`${ENDPOINT}/models/${encodeURIComponent(MODELO)}:generateContent`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'x-goog-api-key': CHAVE },
-    body: JSON.stringify(corpo),
-  });
-  const texto = await resp.text();
+  const resp = await postarJSON(`${ENDPOINT}/models/${encodeURIComponent(MODELO)}:generateContent`, corpo, { 'x-goog-api-key': CHAVE });
+  const texto = resp.texto;
   if (!resp.ok) {
     const erro = new Error(`Gemini respondeu ${resp.status}: ${texto.slice(0, 400)}`);
     erro.status = resp.status;
@@ -178,7 +198,11 @@ async function main() {
         gerado = await chamarGemini(aula, disciplinas[aula.disciplina]);
       } catch (e) {
         if (e.status === 400) gerado = await chamarGemini(aula, disciplinas[aula.disciplina], { comResolucaoBaixa: false });
-        else throw e;
+        else if (!e.status || e.status >= 500) {
+          console.error(`  ! ${e.message} — tentando de novo em 30 s`);
+          await esperar(30000);
+          gerado = await chamarGemini(aula, disciplinas[aula.disciplina]);
+        } else throw e;
       }
     } catch (e) {
       console.error(`  ✗ ${e.message}`);
