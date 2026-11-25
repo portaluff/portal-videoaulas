@@ -6,10 +6,82 @@
   "professor": "",
   "data": "",
   "views": null,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "A aula apresenta a anatomia prática das articulações coxofemoral e femorotibiopatelar (joelho) em peças anatômicas de animais, destacando suas estruturas ósseas, ligamentos e meniscos.",
+  "resumo": [
+    {
+      "rotulo": "Articulação Coxofemoral",
+      "texto": "Demonstração da união entre a cabeça do fêmur e o osso coxal, permitindo múltiplos movimentos."
+    },
+    {
+      "rotulo": "Ligamentos do Coxofemural",
+      "texto": "Identificação do ligamento redondo da cabeça do fêmur, da cápsula articular e do ligamento transverso que fecha a incisura do acetábulo."
+    },
+    {
+      "rotulo": "Articulação Femorotibiopatelar",
+      "texto": "Exibição da articulação do joelho formada por fêmur, tíbia e patela, considerada um osso sesamóide."
+    },
+    {
+      "rotulo": "Ligamentos Patelares",
+      "texto": "Apresentação dos ligamentos femoropatelares e dos ligamentos patelares (lateral, intermédio e medial), apontando que carnívoros possuem apenas um ligamento patelar."
+    },
+    {
+      "rotulo": "Meniscos e Estabilidade",
+      "texto": "Explicação da incongruência articular compensada pelos meniscos lateral e medial e sustentada pelos ligamentos colaterais lateral e medial."
+    },
+    {
+      "rotulo": "Fixação Meniscal e Cruzados",
+      "texto": "Detalhamento da fixação meniscal no fêmur e tíbia e demonstração dos ligamentos cruzados caudal e cranial."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual estrutura fecha a região da incisura do acetábulo na articulação coxofemoral?",
+      "opcoes": [
+        "Lábio da cápsula articular",
+        "Ligamento patelar intermédio",
+        "Ligamento transverso",
+        "Ligamento redondo da cabeça do fêmur"
+      ],
+      "correta": 3,
+      "explicacao": "Segundo a aula, o ligamento transverso fecha a região da incisura do acetábulo na articulação coxofemoral."
+    },
+    {
+      "pergunta": "Qual a diferença apontada no vídeo entre os ligamentos patelares de grandes animais e de carnívoros?",
+      "opcoes": [
+        "Carnívoros não possuem a patela como osso sesamóide.",
+        "Grandes animais possuem três ligamentos patelares (lateral, intermédio e medial), enquanto carnívoros possuem apenas um.",
+        "Carnívoros possuem três ligamentos patelares, enquanto grandes animais possuem dois.",
+        "Grandes animais não possuem ligamentos femoropatelares."
+      ],
+      "correta": 2,
+      "explicacao": "O professor destaca que grandes animais possuem os ligamentos patelares lateral, intermédio e medial, enquanto os carnívoros possuem apenas um ligamento patelar."
+    },
+    {
+      "pergunta": "Como se dá a fixação dos meniscos lateral e medial na tíbia e no fêmur?",
+      "opcoes": [
+        "Nenhum menisco se fixa na tíbia, apenas no fêmur.",
+        "O menisco medial liga-se ao fêmur e à tíbia, enquanto o lateral liga-se apenas à tíbia.",
+        "O menisco lateral possui ligamento femoral e ligamento tibial, enquanto o menisco medial é preso apenas na tíbia por ligamento tibial.",
+        "Ambos os meniscos são presos apenas ao fêmur."
+      ],
+      "correta": 3,
+      "explicacao": "O menisco lateral é mais preso, possuindo ligamento femoral e tibial, ao passo que o menisco medial é fixado apenas na tíbia pelo ligamento tibial do menisco medial."
+    },
+    {
+      "pergunta": "Quais ligamentos conectam diretamente o fêmur à tíbia na porção interna/profunda do joelho?",
+      "opcoes": [
+        "Ligamentos cruzados caudal e cranial",
+        "Ligamentos femoropatelares medial e lateral",
+        "Ligamentos colaterais medial e lateral",
+        "Ligamento redondo e ligamento transverso"
+      ],
+      "correta": 1,
+      "explicacao": "Os ligamentos cruzados (caudal e cranial) fixam o fêmur na tíbia na porção interna da articulação femorotibiopatelar."
+    }
+  ],
   "quizRevisado": false,
-  "referencias": []
+  "referencias": [],
+  "iaGeradoEm": "2026-11-25",
+  "iaModelo": "gemini-3.6-flash"
 }
