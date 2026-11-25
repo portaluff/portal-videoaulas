@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/dados.js';
+---
+<Base titulo="Sobre o portal" atual="sobre">
+  <div class="container cab-pagina">
+    <nav class="migalhas" aria-label="Você está em"><a href={url('/')}>Início</a><span aria-hidden="true">›</span><span>Sobre</span></nav>
+    <h1>Sobre o portal</h1>
+  </div>
+  <div class="container" style="padding-top: 24px; padding-bottom: 56px; display: flex; flex-direction: column; gap: 20px; max-width: 860px; margin-left: max(0px, calc((100% - 1200px) / 2))">
+    <section class="painel" style="display: flex; flex-direction: column; gap: 12px; font-size: 16px; line-height: 1.65">
+      <h2 style="font-size: 22px">O que é</h2>
+      <p>O Portal de Videoaulas da UFF disponibiliza vídeos didáticos para estudar diversos temas em qualquer lugar com acesso à internet. É um ambiente de estudos para alunos e profissionais, com aulas gravadas por professores da universidade.</p>
+      <p>O portal nasceu em meados dos anos 2000, por iniciativa do Prof. Ismar Araujo de Moraes com um grupo de estudantes de Medicina, e hoje é um projeto de extensão do Instituto Biomédico da UFF.</p>
+    </section>
+    <section class="painel" style="display: flex; flex-direction: column; gap: 12px; font-size: 16px; line-height: 1.65">
+      <h2 style="font-size: 22px">O que há de novo</h2>
+      <p>Além dos vídeos, cada aula pode ter um resumo gerado por inteligência artificial e revisado pelo professor, um quiz com feedback imediato e referências para estudo aprofundado. As trilhas de estudo organizam as aulas em sequência.</p>
+    </section>
+    <section class="painel" id="contato" style="display: flex; flex-direction: column; gap: 12px; font-size: 16px; line-height: 1.65">
+      <h2 style="font-size: 22px">Contato, pedidos e sugestões</h2>
+      <p>Quer pedir uma aula, sugerir melhorias ou relatar um problema? Escreva para <strong>[e-mail do projeto]</strong>.</p>
+      <p class="muted" style="font-size: 14px">Professores que quiserem publicar aulas ou editar resumos e quizzes podem usar a <a href={url('/admin/')}>área do professor</a>.</p>
+    </section>
+  </div>
+</Base>

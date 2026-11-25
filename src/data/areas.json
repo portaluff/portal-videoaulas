@@ -1,0 +1,135 @@
+{
+  "areas": [
+    {
+      "slug": "ciencias-da-saude",
+      "nome": "Ciências da Saúde",
+      "cor": "#0B4EA2",
+      "disciplinas": [
+        {
+          "slug": "anatomia",
+          "nome": "Anatomia",
+          "cor": "#0B4EA2",
+          "descricao": "Videoaulas de anatomia humana, organizadas por sistema do corpo."
+        },
+        {
+          "slug": "neuroanatomia",
+          "nome": "Neuroanatomia",
+          "cor": "#3D4FA0",
+          "descricao": "Estruturas do sistema nervoso central."
+        },
+        {
+          "slug": "cardiologia",
+          "nome": "Cardiologia",
+          "cor": "#8A2F3B",
+          "descricao": "Exame cardiovascular, sopros, manobras e eletrocardiograma."
+        },
+        {
+          "slug": "semiologia",
+          "nome": "Semiologia",
+          "cor": "#0F6E6A",
+          "descricao": "Aulas práticas de exame clínico."
+        },
+        {
+          "slug": "anestesiologia",
+          "nome": "Anestesiologia",
+          "cor": "#4A5568",
+          "descricao": "Discussões e aulas de anestesiologia."
+        },
+        {
+          "slug": "parasitologia",
+          "nome": "Parasitologia",
+          "cor": "#6B5B1E",
+          "descricao": "Técnicas de diagnóstico parasitológico."
+        },
+        {
+          "slug": "farmacia",
+          "nome": "Farmácia",
+          "cor": "#9A4A12",
+          "descricao": "Aulas da Faculdade de Farmácia."
+        },
+        {
+          "slug": "nutricao",
+          "nome": "Nutrição",
+          "cor": "#0F6E6A",
+          "descricao": "Aulas de nutrição."
+        },
+        {
+          "slug": "saude-coletiva",
+          "nome": "Saúde Coletiva",
+          "cor": "#3D4FA0",
+          "descricao": "Aulas de saúde coletiva."
+        }
+      ]
+    },
+    {
+      "slug": "medicina-veterinaria",
+      "nome": "Medicina Veterinária",
+      "cor": "#0F6E6A",
+      "disciplinas": [
+        {
+          "slug": "fisiologia-veterinaria",
+          "nome": "Fisiologia veterinária",
+          "cor": "#0F6E6A",
+          "descricao": "Fisiologia animal."
+        },
+        {
+          "slug": "anatomia-veterinaria",
+          "nome": "Anatomia veterinária",
+          "cor": "#0F6E6A",
+          "descricao": "Anatomia dos animais domésticos."
+        }
+      ]
+    },
+    {
+      "slug": "ciencias-exatas",
+      "nome": "Ciências Exatas",
+      "cor": "#5B3A7A",
+      "disciplinas": [
+        {
+          "slug": "fisica",
+          "nome": "Física",
+          "cor": "#5B3A7A",
+          "descricao": "Termodinâmica, Eletromagnetismo, Mecânica Analítica e Física Moderna."
+        },
+        {
+          "slug": "matematica",
+          "nome": "Matemática",
+          "cor": "#5B3A7A",
+          "descricao": "Aulas de matemática."
+        }
+      ]
+    },
+    {
+      "slug": "humanas-e-sociais",
+      "nome": "Humanas e Sociais",
+      "cor": "#9A4A12",
+      "disciplinas": [
+        {
+          "slug": "antropologia",
+          "nome": "Antropologia",
+          "cor": "#9A4A12",
+          "descricao": "Aulas de antropologia."
+        },
+        {
+          "slug": "administracao",
+          "nome": "Administração",
+          "cor": "#9A4A12",
+          "descricao": "Aulas de administração."
+        }
+      ]
+    },
+    {
+      "slug": "outros",
+      "nome": "Tutoriais",
+      "cor": "#4A5568",
+      "disciplinas": [
+        {
+          "slug": "tutoriais",
+          "nome": "Tutoriais",
+          "cor": "#4A5568",
+          "descricao": "Guias e conteúdos de apoio."
+        }
+      ]
+    }
+  ]
+}

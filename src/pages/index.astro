@@ -1,0 +1,101 @@
+---
+import Base from '../layouts/Base.astro';
+import CartaoAula from '../components/CartaoAula.astro';
+import { aulas, areas, trilhas, aulaPorSlug, url } from '../lib/dados.js';
+
+const maisAssistidas = aulas.filter((a) => a.views != null).slice(0, 8);
+const atalhos = [
+  { nome: 'Anatomia', href: url('/disciplina/anatomia/') },
+  { nome: 'Cardiologia', href: url('/disciplina/cardiologia/') },
+  { nome: 'Neuroanatomia', href: url('/disciplina/neuroanatomia/') },
+  { nome: 'Parasitologia', href: url('/disciplina/parasitologia/') },
+  { nome: 'Física', href: url('/disciplina/fisica/') },
+];
+---
+<Base abertura={true}>
+  <section class="heroi">
+    <div class="container">
+      <p class="sobretitulo">Projeto de extensão · Instituto Biomédico</p>
+      <h1>Aulas da UFF, abertas para quem quiser aprender.</h1>
+      <p class="lead">Videoaulas gravadas por professores da universidade, agora com resumo, quiz e trilhas de estudo em cada tema.</p>
+      <form class="busca-grande" role="search" action={url('/busca/')} method="get">
+        <label for="busca" class="sr">Buscar videoaulas</label>
+        <input id="busca" name="q" type="search" placeholder="Busque por tema, disciplina ou professor" />
+        <button class="btn btn-laranja" type="submit">Buscar</button>
+      </form>
+      <div class="atalhos">
+        <span>Mais buscados:</span>
+        {atalhos.map((a) => <a href={a.href}>{a.nome}</a>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="container secao">
+    <div class="secao-cab">
+      <h2>Explore por área</h2>
+      <a class="link-forte" href={url('/areas/')}>Ver todas as disciplinas →</a>
+    </div>
+    <div class="grade">
+      {areas.map((area) => (
+        <a class="cartao-area" href={url(`/areas/#${area.slug}`)}>
+          <span class="faixa" style={`background: ${area.cor}`}></span>
+          <strong>{area.nome}</strong>
+          <span>{area.disciplinas.map((d) => d.nome).join(', ')}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="container secao">
+    <div class="secao-cab">
+      <h2>Mais assistidas no portal</h2>
+      <span class="muted" style="font-size: 14px">Total de visualizações</span>
+    </div>
+    <div class="grade-aulas">
+      {maisAssistidas.map((a) => <CartaoAula aula={a} />)}
+    </div>
+  </section>
+
+  <section class="container secao">
+    <div class="secao-cab">
+      <h2>Trilhas de estudo</h2>
+      <a class="link-forte" href={url('/trilhas/')}>Ver todas as trilhas →</a>
+    </div>
+    <div class="grade">
+      {trilhas.map((t) => (
+        <div class="trilha" style="flex: 1 1 420px">
+          <div class="trilha-cab"><strong>{t.nome}</strong><span>{t.aulas.length} aulas em sequência</span></div>
+          <ol class="passos">
+            {t.aulas.map((s, i) => aulaPorSlug[s] && (
+              <li><a href={url(`/aula/${s}/`)}><span class="passo-n">{i + 1}</span>{aulaPorSlug[s].titulo}</a></li>
+            ))}
+          </ol>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="container" style="padding-top: 40px; padding-bottom: 56px">
+    <div class="recursos">
+      <div>
+        <h2>Aprender, não só assistir</h2>
+        <p style="font-size: 15px">Cada videoaula ganha ferramentas de aprendizagem ativa, criadas e revisadas pelos professores responsáveis.</p>
+      </div>
+      <div>
+        <span class="icone-redondo" style="background: var(--laranja-claro)"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B4570E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></span>
+        <h3>Quiz com feedback imediato</h3>
+        <p>Perguntas sobre a aula, com a explicação de cada resposta na hora.</p>
+      </div>
+      <div>
+        <span class="icone-redondo" style="background: var(--azul-claro)"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B4EA2" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h10M4 18h13"/></svg></span>
+        <h3>Resumo gerado por IA</h3>
+        <p>Síntese da aula a partir da transcrição, revisada pelo professor antes de ser publicada.</p>
+      </div>
+      <div>
+        <span class="icone-redondo" style="background: #E2F1EE"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F6E6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 15l4-4 3 3 5-6"/></svg></span>
+        <h3>Trilhas de estudo</h3>
+        <p>Aulas em sequência para estudar um tema do começo ao fim.</p>
+      </div>
+    </div>
+  </section>
+</Base>

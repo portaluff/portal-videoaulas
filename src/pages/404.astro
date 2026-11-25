@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/dados.js';
+---
+<Base titulo="Página não encontrada">
+  <div class="container" style="padding-top: 80px; padding-bottom: 80px; display: flex; flex-direction: column; gap: 16px; align-items: flex-start">
+    <h1 style="font-size: 40px">Página não encontrada</h1>
+    <p class="muted">Esta aula pode ter mudado de endereço com a modernização do portal.</p>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap">
+      <a class="btn btn-primario" href={url('/busca/')}>Buscar uma aula</a>
+      <a class="btn" href={url('/')}>Ir para o início</a>
+    </div>
+  </div>
+</Base>

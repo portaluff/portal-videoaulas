@@ -1,0 +1,100 @@
+# Painel de edição do Portal de Videoaulas (Decap CMS) — acessível em /admin/
+# Cada alteração feita no painel vira um commit no repositório e o site é republicado sozinho.
+# IMPORTANTE: para o login funcionar no GitHub Pages é preciso configurar um serviço de OAuth
+# (veja a seção "Painel do professor" no README) e preencher base_url abaixo.
+backend:
+  name: github
+  repo: portaluff/portal-videoaulas
+  branch: main
+  # base_url: https://SEU-SERVICO-OAUTH.exemplo.workers.dev
+
+locale: pt
+media_folder: public/imagens
+public_folder: /imagens
+
+collections:
+  - name: aulas
+    label: Videoaulas
+    label_singular: Videoaula
+    description: Cada videoaula do portal. O nome do arquivo vira o endereço da página.
+    folder: src/data/aulas
+    extension: json
+    format: json
+    create: true
+    slug: "{{slug}}"
+    identifier_field: titulo
+    summary: "{{titulo}} · {{disciplina}}"
+    sortable_fields: [titulo, disciplina, data, views]
+    fields:
+      - { label: Título, name: titulo, widget: string }
+      - label: Disciplina
+        name: disciplina
+        widget: select
+        options:
+          - { label: "Anatomia (Ciências da Saúde)", value: "anatomia" }
+          - { label: "Neuroanatomia (Ciências da Saúde)", value: "neuroanatomia" }
+          - { label: "Cardiologia (Ciências da Saúde)", value: "cardiologia" }
+          - { label: "Semiologia (Ciências da Saúde)", value: "semiologia" }
+          - { label: "Anestesiologia (Ciências da Saúde)", value: "anestesiologia" }
+          - { label: "Parasitologia (Ciências da Saúde)", value: "parasitologia" }
+          - { label: "Farmácia (Ciências da Saúde)", value: "farmacia" }
+          - { label: "Nutrição (Ciências da Saúde)", value: "nutricao" }
+          - { label: "Saúde Coletiva (Ciências da Saúde)", value: "saude-coletiva" }
+          - { label: "Fisiologia veterinária (Medicina Veterinária)", value: "fisiologia-veterinaria" }
+          - { label: "Anatomia veterinária (Medicina Veterinária)", value: "anatomia-veterinaria" }
+          - { label: "Física (Ciências Exatas)", value: "fisica" }
+          - { label: "Matemática (Ciências Exatas)", value: "matematica" }
+          - { label: "Antropologia (Humanas e Sociais)", value: "antropologia" }
+          - { label: "Administração (Humanas e Sociais)", value: "administracao" }
+          - { label: "Tutoriais (Tutoriais)", value: "tutoriais" }
+      - { label: "Tema (ex.: sistema do corpo, capítulo)", name: tema, widget: string, required: false }
+      - { label: ID do vídeo no YouTube, name: youtube, widget: string, required: false, hint: "O código depois de v= no link. Ex.: em youtube.com/watch?v=abc123XYZ, o ID é abc123XYZ" }
+      - { label: Professor(a) responsável, name: professor, widget: string, required: false }
+      - { label: Data de publicação, name: data, widget: datetime, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, required: false }
+      - { label: Visualizações no portal antigo, name: views, widget: number, value_type: int, required: false }
+      - { label: Descrição, name: descricao, widget: text, required: false }
+      - label: Resumo
+        name: resumo
+        widget: list
+        required: false
+        label_singular: tópico
+        fields:
+          - { label: Tópico, name: rotulo, widget: string }
+          - { label: Texto, name: texto, widget: text }
+      - { label: Resumo revisado pelo professor, name: resumoRevisado, widget: boolean, default: false, hint: "Marque só depois de conferir o resumo gerado por IA." }
+      - label: Quiz
+        name: quiz
+        widget: list
+        required: false
+        label_singular: pergunta
+        fields:
+          - { label: Pergunta, name: pergunta, widget: string }
+          - { label: Alternativas, name: opcoes, widget: list, field: { label: Alternativa, name: opcao, widget: string } }
+          - { label: "Alternativa correta (1 = primeira, 2 = segunda...)", name: correta, widget: number, value_type: int, min: 1 }
+          - { label: Explicação mostrada após a resposta, name: explicacao, widget: text }
+      - { label: Referências, name: referencias, widget: list, required: false, field: { label: Referência, name: referencia, widget: string } }
+
+  - name: organizacao
+    label: Organização
+    files:
+      - name: trilhas
+        label: Trilhas de estudo
+        file: src/data/trilhas.json
+        format: json
+        fields:
+          - label: Trilhas
+            name: trilhas
+            widget: list
+            label_singular: trilha
+            fields:
+              - { label: Identificador (sem espaços nem acentos), name: slug, widget: string }
+              - { label: Nome, name: nome, widget: string }
+              - { label: Descrição, name: descricao, widget: text }
+              - label: Aulas, na ordem
+                name: aulas
+                widget: relation
+                collection: aulas
+                search_fields: [titulo]
+                value_field: "{{slug}}"
+                display_fields: [titulo]
+                multiple: true

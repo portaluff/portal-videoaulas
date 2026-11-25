@@ -1,0 +1,26 @@
+{
+  "trilhas": [
+    {
+      "slug": "sistema-digestorio",
+      "nome": "Sistema digestório",
+      "descricao": "Da boca ao intestino delgado, na ordem em que o alimento percorre o trato digestório.",
+      "aulas": [
+        "cavidade-bucal",
+        "faringe",
+        "estomago",
+        "duodeno"
+      ]
+    },
+    {
+      "slug": "exame-cardiovascular",
+      "nome": "Exame cardiovascular",
+      "descricao": "Da anatomia do coração ao eletrocardiograma, às manobras e aos sopros.",
+      "aulas": [
+        "coracao",
+        "eletrocardiograma",
+        "manobra-de-valsalva",
+        "sopro-de-austin-flint"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+---
+import Base from '../../layouts/Base.astro';
+import { areas, aulasDaDisciplina, url } from '../../lib/dados.js';
+---
+<Base titulo="Áreas e disciplinas" atual="areas">
+  <div class="container cab-pagina">
+    <nav class="migalhas" aria-label="Você está em"><a href={url('/')}>Início</a><span aria-hidden="true">›</span><span>Áreas</span></nav>
+    <h1>Áreas e disciplinas</h1>
+    <p class="muted" style="max-width: 680px">Todas as videoaulas do portal, organizadas por grande área do conhecimento e disciplina.</p>
+  </div>
+  <div class="container" style="padding-top: 24px; padding-bottom: 56px; display: flex; flex-direction: column; gap: 20px">
+    {areas.map((area) => (
+      <section id={area.slug} class="painel" style="display: flex; flex-direction: column; gap: 14px">
+        <div style="display: flex; align-items: center; gap: 12px">
+          <span style={`width: 36px; height: 6px; border-radius: 3px; background: ${area.cor}`}></span>
+          <h2 style="font-size: 24px">{area.nome}</h2>
+        </div>
+        <div class="chips">
+          {area.disciplinas.map((d) => {
+            const n = aulasDaDisciplina(d.slug).length;
+            return <a class="chip" href={url(`/disciplina/${d.slug}/`)}>{d.nome}<span class="muted" style="font-weight: 500; margin-left: 6px">{n}</span></a>;
+          })}
+        </div>
+      </section>
+    ))}
+  </div>
+</Base>

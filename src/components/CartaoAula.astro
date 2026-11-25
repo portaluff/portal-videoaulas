@@ -1,0 +1,31 @@
+---
+import IconePlay from './IconePlay.astro';
+import { url, corDaAula, formatarNumero, formatarData, temQuiz, temResumo, disciplinaPorSlug } from '../lib/dados.js';
+const { aula, rotulo = 'disciplina' } = Astro.props;
+const disc = disciplinaPorSlug[aula.disciplina];
+const textoRotulo = rotulo === 'tema' ? (aula.tema || disc?.nome) : (disc?.nome ?? '');
+const meta = [
+  aula.views != null ? `${formatarNumero(aula.views)} visualizações` : '',
+  aula.data ? `desde ${formatarData(aula.data)}` : '',
+].filter(Boolean).join(' · ');
+---
+<a class="cartao-aula" href={url(`/aula/${aula.slug}/`)}
+   data-tema={aula.tema ?? ''} data-quiz={temQuiz(aula) ? '1' : '0'} data-resumo={temResumo(aula) ? '1' : '0'}
+   data-views={aula.views ?? 0} data-data={aula.data ?? ''} data-titulo={aula.titulo}>
+  <span class="capa" style={`background: ${corDaAula(aula)}`}>
+    {aula.youtube && <img src={`https://i.ytimg.com/vi/${aula.youtube}/hqdefault.jpg`} alt="" loading="lazy" />}
+    {aula.youtube && <span class="capa-escurecer"></span>}
+    <span class="capa-rotulo">{textoRotulo}</span>
+    <span class="capa-base">
+      <span class="capa-titulo">{aula.titulo}</span>
+      <span class="play"><IconePlay /></span>
+    </span>
+  </span>
+  <span class="cartao-corpo">
+    {meta && <span class="meta">{meta}</span>}
+    <span class="selos">
+      {temQuiz(aula) && <span class="selo selo-quiz">Quiz</span>}
+      {temResumo(aula) && <span class="selo selo-resumo">Resumo</span>}
+    </span>
+  </span>
+</a>

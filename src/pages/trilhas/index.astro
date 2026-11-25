@@ -1,0 +1,24 @@
+---
+import Base from '../../layouts/Base.astro';
+import { trilhas, aulaPorSlug, disciplinaPorSlug, url } from '../../lib/dados.js';
+---
+<Base titulo="Trilhas de estudo" atual="trilhas">
+  <div class="container cab-pagina">
+    <nav class="migalhas" aria-label="Você está em"><a href={url('/')}>Início</a><span aria-hidden="true">›</span><span>Trilhas</span></nav>
+    <h1>Trilhas de estudo</h1>
+    <p class="muted" style="max-width: 680px">Sequências de videoaulas organizadas para estudar um tema do começo ao fim, na ordem em que o conteúdo faz sentido.</p>
+  </div>
+  <div class="container" style="padding-top: 24px; padding-bottom: 56px; display: flex; flex-direction: column; gap: 20px">
+    {trilhas.map((t) => (
+      <section class="trilha" id={t.slug}>
+        <div class="trilha-cab"><h2 style="font-size: 22px">{t.nome}</h2><span>{t.aulas.length} aulas em sequência</span></div>
+        <p style="color: #D4E2F4; font-size: 15px">{t.descricao}</p>
+        <ol class="passos">
+          {t.aulas.map((s, i) => aulaPorSlug[s] && (
+            <li><a href={url(`/aula/${s}/`)}><span class="passo-n">{i + 1}</span>{aulaPorSlug[s].titulo}<span style="opacity: .7; font-size: 12px; margin-left: 4px">{disciplinaPorSlug[aulaPorSlug[s].disciplina]?.nome}</span></a></li>
+          ))}
+        </ol>
+      </section>
+    ))}
+  </div>
+</Base>

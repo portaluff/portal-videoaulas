@@ -1,0 +1,15 @@
+{
+  "name": "portal-videoaulas-uff",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Portal de Videoaulas da UFF — site estático (Astro) publicado no GitHub Pages",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^7.4.13"
+  }
+}

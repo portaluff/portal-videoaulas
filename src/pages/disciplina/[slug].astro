@@ -1,0 +1,128 @@
+---
+import Base from '../../layouts/Base.astro';
+import CartaoAula from '../../components/CartaoAula.astro';
+import { disciplinas, aulasDaDisciplina, trilhas, aulaPorSlug, url } from '../../lib/dados.js';
+
+export function getStaticPaths() {
+  return disciplinas.map((d) => ({ params: { slug: d.slug }, props: { disciplina: d } }));
+}
+
+const { disciplina } = Astro.props;
+const area = disciplina.area;
+const lista = aulasDaDisciplina(disciplina.slug);
+const temas = [...new Set(lista.map((a) => a.tema).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
+const trilhasAqui = trilhas.filter((t) => t.aulas.some((s) => aulaPorSlug[s]?.disciplina === disciplina.slug));
+---
+<Base titulo={disciplina.nome} descricao={disciplina.descricao} atual="areas">
+  <div class="container cab-pagina">
+    <nav class="migalhas" aria-label="Você está em">
+      <a href={url('/')}>Início</a><span aria-hidden="true">›</span>
+      <a href={url(`/areas/#${area.slug}`)}>{area.nome}</a><span aria-hidden="true">›</span>
+      <span>{disciplina.nome}</span>
+    </nav>
+    <h1>{disciplina.nome}</h1>
+    <p class="muted" style="max-width: 680px">{disciplina.descricao}</p>
+    {temas.length > 1 && (
+      <div class="chips" role="group" aria-label="Filtrar por tema" style="margin-top: 8px" data-chips>
+        <button type="button" class="chip" aria-pressed="true" data-tema="">Todos</button>
+        {temas.map((t) => <button type="button" class="chip" aria-pressed="false" data-tema={t}>{t}</button>)}
+      </div>
+    )}
+  </div>
+
+  <div class="container layout-lateral">
+    <aside class="lateral">
+      <div class="painel" style="display: flex; flex-direction: column; gap: 8px">
+        <span class="rotulo-grupo">Recursos da aula</span>
+        <label class="check"><input type="checkbox" data-filtro="quiz" /> Com quiz</label>
+        <label class="check"><input type="checkbox" data-filtro="resumo" /> Com resumo</label>
+      </div>
+      <nav class="painel lista-disc" aria-label={`Disciplinas de ${area.nome}`}>
+        <span class="rotulo-grupo" style="margin-bottom: 6px">{area.nome}</span>
+        {area.disciplinas.map((d) => (
+          <a href={url(`/disciplina/${d.slug}/`)} aria-current={d.slug === disciplina.slug ? 'page' : undefined}>{d.nome}</a>
+        ))}
+      </nav>
+    </aside>
+
+    <div class="principal">
+      {trilhasAqui.map((t) => (
+        <section class="trilha" aria-label={`Trilha de estudo: ${t.nome}`}>
+          <div class="trilha-cab"><strong>Trilha de estudo · {t.nome}</strong><span>{t.aulas.length} aulas em sequência</span></div>
+          <ol class="passos">
+            {t.aulas.map((s, i) => aulaPorSlug[s] && (
+              <li><a href={url(`/aula/${s}/`)}><span class="passo-n">{i + 1}</span>{aulaPorSlug[s].titulo}</a></li>
+            ))}
+          </ol>
+        </section>
+      ))}
+
+      <div class="barra-ferramentas">
+        <span style="font-weight: 600" data-contagem aria-live="polite">{lista.length === 1 ? '1 videoaula' : `${lista.length} videoaulas`}</span>
+        <span style="display: flex; align-items: center; gap: 8px; font-size: 14px">
+          <label for="ordem" class="muted">Ordenar por</label>
+          <select id="ordem" data-ordem>
+            <option value="views">Mais assistidas</option>
+            <option value="data">Mais recentes</option>
+            <option value="titulo">A–Z</option>
+          </select>
+        </span>
+      </div>
+
+      <div class="vazio" data-vazio hidden={lista.length > 0}>
+        {lista.length === 0
+          ? <>As aulas desta disciplina serão importadas do portal atual. <a href={url('/sobre/#contato')}>Peça um conteúdo</a> à equipe.</>
+          : <>Nenhuma aula com esses filtros ainda. <a href={url('/sobre/#contato')}>Peça este conteúdo</a> à equipe do portal.</>}
+      </div>
+
+      <div class="grade-aulas" data-grade>
+        {lista.map((a) => <CartaoAula aula={a} rotulo="tema" />)}
+      </div>
+    </div>
+  </div>
+</Base>
+
+<script>
+  const grade = document.querySelector('[data-grade]');
+  const cartoes = grade ? Array.from(grade.querySelectorAll('.cartao-aula')) : [];
+  const contagem = document.querySelector('[data-contagem]');
+  const vazio = document.querySelector('[data-vazio]');
+  const estado = { tema: '', quiz: false, resumo: false };
+
+  function aplicar() {
+    let n = 0;
+    for (const c of cartoes) {
+      const ok = (!estado.tema || c.dataset.tema === estado.tema)
+        && (!estado.quiz || c.dataset.quiz === '1')
+        && (!estado.resumo || c.dataset.resumo === '1');
+      c.hidden = !ok;
+      if (ok) n += 1;
+    }
+    if (contagem) contagem.textContent = n === 1 ? '1 videoaula' : `${n} videoaulas`;
+    if (vazio && cartoes.length) vazio.hidden = n > 0;
+  }
+
+  document.querySelectorAll('[data-chips] .chip').forEach((chip) => {
+    chip.addEventListener('click', () => {
+      document.querySelectorAll('[data-chips] .chip').forEach((c) => c.setAttribute('aria-pressed', 'false'));
+      chip.setAttribute('aria-pressed', 'true');
+      estado.tema = chip.dataset.tema || '';
+      aplicar();
+    });
+  });
+
+  document.querySelectorAll('[data-filtro]').forEach((cb) => {
+    cb.addEventListener('change', () => { estado[cb.dataset.filtro] = cb.checked; aplicar(); });
+  });
+
+  const ordem = document.querySelector('[data-ordem]');
+  ordem?.addEventListener('change', () => {
+    const v = ordem.value;
+    const ordenados = [...cartoes].sort((a, b) => {
+      if (v === 'views') return Number(b.dataset.views) - Number(a.dataset.views);
+      if (v === 'data') return (b.dataset.data || '').localeCompare(a.dataset.data || '');
+      return (a.dataset.titulo || '').localeCompare(b.dataset.titulo || '', 'pt-BR');
+    });
+    ordenados.forEach((c) => grade.appendChild(c));
+  });
+</script>

@@ -1,0 +1,29 @@
+---
+import IconePlay from './IconePlay.astro';
+import { url } from '../lib/dados.js';
+const { atual = '' } = Astro.props;
+const itens = [
+  { id: 'areas', nome: 'Áreas', href: url('/areas/') },
+  { id: 'trilhas', nome: 'Trilhas', href: url('/trilhas/') },
+  { id: 'busca', nome: 'Buscar', href: url('/busca/') },
+  { id: 'sobre', nome: 'Sobre', href: url('/sobre/') },
+];
+---
+<a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="cabecalho">
+  <div class="container">
+    <a class="marca" href={url('/')}>
+      <span class="marca-icone"><IconePlay tamanho={18} /></span>
+      <span class="marca-texto"><strong>Portal de Videoaulas</strong><span>Universidade Federal Fluminense</span></span>
+    </a>
+    <nav class="nav-principal" aria-label="Principal">
+      {itens.map((i) => (
+        <a href={i.href} aria-current={atual === i.id ? 'page' : undefined}>{i.nome}</a>
+      ))}
+    </nav>
+    <form class="busca-mini" role="search" action={url('/busca/')} method="get">
+      <label for="busca-topo" class="sr">Buscar videoaulas</label>
+      <input id="busca-topo" name="q" type="search" placeholder="Buscar aulas" />
+    </form>
+  </div>
+</header>

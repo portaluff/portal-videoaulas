@@ -1,0 +1,38 @@
+---
+import '../styles/global.css';
+import Cabecalho from '../components/Cabecalho.astro';
+import Rodape from '../components/Rodape.astro';
+import Abertura from '../components/Abertura.astro';
+import { url } from '../lib/dados.js';
+
+const {
+  titulo,
+  descricao = 'Videoaulas gratuitas de professores da Universidade Federal Fluminense, com resumo, quiz e trilhas de estudo.',
+  atual = '',
+  abertura = false,
+} = Astro.props;
+const tituloCompleto = titulo ? `${titulo} — Portal de Videoaulas UFF` : 'Portal de Videoaulas UFF';
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{tituloCompleto}</title>
+    <meta name="description" content={descricao} />
+    <meta property="og:title" content={tituloCompleto} />
+    <meta property="og:description" content={descricao} />
+    <link rel="icon" type="image/svg+xml" href={url('/favicon.svg')} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    {abertura && <Abertura />}
+    <Cabecalho atual={atual} />
+    <main id="conteudo">
+      <slot />
+    </main>
+    <Rodape />
+  </body>
+</html>

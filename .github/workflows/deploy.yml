@@ -1,0 +1,38 @@
+name: Publicar no GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Quando o domínio próprio estiver apontado para o GitHub Pages:
+#   SITE_URL: https://SEU-DOMINIO
+#   BASE_PATH: /
+env:
+  SITE_URL: https://portaluff.github.io
+  BASE_PATH: /portal-videoaulas
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v7
+      - name: Instalar, gerar e enviar o site
+        uses: withastro/action@v6
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar
+        id: deployment
+        uses: actions/deploy-pages@v5

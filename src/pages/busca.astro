@@ -1,0 +1,63 @@
+---
+import Base from '../layouts/Base.astro';
+import CartaoAula from '../components/CartaoAula.astro';
+import { aulas, disciplinaPorSlug, url } from '../lib/dados.js';
+
+const normalizar = (s) => (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+const textoBusca = (a) => {
+  const d = disciplinaPorSlug[a.disciplina];
+  return normalizar([a.titulo, a.tema, a.professor, a.descricao, d?.nome, d?.area?.nome].join(' '));
+};
+---
+<Base titulo="Buscar" atual="busca">
+  <div class="container cab-pagina">
+    <nav class="migalhas" aria-label="Você está em"><a href={url('/')}>Início</a><span aria-hidden="true">›</span><span>Buscar</span></nav>
+    <h1>Buscar videoaulas</h1>
+    <form class="busca-grande" role="search" style="margin-top: 4px" data-form>
+      <label for="q" class="sr">Buscar videoaulas</label>
+      <input id="q" name="q" type="search" placeholder="Tema, disciplina ou professor" style="border: 1px solid var(--borda-forte)" />
+      <button class="btn btn-primario" type="submit">Buscar</button>
+    </form>
+  </div>
+  <div class="container" style="padding-top: 24px; padding-bottom: 56px; display: flex; flex-direction: column; gap: 16px">
+    <strong data-contagem aria-live="polite">{aulas.length} videoaulas</strong>
+    <div class="vazio" data-vazio hidden>Nenhuma aula encontrada. Tente outra palavra ou <a href={url('/sobre/#contato')}>peça este conteúdo</a>.</div>
+    <div class="grade-aulas" data-grade>
+      {aulas.map((a) => <div style="display: contents" data-busca={textoBusca(a)}><CartaoAula aula={a} /></div>)}
+    </div>
+  </div>
+</Base>
+
+<script>
+  const normalizar = (s) => (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  const itens = Array.from(document.querySelectorAll('[data-busca]'));
+  const input = document.getElementById('q');
+  const contagem = document.querySelector('[data-contagem]');
+  const vazio = document.querySelector('[data-vazio]');
+
+  function buscar(termo) {
+    const palavras = normalizar(termo).split(/\s+/).filter(Boolean);
+    let n = 0;
+    itens.forEach((el) => {
+      const ok = palavras.every((p) => el.dataset.busca.includes(p));
+      el.hidden = !ok;
+      if (ok) n += 1;
+    });
+    contagem.textContent = palavras.length
+      ? `${n} ${n === 1 ? 'resultado' : 'resultados'} para “${termo}”`
+      : `${itens.length} videoaulas`;
+    vazio.hidden = n > 0;
+  }
+
+  const q = new URLSearchParams(location.search).get('q') || '';
+  input.value = q;
+  buscar(q);
+  input.addEventListener('input', () => buscar(input.value));
+  document.querySelector('[data-form]').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const params = new URLSearchParams(location.search);
+    params.set('q', input.value);
+    history.replaceState(null, '', `${location.pathname}?${params}`);
+    buscar(input.value);
+  });
+</script>

@@ -1,0 +1,18 @@
+---
+import { url } from '../lib/dados.js';
+---
+<footer class="rodape" id="rodape">
+  <div class="container">
+    <div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 8px; line-height: 1.6">
+      <strong style="font-family: var(--fonte-titulo); font-size: 18px; color: #FFFFFF">Portal de Videoaulas UFF</strong>
+      <span>Projeto de extensão do Instituto Biomédico — Universidade Federal Fluminense, Niterói (RJ).</span>
+      <span>Coordenação: Prof. Ismar Araujo de Moraes</span>
+    </div>
+    <nav aria-label="Rodapé">
+      <a href={url('/sobre/')}>Sobre o portal</a>
+      <a href={url('/sobre/#contato')}>Pedir um conteúdo</a>
+      <a href={url('/sobre/#contato')}>Sugestões, elogios e queixas</a>
+      <a href={url('/admin/')}>Área do professor</a>
+    </nav>
+  </div>
+</footer>

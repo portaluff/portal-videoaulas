@@ -1,0 +1,267 @@
+---
+import Base from '../../layouts/Base.astro';
+import IconePlay from '../../components/IconePlay.astro';
+import {
+  aulas, aulaPorSlug, disciplinaPorSlug, trilhasDaAula, url, corDaAula,
+  formatarNumero, formatarData, temQuiz, temResumo,
+} from '../../lib/dados.js';
+
+export function getStaticPaths() {
+  return aulas.map((a) => ({ params: { slug: a.slug }, props: { aula: a } }));
+}
+
+const { aula } = Astro.props;
+const disc = disciplinaPorSlug[aula.disciplina];
+const area = disc?.area;
+const relacionadas = aulas.filter((a) => a.disciplina === aula.disciplina && a.slug !== aula.slug).slice(0, 4);
+const naTrilha = trilhasDaAula(aula.slug);
+const meta = [
+  aula.professor,
+  aula.data ? `Publicada em ${formatarData(aula.data)}` : '',
+  aula.views != null ? `${formatarNumero(aula.views)} visualizações` : '',
+].filter(Boolean).join(' · ');
+const letras = ['A', 'B', 'C', 'D', 'E', 'F'];
+const abas = [
+  { id: 'resumo', nome: 'Resumo' },
+  { id: 'quiz', nome: 'Quiz' },
+  { id: 'referencias', nome: 'Referências' },
+  { id: 'duvidas', nome: 'Dúvidas' },
+];
+---
+<Base titulo={aula.titulo} descricao={aula.descricao || `Videoaula de ${disc?.nome ?? ''} — Portal de Videoaulas UFF`} atual="areas">
+  <div class="container layout-lateral" style="padding-top: 20px">
+    <div class="principal" style="gap: 18px">
+      <nav class="migalhas" aria-label="Você está em">
+        <a href={url('/')}>Início</a><span aria-hidden="true">›</span>
+        {area && <><a href={url(`/areas/#${area.slug}`)}>{area.nome}</a><span aria-hidden="true">›</span></>}
+        {disc && <><a href={url(`/disciplina/${disc.slug}/`)}>{disc.nome}</a><span aria-hidden="true">›</span></>}
+        <span>{aula.titulo}</span>
+      </nav>
+
+      <div class="player" data-player data-youtube={aula.youtube || ''}>
+        {aula.youtube ? (
+          <>
+            <img src={`https://i.ytimg.com/vi/${aula.youtube}/hqdefault.jpg`} alt="" />
+            <button type="button" class="player-btn" aria-label={`Reproduzir a videoaula ${aula.titulo}`} data-tocar><IconePlay tamanho={28} cor="#1A1205" /></button>
+          </>
+        ) : (
+          <>
+            <span class="player-btn" style="background: rgba(255,255,255,.12); cursor: default"><IconePlay tamanho={28} cor="#B8C7DA" /></span>
+            <span class="player-aviso">O vídeo desta aula será vinculado durante a migração do acervo.</span>
+          </>
+        )}
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <div class="selos">
+          {disc && <span class="selo selo-resumo">{disc.nome}</span>}
+          {aula.tema && <span class="selo selo-cinza">{aula.tema}</span>}
+        </div>
+        <h1 style="font-size: clamp(28px, 4vw, 38px)">{aula.titulo}</h1>
+        {meta && <p class="muted" style="font-size: 15px">{meta}</p>}
+        {aula.descricao && <p style="font-size: 15px; max-width: 760px">{aula.descricao}</p>}
+        {aula.youtube && (
+          <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px">
+            <a class="btn" href={`https://www.youtube.com/watch?v=${aula.youtube}`} target="_blank" rel="noopener">Assistir no YouTube</a>
+          </div>
+        )}
+      </div>
+
+      <div class="painel" style="padding: 0; overflow: hidden">
+        <div class="abas" role="tablist" aria-label="Conteúdo da aula">
+          {abas.map((a, i) => (
+            <button type="button" class="aba" role="tab" id={`aba-${a.id}`} aria-controls={`painel-${a.id}`}
+              aria-selected={i === 0 ? 'true' : 'false'} tabindex={i === 0 ? 0 : -1}>{a.nome}</button>
+          ))}
+        </div>
+
+        <section class="aba-painel" role="tabpanel" id="painel-resumo" aria-labelledby="aba-resumo">
+          {temResumo(aula) ? (
+            <>
+              <div class="selos" style="margin-bottom: 14px">
+                <span class="selo selo-resumo">Gerado por IA a partir da transcrição</span>
+                {aula.resumoRevisado
+                  ? <span class="selo selo-verde">Revisado pelo professor</span>
+                  : <span class="selo selo-quiz">Aguardando revisão do professor</span>}
+              </div>
+              <h2>Resumo da aula</h2>
+              <ul class="lista-resumo">
+                {aula.resumo.map((r) => <li>{r.rotulo && <strong>{r.rotulo}: </strong>}{r.texto}</li>)}
+              </ul>
+            </>
+          ) : (
+            <p class="muted">O resumo desta aula ainda não foi publicado.</p>
+          )}
+        </section>
+
+        <section class="aba-painel" role="tabpanel" id="painel-quiz" aria-labelledby="aba-quiz" hidden>
+          {temQuiz(aula) ? (
+            <div data-quiz data-total={aula.quiz.length}>
+              <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px">
+                <h2 style="margin: 0">Quiz · {aula.quiz.length} {aula.quiz.length === 1 ? 'pergunta' : 'perguntas'}</h2>
+                <span style="display: flex; align-items: center; gap: 12px; font-size: 14px">
+                  <strong data-placar aria-live="polite">Nenhuma pergunta respondida</strong>
+                  <button type="button" class="btn" style="min-height: 40px" data-refazer>Refazer</button>
+                </span>
+              </div>
+              {aula.quiz.map((q, qi) => (
+                <fieldset class="pergunta" data-pergunta data-correta={q.correta - 1} style="border: 0; padding: 0; margin-inline: 0">
+                  <legend style="font-size: 16px; font-weight: 600; padding: 0; margin-bottom: 10px">{qi + 1}. {q.pergunta}</legend>
+                  {q.opcoes.map((op, oi) => (
+                    <button type="button" class="opcao" data-opcao={oi}>
+                      <span class="letra">{letras[oi]}</span><span class="texto">{op}</span><span class="marca-resp"></span>
+                    </button>
+                  ))}
+                  <div class="feedback" data-feedback hidden><strong></strong> <span>{q.explicacao}</span></div>
+                </fieldset>
+              ))}
+            </div>
+          ) : (
+            <p class="muted">Esta aula ainda não tem quiz.</p>
+          )}
+        </section>
+
+        <section class="aba-painel" role="tabpanel" id="painel-referencias" aria-labelledby="aba-referencias" hidden>
+          <h2>Referências indicadas pelo professor</h2>
+          {aula.referencias?.length ? (
+            <ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px">
+              {aula.referencias.map((r) => <li>{r}</li>)}
+            </ol>
+          ) : (
+            <p class="muted">As referências desta aula serão adicionadas pelo professor responsável.</p>
+          )}
+        </section>
+
+        <section class="aba-painel" role="tabpanel" id="painel-duvidas" aria-labelledby="aba-duvidas" hidden>
+          <h2>Dúvidas da turma</h2>
+          <p class="muted">O espaço de perguntas e respostas, com monitores e professores, será ativado numa próxima etapa do projeto.</p>
+        </section>
+      </div>
+    </div>
+
+    <aside class="lateral" style="flex-basis: 280px; margin-top: 38px">
+      {temQuiz(aula) && (
+        <div class="painel" style="display: flex; flex-direction: column; gap: 12px">
+          <h2 style="font-size: 18px">Seu desempenho</h2>
+          <span class="muted" style="font-size: 14px">Quiz desta aula</span>
+          <div class="barra"><span data-barra></span></div>
+          <strong style="font-size: 14px" data-placar-lateral>Nenhuma pergunta respondida</strong>
+        </div>
+      )}
+
+      {naTrilha.map(({ trilha, indice }) => {
+        const ant = trilha.aulas[indice - 1];
+        const prox = trilha.aulas[indice + 1];
+        return (
+          <div class="painel" style="display: flex; flex-direction: column; gap: 10px">
+            <span class="rotulo-grupo">Trilha · aula {indice + 1} de {trilha.aulas.length}</span>
+            <h2 style="font-size: 18px"><a href={url('/trilhas/')} style="text-decoration: none; color: inherit">{trilha.nome}</a></h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px">
+              {ant && aulaPorSlug[ant] && <a class="btn" href={url(`/aula/${ant}/`)}>← {aulaPorSlug[ant].titulo}</a>}
+              {prox && aulaPorSlug[prox] && <a class="btn btn-primario" href={url(`/aula/${prox}/`)}>{aulaPorSlug[prox].titulo} →</a>}
+            </div>
+          </div>
+        );
+      })}
+
+      {relacionadas.length > 0 && (
+        <div class="painel" style="display: flex; flex-direction: column; gap: 12px">
+          <h2 style="font-size: 18px">Aulas relacionadas</h2>
+          {relacionadas.map((r) => (
+            <a class="relacionada" href={url(`/aula/${r.slug}/`)}>
+              <span class="mini" style={`background: ${corDaAula(r)}`}><IconePlay tamanho={14} /></span>
+              <span style="display: flex; flex-direction: column; gap: 2px">
+                <strong style="font-size: 15px">{r.titulo}</strong>
+                {r.views != null && <span class="muted" style="font-size: 13px">{formatarNumero(r.views)} visualizações</span>}
+              </span>
+            </a>
+          ))}
+        </div>
+      )}
+
+      <div class="painel" style="background: var(--marinho); border-color: var(--marinho); color: #FFFFFF; display: flex; flex-direction: column; gap: 8px">
+        <h2 style="font-size: 18px">Faltou algum tema?</h2>
+        <p style="font-size: 14px; color: #D4E2F4">Peça uma aula à equipe do portal. Os pedidos ajudam a planejar as próximas gravações.</p>
+        <a href={url('/sobre/#contato')} style="color: var(--laranja); font-weight: 600; font-size: 14px">Pedir um conteúdo</a>
+      </div>
+    </aside>
+  </div>
+</Base>
+
+<script>
+  // Abas acessíveis (setas do teclado alternam entre as abas)
+  const abas = Array.from(document.querySelectorAll('[role="tab"]'));
+  function ativar(aba) {
+    abas.forEach((a) => {
+      const sel = a === aba;
+      a.setAttribute('aria-selected', sel ? 'true' : 'false');
+      a.tabIndex = sel ? 0 : -1;
+      const painel = document.getElementById(a.getAttribute('aria-controls'));
+      if (painel) painel.hidden = !sel;
+    });
+  }
+  abas.forEach((aba, i) => {
+    aba.addEventListener('click', () => ativar(aba));
+    aba.addEventListener('keydown', (e) => {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      const prox = abas[(i + (e.key === 'ArrowRight' ? 1 : abas.length - 1)) % abas.length];
+      ativar(prox);
+      prox.focus();
+    });
+  });
+
+  // Player: carrega o YouTube só quando o aluno clica (página mais leve)
+  const player = document.querySelector('[data-player]');
+  player?.querySelector('[data-tocar]')?.addEventListener('click', () => {
+    const id = player.dataset.youtube;
+    player.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0" title="Videoaula" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
+  });
+
+  // Quiz com feedback imediato
+  const quiz = document.querySelector('[data-quiz]');
+  if (quiz) {
+    const total = Number(quiz.dataset.total);
+    const perguntas = Array.from(quiz.querySelectorAll('[data-pergunta]'));
+    const placares = [document.querySelector('[data-placar]'), document.querySelector('[data-placar-lateral]')];
+    const barra = document.querySelector('[data-barra]');
+
+    function atualizarPlacar() {
+      const respondidas = perguntas.filter((p) => p.dataset.resposta !== undefined);
+      const acertos = respondidas.filter((p) => p.dataset.resposta === p.dataset.correta).length;
+      const texto = respondidas.length === 0 ? 'Nenhuma pergunta respondida' : `${acertos} de ${total} acertos`;
+      placares.forEach((el) => { if (el) el.textContent = texto; });
+      if (barra) barra.style.width = `${Math.round((acertos / total) * 100)}%`;
+    }
+
+    perguntas.forEach((p) => {
+      const opcoes = Array.from(p.querySelectorAll('[data-opcao]'));
+      const fb = p.querySelector('[data-feedback]');
+      opcoes.forEach((op) => {
+        op.addEventListener('click', () => {
+          if (p.dataset.resposta !== undefined) return;
+          p.dataset.resposta = op.dataset.opcao;
+          const certa = op.dataset.opcao === p.dataset.correta;
+          opcoes.forEach((o) => {
+            o.disabled = true;
+            if (o.dataset.opcao === p.dataset.correta) { o.classList.add('certa'); o.querySelector('.marca-resp').textContent = 'Resposta correta'; }
+            else if (o === op) { o.classList.add('errada'); o.querySelector('.marca-resp').textContent = 'Sua resposta'; }
+          });
+          fb.classList.add(certa ? 'ok' : 'nao');
+          fb.querySelector('strong').textContent = certa ? 'Correto!' : 'Não foi dessa vez.';
+          fb.hidden = false;
+          atualizarPlacar();
+        });
+      });
+    });
+
+    quiz.querySelector('[data-refazer]')?.addEventListener('click', () => {
+      perguntas.forEach((p) => {
+        delete p.dataset.resposta;
+        p.querySelectorAll('[data-opcao]').forEach((o) => { o.disabled = false; o.classList.remove('certa', 'errada'); o.querySelector('.marca-resp').textContent = ''; });
+        const fb = p.querySelector('[data-feedback]');
+        fb.hidden = true; fb.classList.remove('ok', 'nao');
+      });
+      atualizarPlacar();
+    });
+  }
+</script>

@@ -1,0 +1,64 @@
+---
+// Abertura animada: a sigla UFF se transforma no botão de play do portal.
+// Aparece uma vez por sessão, pode ser pulada e não aparece para quem ativou "reduzir movimento".
+const U  = 'polygon(70px 50px,114px 50px,114px 206px,176px 206px,176px 50px,220px 50px,220px 220px,190px 250px,145px 250px,100px 250px,70px 220px,70px 135px)';
+const F1 = 'polygon(250px 50px,375px 50px,375px 92px,294px 92px,294px 128px,358px 128px,358px 170px,294px 170px,294px 250px,250px 250px,250px 190px,250px 120px)';
+const F2 = 'polygon(405px 50px,530px 50px,530px 92px,449px 92px,449px 128px,513px 128px,513px 170px,449px 170px,449px 250px,405px 250px,405px 190px,405px 120px)';
+---
+<div id="abertura" class="ab" role="presentation">
+  <div class="ab-ancora" aria-hidden="true">
+    <div class="ab-grupo">
+      <div class="ab-logo">
+        <div class="ab-quadrado"></div>
+        <div class="ab-peca ab-u" style={`clip-path: ${U}`}></div>
+        <div class="ab-peca ab-f1" style={`clip-path: ${F1}`}></div>
+        <div class="ab-peca ab-f2" style={`clip-path: ${F2}`}></div>
+      </div>
+      <div class="ab-nome">
+        <span class="ab-nome-1">Portal de Videoaulas</span>
+        <span class="ab-nome-2">Universidade Federal Fluminense</span>
+      </div>
+    </div>
+  </div>
+  <button type="button" id="abertura-pular" class="ab-pular">Pular abertura</button>
+</div>
+<script is:inline>
+(function () {
+  var el = document.getElementById('abertura');
+  if (!el) return;
+  function fim() { if (el.parentNode) el.parentNode.removeChild(el); }
+  try {
+    if (sessionStorage.getItem('abertura-vista')) { fim(); return; }
+    sessionStorage.setItem('abertura-vista', '1');
+  } catch (e) {}
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { fim(); return; }
+  el.addEventListener('animationend', function (e) { if (e.target === el) fim(); });
+  document.getElementById('abertura-pular').addEventListener('click', fim);
+})();
+</script>
+<style is:global>
+.ab { position: fixed; inset: 0; z-index: 1000; background: #0F2A4D; overflow: hidden; animation: abFundo 4.4s ease both; }
+.ab-ancora { position: absolute; left: 50%; top: 50%; width: 0; height: 0; }
+.ab-grupo { position: absolute; left: 0; top: 0; width: 0; height: 0; animation: abEntra 4.4s ease-in-out both; }
+.ab-logo { position: absolute; left: -300px; top: -150px; width: 600px; height: 300px; transform-origin: 275px 150px; animation: abMove 4.4s cubic-bezier(.65,0,.35,1) both; }
+.ab-quadrado { position: absolute; left: 83px; top: -42px; width: 384px; height: 384px; border-radius: 96px; background: #0B4EA2; animation: abQuadrado 4.4s cubic-bezier(.34,1.45,.64,1) both; }
+.ab-peca { position: absolute; left: 0; top: 0; width: 600px; height: 300px; background: #FFFFFF; }
+.ab-u { animation: abU 4.4s cubic-bezier(.65,0,.35,1) both; }
+.ab-f1 { animation: abF1 4.4s cubic-bezier(.65,0,.35,1) both; }
+.ab-f2 { animation: abF2 4.4s cubic-bezier(.65,0,.35,1) both; }
+.ab-nome { position: absolute; left: -271px; top: -52px; display: flex; flex-direction: column; gap: 8px; white-space: nowrap; animation: abNome 4.4s cubic-bezier(.2,.7,.2,1) both; }
+.ab-nome-1 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 64px; line-height: 1; color: #FFFFFF; }
+.ab-nome-2 { font-family: 'Inter', sans-serif; font-size: 26px; line-height: 1.2; color: #9DC1F0; }
+.ab-pular { position: absolute; right: 24px; bottom: 24px; min-height: 44px; padding: 0 18px; border-radius: 8px; border: 1px solid rgba(255,255,255,.35); background: transparent; color: #FFFFFF; font: 600 14px 'Inter', sans-serif; cursor: pointer; }
+@keyframes abFundo { 0%, 88% { opacity: 1; } 100% { opacity: 0; visibility: hidden; } }
+@keyframes abEntra { 0% { opacity: 0; transform: translateY(28px); } 8%, 100% { opacity: 1; transform: none; } }
+@keyframes abU { 0%, 28% { clip-path: polygon(70px 50px,114px 50px,114px 206px,176px 206px,176px 50px,220px 50px,220px 220px,190px 250px,145px 250px,100px 250px,70px 220px,70px 135px); } 44%, 100% { clip-path: polygon(195px 30px,209px 38px,223px 46px,238px 54px,252px 62px,266px 70px,266px 190px,266px 230px,242px 243px,219px 257px,195px 270px,195px 150px); } }
+@keyframes abF1 { 0%, 30% { clip-path: polygon(250px 50px,375px 50px,375px 92px,294px 92px,294px 128px,358px 128px,358px 170px,294px 170px,294px 250px,250px 250px,250px 190px,250px 120px); } 46%, 100% { clip-path: polygon(265px 70px,336px 110px,336px 122px,336px 134px,336px 146px,336px 158px,336px 170px,336px 180px,336px 190px,265px 230px,265px 190px,265px 120px); } }
+@keyframes abF2 { 0%, 32% { clip-path: polygon(405px 50px,530px 50px,530px 92px,449px 92px,449px 128px,513px 128px,513px 170px,449px 170px,449px 250px,405px 250px,405px 190px,405px 120px); } 48%, 100% { clip-path: polygon(335px 110px,405px 150px,395px 156px,385px 161px,375px 167px,365px 173px,355px 179px,345px 184px,338px 188px,335px 190px,335px 163px,335px 137px); } }
+@keyframes abQuadrado { 0%, 46% { opacity: 0; transform: scale(.5); } 56%, 100% { opacity: 1; transform: none; } }
+@keyframes abMove { 0%, 56% { transform: none; } 64% { transform: scale(.42); } 74%, 100% { transform: translateX(-362px) scale(.42); } }
+@keyframes abNome { 0%, 68% { opacity: 0; transform: translateX(-28px); } 78%, 100% { opacity: 1; transform: none; } }
+@media (max-width: 1000px) { .ab-ancora { scale: .6; } }
+@media (max-width: 640px) { .ab-ancora { scale: .38; } }
+@media (prefers-reduced-motion: reduce) { .ab { display: none; } }
+</style>
