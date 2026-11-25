@@ -79,7 +79,7 @@ const abas = [
           {temResumo(aula) ? (
             <>
               <div class="selos" style="margin-bottom: 14px">
-                <span class="selo selo-resumo">Gerado por IA a partir da transcrição</span>
+                {aula.iaModelo && <span class="selo selo-resumo">Gerado por IA a partir do vídeo</span>}
                 {aula.resumoRevisado
                   ? <span class="selo selo-verde">Revisado pelo professor</span>
                   : <span class="selo selo-quiz">Aguardando revisão do professor</span>}
@@ -98,7 +98,12 @@ const abas = [
           {temQuiz(aula) ? (
             <div data-quiz data-total={aula.quiz.length}>
               <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px">
-                <h2 style="margin: 0">Quiz · {aula.quiz.length} {aula.quiz.length === 1 ? 'pergunta' : 'perguntas'}</h2>
+                <div style="display: flex; flex-direction: column; gap: 8px">
+                  <h2 style="margin: 0">Quiz · {aula.quiz.length} {aula.quiz.length === 1 ? 'pergunta' : 'perguntas'}</h2>
+                  {aula.quizRevisado
+                    ? <span class="selo selo-verde" style="align-self: flex-start">Revisado pelo professor</span>
+                    : <span class="selo selo-quiz" style="align-self: flex-start">Aguardando revisão do professor</span>}
+                </div>
                 <span style="display: flex; align-items: center; gap: 12px; font-size: 14px">
                   <strong data-placar aria-live="polite">Nenhuma pergunta respondida</strong>
                   <button type="button" class="btn" style="min-height: 40px" data-refazer>Refazer</button>

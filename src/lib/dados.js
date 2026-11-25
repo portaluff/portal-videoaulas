@@ -2,6 +2,7 @@
 // Cada aula é um arquivo em src/data/aulas/<slug>.json — o nome do arquivo vira o endereço da página.
 import areasJson from '../data/areas.json';
 import trilhasJson from '../data/trilhas.json';
+import configJson from '../data/config.json';
 
 const arquivos = import.meta.glob('../data/aulas/*.json', { eager: true });
 
@@ -56,5 +57,9 @@ export function trilhasDaAula(slug) {
     .filter((x) => x.indice >= 0);
 }
 
-export const temResumo = (a) => Array.isArray(a.resumo) && a.resumo.length > 0;
-export const temQuiz = (a) => Array.isArray(a.quiz) && a.quiz.length > 0;
+// Resumo e quiz gerados por IA só aparecem depois da revisão do professor,
+// a não ser que "mostrarConteudoNaoRevisado" esteja ligado em src/data/config.json (fase de testes).
+export const config = configJson;
+const visivel = (revisado) => revisado === true || config.mostrarConteudoNaoRevisado === true;
+export const temResumo = (a) => Array.isArray(a.resumo) && a.resumo.length > 0 && visivel(a.resumoRevisado);
+export const temQuiz = (a) => Array.isArray(a.quiz) && a.quiz.length > 0 && visivel(a.quizRevisado);

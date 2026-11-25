@@ -72,11 +72,21 @@ collections:
           - { label: Alternativas, name: opcoes, widget: list, field: { label: Alternativa, name: opcao, widget: string } }
           - { label: "Alternativa correta (1 = primeira, 2 = segunda...)", name: correta, widget: number, value_type: int, min: 1 }
           - { label: Explicação mostrada após a resposta, name: explicacao, widget: text }
+      - { label: Quiz revisado pelo professor, name: quizRevisado, widget: boolean, default: false, hint: "Marque só depois de conferir perguntas, alternativas e a resposta correta." }
       - { label: Referências, name: referencias, widget: list, required: false, field: { label: Referência, name: referencia, widget: string } }
+      - { label: "Não gerar resumo/quiz com IA para esta aula", name: iaIgnorar, widget: boolean, default: false, required: false }
+      - { label: Gerado por IA em, name: iaGeradoEm, widget: hidden, required: false }
+      - { label: Modelo de IA, name: iaModelo, widget: hidden, required: false }
 
   - name: organizacao
     label: Organização
     files:
+      - name: config
+        label: Configurações
+        file: src/data/config.json
+        format: json
+        fields:
+          - { label: "Mostrar resumos e quizzes ainda não revisados (com o aviso 'Aguardando revisão')", name: mostrarConteudoNaoRevisado, widget: boolean, default: false, hint: "Deixe ligado só na fase de testes. Desligado, o conteúdo gerado por IA só aparece no site depois que o professor marcar como revisado." }
       - name: trilhas
         label: Trilhas de estudo
         file: src/data/trilhas.json

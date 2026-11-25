@@ -1,0 +1,58 @@
+name: Gerar resumo e quiz com IA (Gemini)
+
+# Roda quando uma aula é cadastrada/alterada, todo dia de madrugada (para ir processando o acervo
+# dentro do limite gratuito) e também manualmente pela aba Actions.
+on:
+  push:
+    branches: [main]
+    paths: ['src/data/aulas/**']
+  schedule:
+    - cron: '17 6 * * *'   # 03:17 no horário de Brasília
+  workflow_dispatch:
+    inputs:
+      max_aulas:
+        description: 'Máximo de aulas nesta execução'
+        default: '8'
+      aulas:
+        description: 'Só estas aulas (endereços separados por espaço, opcional)'
+        default: ''
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: gerar-conteudo-ia
+  cancel-in-progress: false
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v7
+
+      - name: Gerar resumo e quiz das aulas pendentes
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          MAX_AULAS: ${{ inputs.max_aulas || '8' }}
+          AULAS: ${{ inputs.aulas }}
+        run: node scripts/gerar-conteudo-ia.mjs $AULAS
+
+      - name: Salvar no repositório e republicar o site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- src/data/aulas; then
+            echo "Nenhuma aula nova processada."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/aulas
+          git commit -m "IA: resumo e quiz gerados (aguardando revisão do professor)"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          # Commits feitos pela própria automação não disparam outros workflows; pedimos a publicação explicitamente.
+          gh workflow run deploy.yml --ref main
