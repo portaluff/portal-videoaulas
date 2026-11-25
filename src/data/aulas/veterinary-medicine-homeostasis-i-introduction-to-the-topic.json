@@ -1,6 +1,6 @@
 {
-  "titulo": "(Veterinary Medicine) Homeostasis I - Introduction to the topic",
-  "disciplina": "a-classificar",
+  "titulo": "Homeostasis I - Introduction to the topic",
+  "disciplina": "fisiologia-veterinaria",
   "tema": "",
   "youtube": "JG100TRVQtk",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

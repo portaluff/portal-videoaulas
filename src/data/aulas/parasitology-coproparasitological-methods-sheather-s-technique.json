@@ -1,6 +1,6 @@
 {
-  "titulo": "[Parasitology] Coproparasitological Methods: Sheather's Technique",
-  "disciplina": "a-classificar",
+  "titulo": "Coproparasitological Methods: Sheather's Technique",
+  "disciplina": "parasitologia",
   "tema": "",
   "youtube": "g901pdMEJxo",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

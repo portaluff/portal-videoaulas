@@ -1,6 +1,6 @@
 {
-  "titulo": "[Veterinary Physiology I] Nervous System - 11. Somatic Motor Nervous System Disorders",
-  "disciplina": "a-classificar",
+  "titulo": "Nervous System - 11. Somatic Motor Nervous System Disorders",
+  "disciplina": "fisiologia-veterinaria",
   "tema": "",
   "youtube": "4Hvr3NfbyqQ",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

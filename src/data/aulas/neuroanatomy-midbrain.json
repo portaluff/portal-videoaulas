@@ -1,6 +1,6 @@
 {
-  "titulo": "[NEUROANATOMY] Midbrain",
-  "disciplina": "a-classificar",
+  "titulo": "Midbrain",
+  "disciplina": "neuroanatomia",
   "tema": "",
   "youtube": "zll_h8cUt2A",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

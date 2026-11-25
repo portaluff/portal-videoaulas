@@ -1,6 +1,6 @@
 {
-  "titulo": "[CARDIOLOGY] Paradoxical Splitting of S2",
-  "disciplina": "a-classificar",
+  "titulo": "Paradoxical Splitting of S2",
+  "disciplina": "cardiologia",
   "tema": "",
   "youtube": "Dxa-iTd6Gko",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

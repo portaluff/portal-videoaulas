@@ -1,7 +1,7 @@
 {
-  "titulo": "Electromagnetism Ch. 6.01 - Coulomb's Law, Electric Field (vector notation, point charges)",
-  "disciplina": "a-classificar",
-  "tema": "",
+  "titulo": "Eletromagnetismo — Ch. 6.01 - Coulomb's Law, Electric Field (vector notation, point charges)",
+  "disciplina": "fisica",
+  "tema": "Eletromagnetismo",
   "youtube": "bMAsGyYjUvg",
   "professor": "",
   "data": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

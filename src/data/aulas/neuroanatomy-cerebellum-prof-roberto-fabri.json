@@ -1,6 +1,6 @@
 {
-  "titulo": "[NEUROANATOMY] Cerebellum - Prof. Roberto Fabri",
-  "disciplina": "a-classificar",
+  "titulo": "Cerebellum - Prof. Roberto Fabri",
+  "disciplina": "neuroanatomia",
   "tema": "",
   "youtube": "KuVvftQbNJM",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

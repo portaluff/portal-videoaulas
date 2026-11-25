@@ -1,6 +1,6 @@
 {
-  "titulo": "[Physiology] Vision - 5. Visual Processing",
-  "disciplina": "a-classificar",
+  "titulo": "Vision - 5. Visual Processing",
+  "disciplina": "fisiologia",
   "tema": "",
   "youtube": "NsWhOzXLSIQ",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

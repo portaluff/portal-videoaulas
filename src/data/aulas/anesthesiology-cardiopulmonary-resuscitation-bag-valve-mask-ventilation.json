@@ -1,6 +1,6 @@
 {
-  "titulo": "[ANESTHESIOLOGY] Cardiopulmonary Resuscitation: Bag-Valve-Mask Ventilation",
-  "disciplina": "a-classificar",
+  "titulo": "Cardiopulmonary Resuscitation: Bag-Valve-Mask Ventilation",
+  "disciplina": "anestesiologia",
   "tema": "",
   "youtube": "mnocAKDurPo",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

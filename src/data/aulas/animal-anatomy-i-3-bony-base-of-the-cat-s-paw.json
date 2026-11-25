@@ -1,6 +1,6 @@
 {
-  "titulo": "[ANIMAL ANATOMY I] 3. Bony base of the cat's paw",
-  "disciplina": "a-classificar",
+  "titulo": "3. Bony base of the cat's paw",
+  "disciplina": "anatomia-veterinaria",
   "tema": "",
   "youtube": "FX9P-xFSgMI",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

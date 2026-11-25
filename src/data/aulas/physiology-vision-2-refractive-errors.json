@@ -1,6 +1,6 @@
 {
-  "titulo": "[Physiology] Vision - 2. Refractive errors",
-  "disciplina": "a-classificar",
+  "titulo": "Vision - 2. Refractive errors",
+  "disciplina": "fisiologia",
   "tema": "",
   "youtube": "tmRTtb3tuzg",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

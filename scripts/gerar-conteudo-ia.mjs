@@ -31,9 +31,12 @@ const ENDPOINT = process.env.GEMINI_ENDPOINT || 'https://generativelanguage.goog
 const CHAVE = process.env.GEMINI_API_KEY;
 const PAUSA_MS = Number(process.env.PAUSA_MS ?? 8000);
 
-const ESQUEMA = {
+function montarEsquema(disciplinas) {
+  return {
   type: 'OBJECT',
   properties: {
+    disciplina: { type: 'STRING', enum: Object.keys(disciplinas), description: 'Disciplina da aula, escolhida da lista.' },
+    idioma: { type: 'STRING', enum: ['pt', 'en', 'es'], description: 'Idioma falado no vídeo.' },
     descricao: { type: 'STRING', description: 'Uma frase dizendo do que trata a aula.' },
     resumo: {
       type: 'ARRAY',
@@ -60,10 +63,11 @@ const ESQUEMA = {
       },
     },
   },
-  required: ['descricao', 'resumo', 'quiz'],
-};
+  required: ['disciplina', 'idioma', 'descricao', 'resumo', 'quiz'],
+  };
+}
 
-function montarPedido(aula, disciplina) {
+function montarPedido(aula, disciplina, disciplinas) {
   return `Você apoia o Portal de Videoaulas da Universidade Federal Fluminense (UFF).
 Assista à videoaula anexada${disciplina ? ` (disciplina: ${disciplina})` : ''}, título "${aula.titulo}", e produza, em português do Brasil:
 
@@ -76,7 +80,13 @@ Regras:
 - As perguntas devem testar compreensão dos pontos principais, não detalhes irrelevantes.
 - Alternativas erradas devem ser plausíveis para quem estudou o tema, mas claramente erradas segundo a aula.
 - Use a terminologia técnica correta da área, como um professor universitário usaria.
-- Este material será revisado pelo professor antes de ser publicado.`;
+- Escreva o resumo e o quiz sempre em português do Brasil, mesmo que o vídeo seja em outro idioma.
+- Este material será revisado pelo professor antes de ser publicado.
+
+Informe também:
+- "idioma": o idioma falado no vídeo (pt, en ou es).
+- "disciplina": a disciplina que melhor descreve a aula, escolhendo o código desta lista:
+${Object.entries(disciplinas).map(([slug, nome]) => `  ${slug}: ${nome}`).join('\n')}`;
 }
 
 const esperar = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -103,18 +113,18 @@ function postarJSON(url, corpo, cabecalhos) {
   });
 }
 
-async function chamarGemini(aula, disciplina, { comResolucaoBaixa = true } = {}) {
+async function chamarGemini(aula, disciplina, disciplinas, { comResolucaoBaixa = true } = {}) {
   const corpo = {
     contents: [{
       role: 'user',
       parts: [
         { file_data: { file_uri: `https://www.youtube.com/watch?v=${aula.youtube}` } },
-        { text: montarPedido(aula, disciplina) },
+        { text: montarPedido(aula, disciplina, disciplinas) },
       ],
     }],
     generationConfig: {
       responseMimeType: 'application/json',
-      responseSchema: ESQUEMA,
+      responseSchema: montarEsquema(disciplinas),
       temperature: 0.3,
       ...(comResolucaoBaixa ? { mediaResolution: 'MEDIA_RESOLUTION_LOW' } : {}),
     },
@@ -134,12 +144,12 @@ async function chamarGemini(aula, disciplina, { comResolucaoBaixa = true } = {})
 
 // O Gemini às vezes responde 503 ("alta demanda") ou cai a conexão: espera e tenta de novo
 // (30 s, 2 min, 5 min). Erro 400 costuma ser a opção de resolução baixa: repete sem ela.
-async function chamarComNovasTentativas(aula, disciplina) {
+async function chamarComNovasTentativas(aula, disciplina, disciplinas) {
   const esperas = [30, 120, 300];
   let opcoes = { comResolucaoBaixa: true };
   for (let tentativa = 0; ; tentativa++) {
     try {
-      return await chamarGemini(aula, disciplina, opcoes);
+      return await chamarGemini(aula, disciplina, disciplinas, opcoes);
     } catch (e) {
       if (e.status === 400 && opcoes.comResolucaoBaixa) { opcoes = { comResolucaoBaixa: false }; continue; }
       const temporario = !e.status || e.status >= 500;
@@ -180,7 +190,7 @@ function validar(gerado, slug) {
     const opcoes = embaralhar(alternativas, `${slug}-${n}`);
     quiz.push({ pergunta: limpa(q.pergunta), opcoes, correta: opcoes.indexOf(certa) + 1, explicacao: limpa(q.explicacao) });
   }
-  return { descricao: limpa(gerado.descricao), resumo, quiz: quiz.slice(0, 6) };
+  return { descricao: limpa(gerado.descricao), resumo, quiz: quiz.slice(0, 6), disciplina: limpa(gerado.disciplina), idioma: limpa(gerado.idioma) };
 }
 
 async function carregarDisciplinas() {
@@ -194,6 +204,7 @@ async function main() {
     return;
   }
   const disciplinas = await carregarDisciplinas();
+  const classificaveis = Object.fromEntries(Object.entries(disciplinas).filter(([slug]) => slug !== 'a-classificar'));
   const pedidos = process.argv.slice(2);
   const arquivos = (await readdir(PASTA_AULAS)).filter((f) => f.endsWith('.json')).sort();
 
@@ -226,7 +237,7 @@ async function main() {
     console.log(`→ ${slug} (${aula.titulo})`);
     let gerado;
     try {
-      gerado = await chamarComNovasTentativas(aula, disciplinas[aula.disciplina]);
+      gerado = await chamarComNovasTentativas(aula, disciplinas[aula.disciplina], classificaveis);
     } catch (e) {
       console.error(`  ✗ ${e.message}`);
       if (e.status === 429) { console.error('  Limite diário da faixa gratuita atingido; o restante fica para a próxima execução.'); break; }
@@ -238,6 +249,12 @@ async function main() {
     if (p.faltaResumo && ok.resumo.length) { aula.resumo = ok.resumo; aula.resumoRevisado = false; }
     if (p.faltaQuiz && ok.quiz.length) { aula.quiz = ok.quiz; aula.quizRevisado = false; }
     if (!aula.descricao && ok.descricao) aula.descricao = ok.descricao;
+    if (aula.disciplina === 'a-classificar' && classificaveis[ok.disciplina]) {
+      aula.disciplina = ok.disciplina;
+      aula.disciplinaPelaIA = true; // aparece no painel para o professor conferir
+      console.log(`  → classificada pela IA em: ${classificaveis[ok.disciplina]}`);
+    }
+    if (!aula.idioma && ['pt', 'en', 'es'].includes(ok.idioma)) aula.idioma = ok.idioma;
     aula.iaGeradoEm = agora;
     aula.iaModelo = MODELO;
 

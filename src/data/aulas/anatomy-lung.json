@@ -1,6 +1,6 @@
 {
-  "titulo": "[ANATOMY] Lung",
-  "disciplina": "a-classificar",
+  "titulo": "Lung",
+  "disciplina": "anatomia",
   "tema": "",
   "youtube": "NqMF3n3C1x0",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

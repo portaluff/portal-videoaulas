@@ -56,6 +56,8 @@ const abas = [
         <div class="selos">
           {disc && <span class="selo selo-resumo">{disc.nome}</span>}
           {aula.tema && <span class="selo selo-cinza">{aula.tema}</span>}
+          {aula.idioma === 'en' && <span class="selo selo-cinza">Vídeo em inglês</span>}
+          {aula.idioma === 'es' && <span class="selo selo-cinza">Vídeo em espanhol</span>}
         </div>
         <h1 style="font-size: clamp(28px, 4vw, 38px)">{aula.titulo}</h1>
         {meta && <p class="muted" style="font-size: 15px">{meta}</p>}

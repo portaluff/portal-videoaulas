@@ -1,6 +1,6 @@
 {
-  "titulo": "[Veterinary Physiology I] Nervous System - 8. Motor Nerve Endings",
-  "disciplina": "a-classificar",
+  "titulo": "Nervous System - 8. Motor Nerve Endings",
+  "disciplina": "fisiologia-veterinaria",
   "tema": "",
   "youtube": "ZSlwZTQBGYg",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

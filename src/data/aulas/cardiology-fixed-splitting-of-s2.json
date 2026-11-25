@@ -1,6 +1,6 @@
 {
-  "titulo": "[CARDIOLOGY] Fixed Splitting of S2",
-  "disciplina": "a-classificar",
+  "titulo": "Fixed Splitting of S2",
+  "disciplina": "cardiologia",
   "tema": "",
   "youtube": "5ZGozPVcX8w",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

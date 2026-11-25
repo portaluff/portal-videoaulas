@@ -1,6 +1,6 @@
 {
-  "titulo": "[CARDIOLOGY] Protodiastolic Murmur",
-  "disciplina": "a-classificar",
+  "titulo": "Protodiastolic Murmur",
+  "disciplina": "cardiologia",
   "tema": "",
   "youtube": "8U5mG1oBlKg",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

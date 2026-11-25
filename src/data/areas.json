@@ -58,6 +58,48 @@
           "nome": "Saúde Coletiva",
           "cor": "#3D4FA0",
           "descricao": "Aulas de saúde coletiva."
+        },
+        {
+          "slug": "fisiologia",
+          "nome": "Fisiologia",
+          "cor": "#0F6E6A",
+          "descricao": "Fisiologia humana e médica."
+        },
+        {
+          "slug": "embriologia",
+          "nome": "Embriologia",
+          "cor": "#3D4FA0",
+          "descricao": "Desenvolvimento embrionário."
+        },
+        {
+          "slug": "clinica-medica",
+          "nome": "Clínica Médica",
+          "cor": "#8A2F3B",
+          "descricao": "Aulas de clínica médica."
+        },
+        {
+          "slug": "emergencia",
+          "nome": "Emergência (HUAP)",
+          "cor": "#8A2F3B",
+          "descricao": "Aulas de emergência do Hospital Universitário Antônio Pedro."
+        },
+        {
+          "slug": "psiquiatria",
+          "nome": "Psiquiatria",
+          "cor": "#5B3A7A",
+          "descricao": "Aulas de psiquiatria."
+        },
+        {
+          "slug": "enfermagem",
+          "nome": "Enfermagem",
+          "cor": "#0F6E6A",
+          "descricao": "Aulas de enfermagem."
+        },
+        {
+          "slug": "pop-saude",
+          "nome": "Pop Saúde",
+          "cor": "#9A4A12",
+          "descricao": "Divulgação científica em saúde."
         }
       ]
     },
@@ -77,6 +119,12 @@
           "nome": "Anatomia veterinária",
           "cor": "#0F6E6A",
           "descricao": "Anatomia dos animais domésticos."
+        },
+        {
+          "slug": "nutricao-animal",
+          "nome": "Nutrição e alimentação animal",
+          "cor": "#0F6E6A",
+          "descricao": "Nutrição e alimentação dos animais."
         }
       ]
     },
@@ -96,6 +144,12 @@
           "nome": "Matemática",
           "cor": "#5B3A7A",
           "descricao": "Aulas de matemática."
+        },
+        {
+          "slug": "bioestatistica",
+          "nome": "Bioestatística",
+          "cor": "#5B3A7A",
+          "descricao": "Estatística aplicada às ciências da saúde."
         }
       ]
     },
@@ -115,6 +169,25 @@
           "nome": "Administração",
           "cor": "#9A4A12",
           "descricao": "Aulas de administração."
+        },
+        {
+          "slug": "empreendedorismo",
+          "nome": "Empreendedorismo",
+          "cor": "#9A4A12",
+          "descricao": "Aulas de empreendedorismo."
+        }
+      ]
+    },
+    {
+      "slug": "engenharias",
+      "nome": "Engenharias",
+      "cor": "#3D4FA0",
+      "disciplinas": [
+        {
+          "slug": "engenharia-agricola",
+          "nome": "Engenharia Agrícola e Ambiental",
+          "cor": "#3D4FA0",
+          "descricao": "Aulas de engenharia agrícola e ambiental."
         }
       ]
     },

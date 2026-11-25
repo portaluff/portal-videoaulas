@@ -27,53 +27,96 @@ const normalizar = (s) => String(s ?? '')
 
 const paraEndereco = (s) => normalizar(s).replace(/ /g, '-').slice(0, 80).replace(/-+$/, '');
 
-// Etiqueta entre colchetes no título → disciplina (e tema, quando a etiqueta é um tópico)
+// Etiqueta no título ("[ANATOMIA] Rins", "(Veterinary Medicine) ...") → disciplina, tema e idioma.
+// Numerais romanos no fim da etiqueta ("Fisiologia Veterinária II") são ignorados na comparação.
 const ETIQUETAS = {
   'anatomia': { disciplina: 'anatomia' },
+  'anatomy': { disciplina: 'anatomia', idioma: 'en' },
   'neuroanatomia': { disciplina: 'neuroanatomia' },
+  'neuroanatomy': { disciplina: 'neuroanatomia', idioma: 'en' },
   'cardiologia': { disciplina: 'cardiologia' },
+  'cardiology': { disciplina: 'cardiologia', idioma: 'en' },
   'semiologia': { disciplina: 'semiologia' },
+  'semiology': { disciplina: 'semiologia', idioma: 'en' },
   'anestesiologia': { disciplina: 'anestesiologia' },
+  'anesthesiology': { disciplina: 'anestesiologia', idioma: 'en' },
   'parasitologia': { disciplina: 'parasitologia' },
+  'parasitology': { disciplina: 'parasitologia', idioma: 'en' },
   'farmacia': { disciplina: 'farmacia' },
   'nutricao': { disciplina: 'nutricao' },
   'saude coletiva': { disciplina: 'saude-coletiva' },
+  'fisiologia': { disciplina: 'fisiologia' },
+  'fisiologia medica': { disciplina: 'fisiologia' },
+  'physiology': { disciplina: 'fisiologia', idioma: 'en' },
+  'medical physiology': { disciplina: 'fisiologia', idioma: 'en' },
+  'embriologia': { disciplina: 'embriologia' },
+  'clinica medica': { disciplina: 'clinica-medica' },
+  'emergencia huap': { disciplina: 'emergencia' },
+  'psiquiatria': { disciplina: 'psiquiatria' },
+  'enfermagem': { disciplina: 'enfermagem' },
+  'pop saude': { disciplina: 'pop-saude' },
+  'fisiologia veterinaria': { disciplina: 'fisiologia-veterinaria' },
+  'veterinary physiology': { disciplina: 'fisiologia-veterinaria', idioma: 'en' },
+  'anatomia animal': { disciplina: 'anatomia-veterinaria' },
+  'anatomia veterinaria': { disciplina: 'anatomia-veterinaria' },
+  'animal anatomy': { disciplina: 'anatomia-veterinaria', idioma: 'en' },
+  'veterinary anatomy': { disciplina: 'anatomia-veterinaria', idioma: 'en' },
+  'nutricao e alimentacao animal': { disciplina: 'nutricao-animal' },
   'matematica': { disciplina: 'matematica' },
+  'mathematics': { disciplina: 'matematica', idioma: 'en' },
+  'bioestatistica': { disciplina: 'bioestatistica' },
   'antropologia': { disciplina: 'antropologia' },
   'administracao': { disciplina: 'administracao' },
+  'empreendedorismo': { disciplina: 'empreendedorismo' },
+  'engenharia agricola e ambiental': { disciplina: 'engenharia-agricola' },
+  'tutorial': { disciplina: 'tutoriais' },
   'termodinamica': { disciplina: 'fisica', tema: 'Termodinâmica' },
+  'thermodynamics': { disciplina: 'fisica', tema: 'Termodinâmica', idioma: 'en' },
   'eletromagnetismo': { disciplina: 'fisica', tema: 'Eletromagnetismo' },
+  'electromagnetism': { disciplina: 'fisica', tema: 'Eletromagnetismo', idioma: 'en' },
   'mecanica analitica': { disciplina: 'fisica', tema: 'Mecânica Analítica' },
+  'analytical mechanics': { disciplina: 'fisica', tema: 'Mecânica Analítica', idioma: 'en' },
   'fisica moderna': { disciplina: 'fisica', tema: 'Física Moderna' },
+  'modern physics': { disciplina: 'fisica', tema: 'Física Moderna', idioma: 'en' },
   'fisica': { disciplina: 'fisica' },
 };
+// Títulos sem etiqueta que começam com estes termos (ex.: "Eletromagnetismo Cap 07.03 - ...")
+const PREFIXOS = ['termodinamica', 'thermodynamics', 'eletromagnetismo', 'electromagnetism', 'mecanica analitica', 'fisica moderna', 'modern physics', 'clinica medica'];
+
+const semRomano = (n) => n.replace(/ (i{1,3}|iv|v)$/, '');
+
+function regraDaEtiqueta(etiqueta) {
+  const n = semRomano(normalizar(etiqueta));
+  return ETIQUETAS[n] ? { ...ETIQUETAS[n] } : null;
+}
 
 function classificar(tituloYoutube) {
   const t = String(tituloYoutube).trim();
-  const m = t.match(/^\[([^\]]+)\]\s*(.+)$/);
+  const m = t.match(/^[\[(]([^\])]+)[\])]\s*[:\-–—]?\s*(.+)$/);
   if (m) {
-    const etiqueta = normalizar(m[1]);
+    const etiqueta = semRomano(normalizar(m[1]));
     const resto = m[2].trim();
-    if (etiqueta === 'medicina veterinaria') {
+    if (etiqueta === 'medicina veterinaria' || etiqueta === 'veterinary medicine') {
+      const idioma = etiqueta === 'veterinary medicine' ? 'en' : undefined;
       const n = normalizar(resto);
-      if (n.startsWith('fisiologia')) return { disciplina: 'fisiologia-veterinaria', titulo: resto };
-      if (n.startsWith('anatomia')) return { disciplina: 'anatomia-veterinaria', titulo: resto };
-      return { disciplina: 'a-classificar', titulo: resto };
+      if (/^(fisiologia|physiology|homeosta)/.test(n)) return { disciplina: 'fisiologia-veterinaria', titulo: resto, idioma };
+      if (/^(anatomia|anatomy)/.test(n)) return { disciplina: 'anatomia-veterinaria', titulo: resto, idioma };
+      return { disciplina: 'a-classificar', titulo: t, idioma };
     }
-    const regra = ETIQUETAS[etiqueta];
+    const regra = regraDaEtiqueta(m[1]);
     if (regra) {
-      return regra.tema
-        ? { disciplina: regra.disciplina, tema: regra.tema, titulo: `${regra.tema} — ${resto}` }
-        : { disciplina: regra.disciplina, titulo: resto };
+      const titulo = regra.tema ? `${regra.tema} — ${resto}` : resto;
+      return { disciplina: regra.disciplina, tema: regra.tema, titulo, idioma: regra.idioma };
     }
     return { disciplina: 'a-classificar', titulo: t };
   }
-  // Sem colchetes: títulos de Física começam pelo nome do tópico ("Eletromagnetismo Cap 07.03 - ...")
   const n = normalizar(t);
-  for (const [chave, regra] of Object.entries(ETIQUETAS)) {
-    if (regra.tema && n.startsWith(chave)) {
-      const resto = t.slice(chave.length).replace(/^[\s:\-–—]+/, '');
-      return { disciplina: regra.disciplina, tema: regra.tema, titulo: `${regra.tema} — ${resto}` };
+  for (const chave of PREFIXOS) {
+    if (n.startsWith(chave)) {
+      const regra = ETIQUETAS[chave];
+      const resto = t.replace(/^[^\s]+(\s+[^\s]+)?/, (x) => (normalizar(x) === chave ? '' : x.split(/\s+/).slice(1).join(' '))).replace(/^[\s:\-–—]+/, '');
+      const titulo = regra.tema ? `${regra.tema} — ${resto || t}` : (resto || t);
+      return { disciplina: regra.disciplina, tema: regra.tema, titulo, idioma: regra.idioma };
     }
   }
   return { disciplina: 'a-classificar', titulo: t };
@@ -135,7 +178,30 @@ async function listarPeloArquivo(arquivo) {
 }
 
 // ---------- Importação ----------
+// Reaplica as regras às aulas importadas que ficaram em "Outros vídeos" (o título delas é o do YouTube)
+async function reclassificar() {
+  const nomes = (await readdir(PASTA_AULAS)).filter((f) => f.endsWith('.json'));
+  const contagem = {};
+  let restantes = 0;
+  for (const f of nomes) {
+    const caminho = path.join(PASTA_AULAS, f);
+    const aula = JSON.parse(await readFile(caminho, 'utf8'));
+    if (aula.disciplina !== 'a-classificar' || aula.origem !== 'youtube') continue;
+    const c = classificar(aula.titulo);
+    if (c.idioma && !aula.idioma) aula.idioma = c.idioma;
+    if (c.disciplina === 'a-classificar') { restantes += 1; await writeFile(caminho, `${JSON.stringify(aula, null, 2)}\n`); continue; }
+    aula.disciplina = c.disciplina;
+    aula.titulo = c.titulo;
+    if (c.tema) aula.tema = c.tema;
+    await writeFile(caminho, `${JSON.stringify(aula, null, 2)}\n`);
+    contagem[c.disciplina] = (contagem[c.disciplina] ?? 0) + 1;
+  }
+  console.log('Reclassificadas:', contagem);
+  console.log(`Ainda em "Outros vídeos": ${restantes}`);
+}
+
 async function main() {
+  if (process.argv[2] === '--reclassificar') return reclassificar();
   const arquivo = process.argv[2];
   let videos;
   if (CHAVE_YT) videos = await listarPelaApi();
@@ -206,6 +272,7 @@ async function main() {
       quizRevisado: false,
       referencias: [],
       origem: 'youtube',
+      ...(c.idioma ? { idioma: c.idioma } : {}),
     };
     await writeFile(path.join(PASTA_AULAS, `${slug}.json`), `${JSON.stringify(aula, null, 2)}\n`);
     porVideo.set(v.id, { slug, dados: aula });

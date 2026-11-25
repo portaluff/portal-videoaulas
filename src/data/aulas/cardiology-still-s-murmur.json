@@ -1,6 +1,6 @@
 {
-  "titulo": "[CARDIOLOGY] Still's murmur",
-  "disciplina": "a-classificar",
+  "titulo": "Still's murmur",
+  "disciplina": "cardiologia",
   "tema": "",
   "youtube": "CO9wvRUopfo",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

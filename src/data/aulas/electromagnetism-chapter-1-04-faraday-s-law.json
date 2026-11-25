@@ -1,7 +1,7 @@
 {
-  "titulo": "Electromagnetism Chapter 1.04 - Faraday's Law",
-  "disciplina": "a-classificar",
-  "tema": "",
+  "titulo": "Eletromagnetismo — Chapter 1.04 - Faraday's Law",
+  "disciplina": "fisica",
+  "tema": "Eletromagnetismo",
   "youtube": "TNxNVhVzgWs",
   "professor": "",
   "data": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

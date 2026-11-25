@@ -1,7 +1,7 @@
 {
-  "titulo": "[Modern Physics] Galilean Relativity - Part 1",
-  "disciplina": "a-classificar",
-  "tema": "",
+  "titulo": "Física Moderna — Galilean Relativity - Part 1",
+  "disciplina": "fisica",
+  "tema": "Física Moderna",
   "youtube": "2AWWm5uFAnk",
   "professor": "",
   "data": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

@@ -1,6 +1,6 @@
 {
-  "titulo": "[Veterinary Physiology I] Hypothalamus - 1. Anatomical Aspects",
-  "disciplina": "a-classificar",
+  "titulo": "Hypothalamus - 1. Anatomical Aspects",
+  "disciplina": "fisiologia-veterinaria",
   "tema": "",
   "youtube": "m-IYd3zQ3UY",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

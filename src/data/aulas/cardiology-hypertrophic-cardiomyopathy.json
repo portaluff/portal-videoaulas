@@ -1,6 +1,6 @@
 {
-  "titulo": "[CARDIOLOGY] Hypertrophic Cardiomyopathy",
-  "disciplina": "a-classificar",
+  "titulo": "Hypertrophic Cardiomyopathy",
+  "disciplina": "cardiologia",
   "tema": "",
   "youtube": "k8alZCJBvvU",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

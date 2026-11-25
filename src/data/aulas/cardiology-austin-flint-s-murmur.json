@@ -1,6 +1,6 @@
 {
-  "titulo": "[CARDIOLOGY] Austin Flint's Murmur",
-  "disciplina": "a-classificar",
+  "titulo": "Austin Flint's Murmur",
+  "disciplina": "cardiologia",
   "tema": "",
   "youtube": "JrnZfjqub-E",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

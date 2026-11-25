@@ -1,6 +1,6 @@
 {
-  "titulo": "[NEUROANATOMY] Frontal sections - Prof. Roberto Fabri",
-  "disciplina": "a-classificar",
+  "titulo": "Frontal sections - Prof. Roberto Fabri",
+  "disciplina": "neuroanatomia",
   "tema": "",
   "youtube": "u69WA3blN3s",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

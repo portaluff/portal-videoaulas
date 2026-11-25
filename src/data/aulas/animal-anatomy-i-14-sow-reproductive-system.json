@@ -1,6 +1,6 @@
 {
-  "titulo": "[ANIMAL ANATOMY I] 14. Sow reproductive system",
-  "disciplina": "a-classificar",
+  "titulo": "14. Sow reproductive system",
+  "disciplina": "anatomia-veterinaria",
   "tema": "",
   "youtube": "ZOhhIiUnySk",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

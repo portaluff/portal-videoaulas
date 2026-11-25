@@ -1,6 +1,6 @@
 {
-  "titulo": "[CARDIOLOGY] Classification of Heart Murmurs",
-  "disciplina": "a-classificar",
+  "titulo": "Classification of Heart Murmurs",
+  "disciplina": "cardiologia",
   "tema": "",
   "youtube": "yzLPjkfRV6g",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

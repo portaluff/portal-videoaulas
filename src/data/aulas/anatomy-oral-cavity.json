@@ -1,6 +1,6 @@
 {
-  "titulo": "[ANATOMY] Oral cavity",
-  "disciplina": "a-classificar",
+  "titulo": "Oral cavity",
+  "disciplina": "anatomia",
   "tema": "",
   "youtube": "FoP7dJlJ4x4",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

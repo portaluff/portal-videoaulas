@@ -1,6 +1,6 @@
 {
-  "titulo": "[Animal Anatomy] Feline Dentition",
-  "disciplina": "a-classificar",
+  "titulo": "Feline Dentition",
+  "disciplina": "anatomia-veterinaria",
   "tema": "",
   "youtube": "8XvD_cdA65c",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

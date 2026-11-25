@@ -1,6 +1,6 @@
 {
-  "titulo": "[Medical Physiology] Neurophysiology. Temperature regulation.",
-  "disciplina": "a-classificar",
+  "titulo": "Neurophysiology. Temperature regulation.",
+  "disciplina": "fisiologia",
   "tema": "",
   "youtube": "q0l4hwvdJ30",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

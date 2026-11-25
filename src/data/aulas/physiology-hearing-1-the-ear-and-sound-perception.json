@@ -1,6 +1,6 @@
 {
-  "titulo": "[Physiology] Hearing - 1. The ear and sound perception",
-  "disciplina": "a-classificar",
+  "titulo": "Hearing - 1. The ear and sound perception",
+  "disciplina": "fisiologia",
   "tema": "",
   "youtube": "XQ434F7MS0s",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

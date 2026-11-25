@@ -1,6 +1,6 @@
 {
-  "titulo": "[Veterinary Physiology] Lactation - 3. Mammogenesis",
-  "disciplina": "a-classificar",
+  "titulo": "Lactation - 3. Mammogenesis",
+  "disciplina": "fisiologia-veterinaria",
   "tema": "",
   "youtube": "-842MuXDjHk",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

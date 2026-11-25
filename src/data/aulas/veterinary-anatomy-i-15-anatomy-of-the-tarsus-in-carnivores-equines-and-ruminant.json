@@ -1,6 +1,6 @@
 {
-  "titulo": "[VETERINARY ANATOMY I] 15. Anatomy of the tarsus in carnivores, equines, and ruminants",
-  "disciplina": "a-classificar",
+  "titulo": "15. Anatomy of the tarsus in carnivores, equines, and ruminants",
+  "disciplina": "anatomia-veterinaria",
   "tema": "",
   "youtube": "dABZEg-fmwI",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

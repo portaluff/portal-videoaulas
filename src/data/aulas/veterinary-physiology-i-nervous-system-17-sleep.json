@@ -1,6 +1,6 @@
 {
-  "titulo": "[Veterinary Physiology I] Nervous system - 17. Sleep.",
-  "disciplina": "a-classificar",
+  "titulo": "Nervous system - 17. Sleep.",
+  "disciplina": "fisiologia-veterinaria",
   "tema": "",
   "youtube": "x77SrYUnDio",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

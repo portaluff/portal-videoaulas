@@ -1,6 +1,6 @@
 {
-  "titulo": "[Veterinary Physiology II] Thyroid - 4. Physiology of the Parathyroid",
-  "disciplina": "a-classificar",
+  "titulo": "Thyroid - 4. Physiology of the Parathyroid",
+  "disciplina": "fisiologia-veterinaria",
   "tema": "",
   "youtube": "t0tyaF39JbU",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

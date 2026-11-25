@@ -1,7 +1,7 @@
 {
-  "titulo": "[Modern Physics] Quantum Numbers and Energy Levels",
-  "disciplina": "a-classificar",
-  "tema": "",
+  "titulo": "Física Moderna — Quantum Numbers and Energy Levels",
+  "disciplina": "fisica",
+  "tema": "Física Moderna",
   "youtube": "A9j-M-RZ9og",
   "professor": "",
   "data": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

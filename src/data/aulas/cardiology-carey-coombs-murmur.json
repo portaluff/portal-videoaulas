@@ -1,6 +1,6 @@
 {
-  "titulo": "[CARDIOLOGY] Carey Coombs murmur",
-  "disciplina": "a-classificar",
+  "titulo": "Carey Coombs murmur",
+  "disciplina": "cardiologia",
   "tema": "",
   "youtube": "KvOTRIYTN7w",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

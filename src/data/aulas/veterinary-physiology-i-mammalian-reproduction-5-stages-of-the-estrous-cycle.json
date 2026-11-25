@@ -1,6 +1,6 @@
 {
-  "titulo": "[Veterinary Physiology I] Mammalian Reproduction - 5. Stages of the Estrous Cycle.",
-  "disciplina": "a-classificar",
+  "titulo": "Mammalian Reproduction - 5. Stages of the Estrous Cycle.",
+  "disciplina": "fisiologia-veterinaria",
   "tema": "",
   "youtube": "4gOedyVPuko",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

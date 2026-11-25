@@ -1,6 +1,6 @@
 {
-  "titulo": "[Veterinary Physiology II] Thyroid - 1. Morphological Aspects",
-  "disciplina": "a-classificar",
+  "titulo": "Thyroid - 1. Morphological Aspects",
+  "disciplina": "fisiologia-veterinaria",
   "tema": "",
   "youtube": "Ju4yHvcTe-w",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

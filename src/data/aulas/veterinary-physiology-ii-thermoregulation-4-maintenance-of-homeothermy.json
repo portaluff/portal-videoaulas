@@ -1,6 +1,6 @@
 {
-  "titulo": "[Veterinary Physiology II] Thermoregulation - 4. Maintenance of Homeothermy",
-  "disciplina": "a-classificar",
+  "titulo": "Thermoregulation - 4. Maintenance of Homeothermy",
+  "disciplina": "fisiologia-veterinaria",
   "tema": "",
   "youtube": "pzjYFg7lRaE",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

@@ -1,6 +1,6 @@
 {
-  "titulo": "[CARDIOLOGY] Second Heart Sound",
-  "disciplina": "a-classificar",
+  "titulo": "Second Heart Sound",
+  "disciplina": "cardiologia",
   "tema": "",
   "youtube": "fY75i6rgjrw",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

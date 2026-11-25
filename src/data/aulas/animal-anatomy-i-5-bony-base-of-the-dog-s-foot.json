@@ -1,6 +1,6 @@
 {
-  "titulo": "[ANIMAL ANATOMY I] 5. Bony base of the dog's foot",
-  "disciplina": "a-classificar",
+  "titulo": "5. Bony base of the dog's foot",
+  "disciplina": "anatomia-veterinaria",
   "tema": "",
   "youtube": "MkrBbRDLO-8",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

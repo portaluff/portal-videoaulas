@@ -1,6 +1,6 @@
 {
-  "titulo": "[ANATOMY] Male Genitals",
-  "disciplina": "a-classificar",
+  "titulo": "Male Genitals",
+  "disciplina": "anatomia",
   "tema": "",
   "youtube": "Yg7-0PCdu3M",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

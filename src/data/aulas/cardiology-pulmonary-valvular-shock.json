@@ -1,6 +1,6 @@
 {
-  "titulo": "[CARDIOLOGY] Pulmonary Valvular Shock",
-  "disciplina": "a-classificar",
+  "titulo": "Pulmonary Valvular Shock",
+  "disciplina": "cardiologia",
   "tema": "",
   "youtube": "k9IY-V_2qZM",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

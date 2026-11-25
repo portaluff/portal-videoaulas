@@ -1,6 +1,6 @@
 {
-  "titulo": "[Veterinary Physiology I] Hypothalamus - 2. Physiological aspects of endocrine regulation.",
-  "disciplina": "a-classificar",
+  "titulo": "Hypothalamus - 2. Physiological aspects of endocrine regulation.",
+  "disciplina": "fisiologia-veterinaria",
   "tema": "",
   "youtube": "p9GZb_BANVI",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

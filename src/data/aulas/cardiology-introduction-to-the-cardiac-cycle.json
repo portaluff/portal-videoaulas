@@ -1,6 +1,6 @@
 {
-  "titulo": "[CARDIOLOGY] Introduction to the Cardiac Cycle",
-  "disciplina": "a-classificar",
+  "titulo": "Introduction to the Cardiac Cycle",
+  "disciplina": "cardiologia",
   "tema": "",
   "youtube": "s2fNkAF4bxQ",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

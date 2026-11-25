@@ -1,6 +1,6 @@
 {
-  "titulo": "[CARDIOLOGY] Pathological Splitting of S2",
-  "disciplina": "a-classificar",
+  "titulo": "Pathological Splitting of S2",
+  "disciplina": "cardiologia",
   "tema": "",
   "youtube": "GFKF0S02pCo",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

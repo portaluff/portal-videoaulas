@@ -1,6 +1,6 @@
 {
-  "titulo": "[CARDIOLOGY] Rivero Carvallo maneuver",
-  "disciplina": "a-classificar",
+  "titulo": "Rivero Carvallo maneuver",
+  "disciplina": "cardiologia",
   "tema": "",
   "youtube": "DxATYOMBr6E",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

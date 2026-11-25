@@ -1,7 +1,7 @@
 {
-  "titulo": "[Thermodynamics] Ch.20.02 - The role of Gibbs free energy and the Clausius-Clapeyron equation.",
-  "disciplina": "a-classificar",
-  "tema": "",
+  "titulo": "Termodinâmica — Ch.20.02 - The role of Gibbs free energy and the Clausius-Clapeyron equation.",
+  "disciplina": "fisica",
+  "tema": "Termodinâmica",
   "youtube": "hYdnRKw-WYg",
   "professor": "",
   "data": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

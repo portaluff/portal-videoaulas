@@ -1,6 +1,6 @@
 {
-  "titulo": "[CARDIOLOGY] Heart Murmurs",
-  "disciplina": "a-classificar",
+  "titulo": "Heart Murmurs",
+  "disciplina": "cardiologia",
   "tema": "",
   "youtube": "w6aVB3CtPaU",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

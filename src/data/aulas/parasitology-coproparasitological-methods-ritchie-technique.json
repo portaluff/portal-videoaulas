@@ -1,6 +1,6 @@
 {
-  "titulo": "[Parasitology] Coproparasitological Methods: Ritchie Technique",
-  "disciplina": "a-classificar",
+  "titulo": "Coproparasitological Methods: Ritchie Technique",
+  "disciplina": "parasitologia",
   "tema": "",
   "youtube": "xhHK-HLQodc",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

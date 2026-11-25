@@ -1,7 +1,7 @@
 {
-  "titulo": "[Thermodynamics] Ch. 1.02 - Thermal, mechanical, and diffusive equilibria; relaxation time",
-  "disciplina": "a-classificar",
-  "tema": "",
+  "titulo": "Termodinâmica — Ch. 1.02 - Thermal, mechanical, and diffusive equilibria; relaxation time",
+  "disciplina": "fisica",
+  "tema": "Termodinâmica",
   "youtube": "YC9Y-_J18Qw",
   "professor": "",
   "data": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

@@ -1,6 +1,6 @@
 {
-  "titulo": "[CARDIOLOGY] Ejection Murmur",
-  "disciplina": "a-classificar",
+  "titulo": "Ejection Murmur",
+  "disciplina": "cardiologia",
   "tema": "",
   "youtube": "HXkh2ymLo6Y",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

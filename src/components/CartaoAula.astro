@@ -26,6 +26,8 @@ const meta = [
     <span class="selos">
       {temQuiz(aula) && <span class="selo selo-quiz">Quiz</span>}
       {temResumo(aula) && <span class="selo selo-resumo">Resumo</span>}
+      {aula.idioma === 'en' && <span class="selo selo-cinza">Em inglês</span>}
+      {aula.idioma === 'es' && <span class="selo selo-cinza">Em espanhol</span>}
     </span>
   </span>
 </a>

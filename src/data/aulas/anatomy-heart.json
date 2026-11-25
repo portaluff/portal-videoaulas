@@ -1,6 +1,6 @@
 {
-  "titulo": "[ANATOMY] Heart",
-  "disciplina": "a-classificar",
+  "titulo": "Heart",
+  "disciplina": "anatomia",
   "tema": "",
   "youtube": "iLtH0jYEOkM",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

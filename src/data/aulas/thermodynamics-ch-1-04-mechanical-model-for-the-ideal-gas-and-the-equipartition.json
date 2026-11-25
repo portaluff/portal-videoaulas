@@ -1,7 +1,7 @@
 {
-  "titulo": "[Thermodynamics] Ch. 1.04 - Mechanical model for the ideal gas and the equipartition of energy",
-  "disciplina": "a-classificar",
-  "tema": "",
+  "titulo": "Termodinâmica — Ch. 1.04 - Mechanical model for the ideal gas and the equipartition of energy",
+  "disciplina": "fisica",
+  "tema": "Termodinâmica",
   "youtube": "RKXbGjsZrR8",
   "professor": "",
   "data": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

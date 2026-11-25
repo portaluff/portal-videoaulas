@@ -1,6 +1,6 @@
 {
-  "titulo": "[Veterinary Medicine] Anatomy - Radius and Ulna",
-  "disciplina": "a-classificar",
+  "titulo": "Anatomy - Radius and Ulna",
+  "disciplina": "anatomia-veterinaria",
   "tema": "",
   "youtube": "NMjgijeq1OM",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

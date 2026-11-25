@@ -93,7 +93,7 @@ p { margin: 0; }
 .cartao-area span { font-size: 14px; color: var(--texto-2); }
 
 .grade-aulas { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
-.cartao-aula { background: var(--branco); border: 1px solid var(--borda); border-radius: var(--raio); overflow: hidden; text-decoration: none; color: var(--tinta); display: flex; flex-direction: column; }
+.cartao-aula { content-visibility: auto; contain-intrinsic-size: auto 270px; background: var(--branco); border: 1px solid var(--borda); border-radius: var(--raio); overflow: hidden; text-decoration: none; color: var(--tinta); display: flex; flex-direction: column; }
 .cartao-aula:hover { border-color: var(--borda-forte); box-shadow: 0 4px 14px rgba(15,27,45,.08); }
 .capa { aspect-ratio: 16 / 9; display: flex; flex-direction: column; justify-content: space-between; padding: 14px 16px; color: var(--branco); position: relative; overflow: hidden; }
 .capa img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }

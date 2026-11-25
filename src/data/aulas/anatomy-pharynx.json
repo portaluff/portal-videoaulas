@@ -1,6 +1,6 @@
 {
-  "titulo": "[ANATOMY] Pharynx",
-  "disciplina": "a-classificar",
+  "titulo": "Pharynx",
+  "disciplina": "anatomia",
   "tema": "",
   "youtube": "gL9bHNNQv8Y",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

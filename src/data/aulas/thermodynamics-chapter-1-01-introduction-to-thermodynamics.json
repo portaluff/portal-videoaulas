@@ -1,7 +1,7 @@
 {
-  "titulo": "[Thermodynamics] Chapter 1.01 - Introduction to Thermodynamics",
-  "disciplina": "a-classificar",
-  "tema": "",
+  "titulo": "Termodinâmica — Chapter 1.01 - Introduction to Thermodynamics",
+  "disciplina": "fisica",
+  "tema": "Termodinâmica",
   "youtube": "ip_icpTFzKI",
   "professor": "",
   "data": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

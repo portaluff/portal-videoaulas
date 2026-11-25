@@ -40,14 +40,25 @@ collections:
           - { label: "Farmácia (Ciências da Saúde)", value: "farmacia" }
           - { label: "Nutrição (Ciências da Saúde)", value: "nutricao" }
           - { label: "Saúde Coletiva (Ciências da Saúde)", value: "saude-coletiva" }
+          - { label: "Fisiologia (Ciências da Saúde)", value: "fisiologia" }
+          - { label: "Embriologia (Ciências da Saúde)", value: "embriologia" }
+          - { label: "Clínica Médica (Ciências da Saúde)", value: "clinica-medica" }
+          - { label: "Emergência (HUAP) (Ciências da Saúde)", value: "emergencia" }
+          - { label: "Psiquiatria (Ciências da Saúde)", value: "psiquiatria" }
+          - { label: "Enfermagem (Ciências da Saúde)", value: "enfermagem" }
+          - { label: "Pop Saúde (Ciências da Saúde)", value: "pop-saude" }
           - { label: "Fisiologia veterinária (Medicina Veterinária)", value: "fisiologia-veterinaria" }
           - { label: "Anatomia veterinária (Medicina Veterinária)", value: "anatomia-veterinaria" }
+          - { label: "Nutrição e alimentação animal (Medicina Veterinária)", value: "nutricao-animal" }
           - { label: "Física (Ciências Exatas)", value: "fisica" }
           - { label: "Matemática (Ciências Exatas)", value: "matematica" }
+          - { label: "Bioestatística (Ciências Exatas)", value: "bioestatistica" }
           - { label: "Antropologia (Humanas e Sociais)", value: "antropologia" }
           - { label: "Administração (Humanas e Sociais)", value: "administracao" }
+          - { label: "Empreendedorismo (Humanas e Sociais)", value: "empreendedorismo" }
+          - { label: "Engenharia Agrícola e Ambiental (Engenharias)", value: "engenharia-agricola" }
           - { label: "Tutoriais (Outros)", value: "tutoriais" }
-          - { label: "Outros vídeos — a classificar (Outros)", value: "a-classificar" }
+          - { label: "Outros vídeos (Outros)", value: "a-classificar" }
       - { label: "Tema (ex.: sistema do corpo, capítulo)", name: tema, widget: string, required: false }
       - { label: ID do vídeo no YouTube, name: youtube, widget: string, required: false, hint: "O código depois de v= no link. Ex.: em youtube.com/watch?v=abc123XYZ, o ID é abc123XYZ" }
       - { label: Professor(a) responsável, name: professor, widget: string, required: false }
@@ -80,6 +91,8 @@ collections:
       - { label: Modelo de IA, name: iaModelo, widget: hidden, required: false }
       - { label: Duração (segundos), name: duracao, widget: hidden, required: false }
       - { label: Origem, name: origem, widget: hidden, required: false }
+      - { label: Idioma do vídeo, name: idioma, widget: select, required: false, options: [{ label: Português, value: pt }, { label: Inglês, value: en }, { label: Espanhol, value: es }] }
+      - { label: Disciplina sugerida pela IA (confira), name: disciplinaPelaIA, widget: boolean, required: false }
 
   - name: organizacao
     label: Organização

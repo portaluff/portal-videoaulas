@@ -1,6 +1,6 @@
 {
-  "titulo": "[Parasitology] Coproparasitological Methods: Willis Technique",
-  "disciplina": "a-classificar",
+  "titulo": "Coproparasitological Methods: Willis Technique",
+  "disciplina": "parasitologia",
   "tema": "",
   "youtube": "S-5Z7tfA3Ag",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

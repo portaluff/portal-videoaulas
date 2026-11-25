@@ -1,6 +1,6 @@
 {
-  "titulo": "[ANESTHESIOLOGY] Cardiopulmonary Resuscitation: Orotracheal Intubation",
-  "disciplina": "a-classificar",
+  "titulo": "Cardiopulmonary Resuscitation: Orotracheal Intubation",
+  "disciplina": "anestesiologia",
   "tema": "",
   "youtube": "VeLiSJ_Zdts",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

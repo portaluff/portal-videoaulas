@@ -1,6 +1,6 @@
 {
-  "titulo": "[CARDIOLOGY] Pulsus Tardus and Pulsus Parvus",
-  "disciplina": "a-classificar",
+  "titulo": "Pulsus Tardus and Pulsus Parvus",
+  "disciplina": "cardiologia",
   "tema": "",
   "youtube": "AeeukkKzbS0",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

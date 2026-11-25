@@ -1,7 +1,7 @@
 {
-  "titulo": "Electromagnetism Chapter 13.01 - Poisson and Laplace Equations",
-  "disciplina": "a-classificar",
-  "tema": "",
+  "titulo": "Eletromagnetismo — Chapter 13.01 - Poisson and Laplace Equations",
+  "disciplina": "fisica",
+  "tema": "Eletromagnetismo",
   "youtube": "wPA8I1J-wH0",
   "professor": "",
   "data": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

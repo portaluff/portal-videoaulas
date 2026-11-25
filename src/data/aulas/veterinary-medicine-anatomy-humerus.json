@@ -1,6 +1,6 @@
 {
-  "titulo": "[Veterinary Medicine] Anatomy - Humerus",
-  "disciplina": "a-classificar",
+  "titulo": "Anatomy - Humerus",
+  "disciplina": "anatomia-veterinaria",
   "tema": "",
   "youtube": "FNlcr7xFkeA",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

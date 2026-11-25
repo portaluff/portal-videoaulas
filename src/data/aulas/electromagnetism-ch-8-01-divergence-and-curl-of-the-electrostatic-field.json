@@ -1,7 +1,7 @@
 {
-  "titulo": "Electromagnetism Ch. 8.01 - Divergence and Curl of the Electrostatic Field",
-  "disciplina": "a-classificar",
-  "tema": "",
+  "titulo": "Eletromagnetismo — Ch. 8.01 - Divergence and Curl of the Electrostatic Field",
+  "disciplina": "fisica",
+  "tema": "Eletromagnetismo",
   "youtube": "AbDcMv9urOc",
   "professor": "",
   "data": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

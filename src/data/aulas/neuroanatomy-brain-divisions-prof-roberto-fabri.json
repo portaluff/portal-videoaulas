@@ -1,6 +1,6 @@
 {
-  "titulo": "[NEUROANATOMY] Brain divisions - Prof. Roberto Fabri",
-  "disciplina": "a-classificar",
+  "titulo": "Brain divisions - Prof. Roberto Fabri",
+  "disciplina": "neuroanatomia",
   "tema": "",
   "youtube": "OY7Zd4QwF2w",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

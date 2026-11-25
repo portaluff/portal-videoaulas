@@ -1,6 +1,6 @@
 {
-  "titulo": "[ANESTHESIOLOGY] Infusion Pumps: Diprivan",
-  "disciplina": "a-classificar",
+  "titulo": "Infusion Pumps: Diprivan",
+  "disciplina": "anestesiologia",
   "tema": "",
   "youtube": "XBknC0Trjgo",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

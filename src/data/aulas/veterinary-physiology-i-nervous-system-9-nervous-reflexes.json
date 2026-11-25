@@ -1,6 +1,6 @@
 {
-  "titulo": "[Veterinary Physiology I] Nervous System - 9. Nervous Reflexes",
-  "disciplina": "a-classificar",
+  "titulo": "Nervous System - 9. Nervous Reflexes",
+  "disciplina": "fisiologia-veterinaria",
   "tema": "",
   "youtube": "4iE-zzbZaN8",
   "professor": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }

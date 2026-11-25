@@ -1,7 +1,7 @@
 {
-  "titulo": "Electromagnetism Ch 11.04 - Spherical capacitor; energy stored in a capacitor",
-  "disciplina": "a-classificar",
-  "tema": "",
+  "titulo": "Eletromagnetismo — Ch 11.04 - Spherical capacitor; energy stored in a capacitor",
+  "disciplina": "fisica",
+  "tema": "Eletromagnetismo",
   "youtube": "X8mB5FN1RfA",
   "professor": "",
   "data": "",
@@ -13,5 +13,6 @@
   "quiz": [],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "en"
 }
