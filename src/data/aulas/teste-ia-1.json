@@ -6,10 +6,63 @@
   "professor": "",
   "data": "",
   "views": null,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula prática de anatomia animal demonstrando a osteologia e a ligamentologia da articulação do tarso.",
+  "resumo": [
+    {
+      "rotulo": "Identificação Óssea",
+      "texto": "A aula apresenta a tíbia, o calcâneo, o talus e a disposição geral dos ossos do tarso."
+    },
+    {
+      "rotulo": "Faces Lateral e Medial",
+      "texto": "Demonstra-se a face lateral, que possui formato convexo, e a face medial, caracterizada por uma concavidade na região do calcâneo."
+    },
+    {
+      "rotulo": "Ligamentos Colaterais",
+      "texto": "Os ligamentos colaterais lateral e medial são mostrados divididos em duas camadas, apresentando uma porção longa e uma porção curta (ou breve)."
+    },
+    {
+      "rotulo": "Ligamentos Dorsal e Plantar",
+      "texto": "A aula destaca a localização do ligamento társico dorsal na região anterior e do ligamento plantar longo na região caudal do calcâneo."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Como são caracterizadas as superfícies das faces lateral e medial da articulação do tarso na peça anatômica?",
+      "opcoes": [
+        "A face lateral é côncava e a face medial é convexa.",
+        "Ambas as faces apresentam convexidade pronunciada.",
+        "Ambas as faces são totalmente planas.",
+        "A face lateral é convexa e a face medial é côncava."
+      ],
+      "correta": 4,
+      "explicacao": "Segundo a explicação do professor, a face lateral apresenta uma convexidade, enquanto a face medial apresenta uma concavidade na região do calcâneo."
+    },
+    {
+      "pergunta": "De acordo com o vídeo, em quais porções/camadas se dividem os ligamentos colaterais do tarso?",
+      "opcoes": [
+        "Porção proximal e porção distal.",
+        "Porção cranial e porção caudal.",
+        "Porção superficial e porção sesamóidea.",
+        "Porção longa e porção curta (ou breve)."
+      ],
+      "correta": 4,
+      "explicacao": "Os ligamentos colaterais (medial e lateral) exibem duas camadas, divididas em uma porção longa e uma porção curta (ou breve)."
+    },
+    {
+      "pergunta": "Quais outros ligamentos específicos são demonstrados na articulação do tarso além dos colaterais?",
+      "opcoes": [
+        "Ligamento társico dorsal e ligamento plantar longo.",
+        "Ligamento da cabeça do fêmur e ligamento transverso.",
+        "Ligamento nucal e ligamento supraespinhoso.",
+        "Ligamento patelar e ligamento cruzado."
+      ],
+      "correta": 1,
+      "explicacao": "Na parte final da demonstração, o professor aponta a presença do ligamento társico dorsal e do ligamento plantar longo (localizado caudalmente ao calcâneo)."
+    }
+  ],
   "quizRevisado": false,
-  "referencias": []
+  "referencias": [],
+  "iaGeradoEm": "2026-11-25",
+  "iaModelo": "gemini-3.6-flash"
 }
