@@ -6,10 +6,80 @@
   "professor": "",
   "data": "2013-06-11",
   "views": 45071,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "O professor explica a realização, as fases e os efeitos hemodinâmicos da manobra de Valsalva, destacando sua utilidade no diagnóstico da miocardiopatia hipertrófica.",
+  "resumo": [
+    {
+      "rotulo": "Conceito e Fases",
+      "texto": "A manobra de Valsalva divide-se em fase de pressão, correspondente ao período de esforço expiratório, e fase de liberação, que ocorre após a interrupção desse esforço."
+    },
+    {
+      "rotulo": "Execução Prática",
+      "texto": "Na prática clínica, a manobra pode ser demonstrada ou realizada pedindo ao paciente que assopre contra a própria mão fechada sobre a boca."
+    },
+    {
+      "rotulo": "Efeitos Hemodinâmicos Gerais",
+      "texto": "Durante a fase de pressão, os volumes de todas as cavidades cardíacas diminuem, reduzindo a intensidade da maioria dos sopros e fenômenos auscultatórios."
+    },
+    {
+      "rotulo": "Exceção Diagnóstica",
+      "texto": "A miocardiopatia hipertrófica (estenose subaórtica hipertrófica idiopática) é a única afecção cardiovascular que piora durante a fase de pressão da manobra."
+    },
+    {
+      "rotulo": "Mecanismo de Obstrução",
+      "texto": "A redução do volume do ventrículo esquerdo aproxima as paredes ventriculares e o folheto anterior da valva mitral, aumentando a obstrução da via de saída e podendo provocar tontura ou síncope."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Quais são as duas fases da manobra de Valsalva descritas na aula?",
+      "opcoes": [
+        "Fase de aspiração e fase de repouso",
+        "Fase de enchimento e fase de esvaziamento",
+        "Fase sistólica e fase diastólica",
+        "Fase de pressão e fase de liberação"
+      ],
+      "correta": 4,
+      "explicacao": "A manobra é dividida na fase de pressão (durante o esforço expiratório) e na fase de liberação (logo após a interrupção do esforço)."
+    },
+    {
+      "pergunta": "O que ocorre com os volumes cardíacos e com a maioria dos sopros durante a fase de pressão da manobra de Valsalva?",
+      "opcoes": [
+        "Os volumes aumentam apenas nas cavidades direitas e os sopros mantêm-se iguais.",
+        "Os volumes cardíacos aumentam e os sopros se intensificam.",
+        "Os volumes cardíacos diminuem e a maioria dos sopros diminui de intensidade.",
+        "Os volumes diminuem apenas no ventrículo esquerdo e os sopros aumentam."
+      ],
+      "correta": 3,
+      "explicacao": "Na fase de pressão, há diminuição do retorno venoso e dos volumes em todas as cavidades cardíacas, o que reduz a intensidade da grande maioria dos sopros."
+    },
+    {
+      "pergunta": "Qual doença cardiovascular se caracteriza por intensificar a obstrução e os sintomas durante a fase de pressão da manobra de Valsalva?",
+      "opcoes": [
+        "Pericardite constritiva",
+        "Miocardiopatia hipertrófica",
+        "Estenose mitral",
+        "Insuficiência aórtica"
+      ],
+      "correta": 2,
+      "explicacao": "A miocardiopatia hipertrófica é a exceção na cardiologia, pois a diminuição do volume do ventrículo esquerdo aproxima as paredes e a valva mitral, aumentando a obstrução ao fluxo sanguíneo."
+    },
+    {
+      "pergunta": "Qual tipo de pulso arterial é associado à miocardiopatia hipertrófica conforme citado no vídeo?",
+      "opcoes": [
+        "Pulso parvus e tardus",
+        "Pulso dicrótico",
+        "Pulso digitiforme (bisferiens)",
+        "Pulso alternante"
+      ],
+      "correta": 3,
+      "explicacao": "O professor relembra que a miocardiopatia hipertrófica produz o pulso digitiforme (ou bisferiens), caracterizado por uma dupla onda sistólica."
+    }
+  ],
   "referencias": [],
-  "duracao": 238
+  "duracao": 238,
+  "quizRevisado": false,
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-26",
+  "iaModelo": "gemini-3.6-flash"
 }

@@ -6,10 +6,69 @@
   "professor": "",
   "data": "2013-06-11",
   "views": 43619,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Esta aula prática demonstra o protocolo de preparação do paciente, posicionamento dos eletrodos e registro das derivações em um eletrocardiograma.",
+  "resumo": [
+    {
+      "rotulo": "Preparação do paciente",
+      "texto": "O paciente deve estar em decúbito dorsal e sem camisa. É feita a limpeza da pele do tórax com álcool e a depilação da região, se necessário, para garantir o contato dos eletrodos."
+    },
+    {
+      "rotulo": "Eletrodos dos membros",
+      "texto": "São posicionados quatro eletrodos nos membros: amarelo no punho esquerdo, verde no tornozelo esquerdo, vermelho no punho direito e preto no tornozelo direito."
+    },
+    {
+      "rotulo": "Eletrodos precordiais",
+      "texto": "Seis eletrodos são fixados no tórax. V1 fica no 4º espaço intercostal paraesternal direito, V2 no 4º espaço intercostal paraesternal esquerdo, V4 no 5º espaço intercostal na linha hemiclavicular esquerda, V3 entre V2 e V4, V5 na linha axilar anterior e V6 na linha axilar média na mesma altura de V4."
+    },
+    {
+      "rotulo": "Derivações bipolares",
+      "texto": "As derivações periféricas medem diferenças de potencial entre os membros: D1 entre punho direito e esquerdo, D2 entre punho direito e tornozelo esquerdo, e D3 entre punho esquerdo e tornozelo esquerdo, formando o triângulo de Einthoven."
+    },
+    {
+      "rotulo": "Registro e impressão",
+      "texto": "Com os eletrodos devidamente instalados, o eletrocardiógrafo é acionado para imprimir o traçado do eletrocardiograma no papel."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual é a disposição correta das cores dos eletrodos posicionados nos membros durante o exame?",
+      "opcoes": [
+        "Amarelo no punho direito, verde no tornozelo direito, vermelho no punho esquerdo e preto no tornozelo esquerdo.",
+        "Amarelo no punho esquerdo, verde no tornozelo esquerdo, vermelho no punho direito e preto no tornozelo direito.",
+        "Verde no punho esquerdo, amarelo no tornozelo esquerdo, preto no punho direito e vermelho no tornozelo direito.",
+        "Vermelho no punho esquerdo, preto no tornozelo esquerdo, amarelo no punho direito e verde no tornozelo direito."
+      ],
+      "correta": 2,
+      "explicacao": "Segundo a aula, os eletrodos do lado esquerdo são o amarelo (punho) e o verde (tornozelo), enquanto no lado direito utilizam-se o vermelho (punho) e o preto (tornozelo)."
+    },
+    {
+      "pergunta": "Em qual localização anatômica deve ser posicionado o eletrodo precordial V1?",
+      "opcoes": [
+        "No 4º espaço intercostal, na linha paraesternal direita.",
+        "No 5º espaço intercostal, na linha hemiclavicular esquerda.",
+        "No 4º espaço intercostal, na linha paraesternal esquerda.",
+        "No 5º espaço intercostal, na linha axilar média."
+      ],
+      "correta": 1,
+      "explicacao": "O eletrodo V1 é posicionado no quarto espaço intercostal, contando a partir da clavícula, logo ao lado do esterno à direita (linha paraesternal direita)."
+    },
+    {
+      "pergunta": "Como é formada a derivação bipolar D2 no eletrocardiograma?",
+      "opcoes": [
+        "Pela diferença de potencial entre o punho direito e o tornozelo esquerdo.",
+        "Pela diferença de potencial entre o punho direito e o punho esquerdo.",
+        "Pela diferença de potencial entre o tornozelo direito e o tornozelo esquerdo.",
+        "Pela diferença de potencial entre o punho esquerdo e o tornozelo esquerdo."
+      ],
+      "correta": 1,
+      "explicacao": "A derivação D2 representa a diferença de potencial elétrico entre o eletrodo colocado no punho direito e o eletrodo do tornozelo esquerdo."
+    }
+  ],
   "referencias": [],
-  "duracao": 298
+  "duracao": 298,
+  "quizRevisado": false,
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-26",
+  "iaModelo": "gemini-3.6-flash"
 }
