@@ -6,10 +6,69 @@
   "professor": "",
   "data": "2013-06-07",
   "views": 18342,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula sobre monitoramento do nível de consciência intraoperatório, utilização do índice bispectral (BIS), limites metodológicos e estratégias de conduta perioperatória.",
+  "resumo": [
+    {
+      "rotulo": "Objetivos da monitorização",
+      "texto": "A monitorização do estado de consciência no período perioperatório visa controlar respostas autonômicas, endócrino-metabólicas, reflexas musculares e neuro-humorais sob anestesia geral."
+    },
+    {
+      "rotulo": "Atividade elétrica cerebral",
+      "texto": "A atividade elétrica cerebral responde por grande parte do consumo de oxigênio e glicose no cérebro, e sua redução farmacológica induz o estado de torpor ou sono anestésico."
+    },
+    {
+      "rotulo": "Índice Bispectral (BIS)",
+      "texto": "Desenvolvido a partir de dados eletroencefalográficos e eletromiográficos frontais, o BIS gera uma escala de 0 a 100 para quantificar a profundidade anestésica."
+    },
+    {
+      "rotulo": "Críticas e limitações",
+      "texto": "O algoritmo do BIS é proprietário e secreto, podendo apresentar distorções ou falsas leituras na presença de respostas autonômicas ou interferências eletromiográficas."
+    },
+    {
+      "rotulo": "Manejo perioperatório",
+      "texto": "Aborda-se a associação de hipnóticos, opioides, betabloqueadores e técnicas analgésicas regionais ou peridurais para assegurar estabilidade hemodinâmica e controle da dor pós-operatória."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual é a finalidade principal de monitorar a profundidade anestésica durante um procedimento cirúrgico?",
+      "opcoes": [
+        "Avaliar exclusivamente o grau de paralisia da musculatura esquelética periférica.",
+        "Eliminar totalmente a necessidade de analgesia no pós-operatório.",
+        "Controlar as respostas autonômicas, endócrino-metabólicas e reflexas do paciente sob anestesia geral.",
+        "Substituir o uso de medicamentos hipnóticos por bloqueadores neuromusculares isolados."
+      ],
+      "correta": 3,
+      "explicacao": "O professor explica que o controle da profundidade anestésica permite regular e modular as respostas fisiológicas reflexas e autonômicas do paciente ao estímulo cirúrgico."
+    },
+    {
+      "pergunta": "Na escala do Índice Bispectral (BIS), o que representam os valores limites de 0 e 100?",
+      "opcoes": [
+        "0 representa saturação de oxigênio nula e 100 representa fluxo sanguíneo cerebral normal.",
+        "0 indica frequência cardíaca basal e 100 indica taquicardia severa intraoperatória.",
+        "0 indica anestesia superficial e 100 indica anestesia profunda com paralisia muscular.",
+        "0 representa ausência teórica de atividade elétrica cerebral e 100 indica o paciente totalmente acordado."
+      ],
+      "correta": 4,
+      "explicacao": "O BIS utiliza um índice numérico onde 100 corresponde ao estado consciente/despertado e 0 corresponde à ausência de atividade elétrica cerebral."
+    },
+    {
+      "pergunta": "Qual limitação do monitor BIS é destacada durante a aula?",
+      "opcoes": [
+        "A necessidade de colocação de eletrodos invasivos intracranianos.",
+        "O fato de seu algoritmo ser proprietário/secreto e vulnerável a interferências autonômicas e musculares.",
+        "A impossibilidade de utilização do equipamento em pacientes adultos.",
+        "A exigência de interrupção da ventilação mecânica para a leitura do sinal."
+      ],
+      "correta": 2,
+      "explicacao": "A aula ressalta que o BIS utiliza um algoritmo secreto e comercial que pode registrar variações atípicas devido a respostas neuromusculares ou autonômicas."
+    }
+  ],
   "referencias": [],
-  "duracao": 1753
+  "duracao": 1753,
+  "quizRevisado": false,
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-27",
+  "iaModelo": "gemini-3.6-flash"
 }

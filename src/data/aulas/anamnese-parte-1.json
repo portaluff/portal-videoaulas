@@ -7,11 +7,84 @@
   "data": "",
   "views": null,
   "duracao": 1668,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula introdutória sobre a anamnese na prática médica, abordando seus conceitos, evolução histórica, etapas de realização, postura do médico e condutas da entrevista clínica.",
+  "resumo": [
+    {
+      "rotulo": "Conceito e Importância",
+      "texto": "A anamnese é o resgate cronológico da história clínica do paciente, sendo responsável por cerca de 80% dos diagnósticos médicos."
+    },
+    {
+      "rotulo": "Evolução Histórica",
+      "texto": "Praticada desde a Grécia Antiga com Hipócrates, a anamnese evoluiu com o ensino à beira do leito por Montanus e consolidou-se com os avanços das ciências básicas."
+    },
+    {
+      "rotulo": "Desenvolvimento do Raciocínio Clínico",
+      "texto": "O processo envolve listar problemas, selecionar dados significativos, agrupá-los em síndromes e formular hipóteses anatômicas, etiológicas e funcionais."
+    },
+    {
+      "rotulo": "Técnica da Entrevista",
+      "texto": "Deve-se criar um vínculo de confiança, encorajar a narrativa sem interrupções precoces e organizar cronologicamente os fatos relatados."
+    },
+    {
+      "rotulo": "Qualidades e Postura Médica",
+      "texto": "O médico precisa ser humano, simpático, sistemático e observador, adaptando a linguagem ao nível do paciente e mantendo conduta ética e estudo contínuo."
+    },
+    {
+      "rotulo": "Identificação e Queixa Principal",
+      "texto": "A coleta inclui a identificação completa, os hábitos de vida e o isolamento da queixa principal para direcionar a investigação da doença atual."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual é a porcentagem estimada de diagnósticos médicos fundamentados nos dados coletados durante a anamnese, segundo a aula?",
+      "opcoes": [
+        "Cerca de 80%",
+        "Cerca de 50%",
+        "Cerca de 95%",
+        "Cerca de 20%"
+      ],
+      "correta": 1,
+      "explicacao": "O professor destaca que em torno de 80% dos diagnósticos são feitos com base na história clínica relatada pelo paciente durante a anamnese."
+    },
+    {
+      "pergunta": "Qual importante contribuição histórica é atribuída a Montanus em Pádua (1543), conforme apresentado na aula?",
+      "opcoes": [
+        "A invenção do estetoscópio para ausculta pulmonar",
+        "A introdução do ensino prático à beira do leito",
+        "A criação da tomografia computadorizada",
+        "O desenvolvimento da teoria dos quatro humores"
+      ],
+      "correta": 2,
+      "explicacao": "Em 1543, Montanus introduziu em Pádua o ensino prático da medicina à beira do leito do paciente."
+    },
+    {
+      "pergunta": "Durante a condução da entrevista clínica, qual conduta técnica é recomendada ao médico?",
+      "opcoes": [
+        "Interromper o paciente imediatamente a cada detalhe irrelevante",
+        "Deixar o paciente concluir seu pensamento sem interrompê-lo precocemente",
+        "Utilizar termos técnicos complexos para demonstrar conhecimento",
+        "Substituir a anamnese por exames complementares de rotina"
+      ],
+      "correta": 2,
+      "explicacao": "A aula recomenda o encorajamento narrativo e permitir que o paciente conclua seu raciocínio, deixando perguntas complementares para o final do relato de cada sintoma."
+    },
+    {
+      "pergunta": "Quais são os três interesses fundamentais ao formular hipóteses diagnósticas na anamnese?",
+      "opcoes": [
+        "Anatômico, etiológico e funcional",
+        "Farmacológico, cirúrgico e paliativo",
+        "Financeiro, social e burocrático",
+        "Radiológico, laboratorial e genético"
+      ],
+      "correta": 1,
+      "explicacao": "A formulação de hipóteses diagnósticas abrange o interesse anatômico (o que está lesado), etiológico (qual a causa da lesão) e funcional (qual a disfunção gerada)."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-27",
+  "iaModelo": "gemini-3.6-flash"
 }

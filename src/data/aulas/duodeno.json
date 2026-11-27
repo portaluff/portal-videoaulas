@@ -6,10 +6,80 @@
   "professor": "",
   "data": "2013-06-07",
   "views": 37837,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Esta aula de anatomia humana apresenta a morfologia, as divisões topográficas, a vascularização e a inervação do duodeno em peças anatômicas dissecadas.",
+  "resumo": [
+    {
+      "rotulo": "Divisões e Níveis Vertebrais",
+      "texto": "O duodeno é a primeira parte do intestino delgado e divide-se em quatro partes: superior (L1, contendo o bulbo duodenal), descendente (L1 a L3), horizontal (L3, com importante relação com os vasos mesentéricos superiores) e ascendente (L3 a L2)."
+    },
+    {
+      "rotulo": "Estruturas da Porção Descendente",
+      "texto": "Na segunda porção do duodeno observam-se as pregas circulares (válvulas de Kerckring) e a papila duodenal maior, local de abertura do ducto pancreático principal e do ducto colédoco."
+    },
+    {
+      "rotulo": "Flexura Duodenojejunal e Recessos",
+      "texto": "A flexura duodenojejunal é fixada pelo músculo suspensor do duodeno, composto de músculo estriado do diafragma e músculo liso do duodeno. Ao seu lado esquerdo, pregas peritoneais delimitam os recessos duodenais superior, inferior e paraduodenal."
+    },
+    {
+      "rotulo": "Vascularização Arterial",
+      "texto": "A irrigação origina-se do tronco celíaco, via artéria gastroduodenal (que dá as artérias pancreaticoduodenais superiores), e da artéria mesentérica superior, que dá origem às artérias pancreaticoduodenais inferiores."
+    },
+    {
+      "rotulo": "Inervação Duodenal",
+      "texto": "Os nervos destinados ao duodeno são provenientes das fibras nervosas do plexo celíaco e do plexo mesentérico superior."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual porção do duodeno possui relação direta com os vasos mesentéricos superiores?",
+      "opcoes": [
+        "Terceira parte (horizontal)",
+        "Primeira parte (superior)",
+        "Segunda parte (descendente)",
+        "Quarta parte (ascendente)"
+      ],
+      "correta": 1,
+      "explicacao": "A terceira parte ou porção horizontal do duodeno cruza anteriormente a coluna vertebral mantendo relação íntima com os vasos mesentéricos superiores."
+    },
+    {
+      "pergunta": "A papila duodenal maior situa-se na segunda porção do duodeno e representa a abertura de quais estruturas?",
+      "opcoes": [
+        "Ducto pancreático acessório e ducto hepático direito",
+        "Ducto hepático comum e ducto cístico",
+        "Ducto cístico e ducto pancreático acessório",
+        "Ducto colédoco e ducto pancreático principal"
+      ],
+      "correta": 4,
+      "explicacao": "A papila duodenal maior é o ponto de desembocadura conjunta do ducto pancreático principal e do ducto colédoco."
+    },
+    {
+      "pergunta": "De acordo com a aula, qual é a composição tecidual do músculo suspensor do duodeno?",
+      "opcoes": [
+        "Músculo estriado oriundo do diafragma e músculo liso oriundo do próprio duodeno",
+        "Exclusivamente músculo liso vindo da camada muscular do jejuno",
+        "Apenas tecido conjuntivo fibroso e elástico",
+        "Músculo estriado esquelético derivado do músculo psoas maior"
+      ],
+      "correta": 1,
+      "explicacao": "O músculo suspensor do duodeno apresenta dupla composição: fibras musculares estriadas provenientes do diafragma e fibras musculares lisas do próprio duodeno."
+    },
+    {
+      "pergunta": "A artéria pancreaticoduodenal superior posterior é ramo de qual estrutura vascular?",
+      "opcoes": [
+        "Artéria mesentérica superior",
+        "Artéria hepática própria",
+        "Artéria gastroduodenal",
+        "Artéria esplênica"
+      ],
+      "correta": 3,
+      "explicacao": "A artéria gastroduodenal dá como seu primeiro ramo a artéria pancreaticoduodenal superior posterior antes de se dividir em seus ramos terminais."
+    }
+  ],
   "referencias": [],
-  "duracao": 287
+  "duracao": 287,
+  "quizRevisado": false,
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-27",
+  "iaModelo": "gemini-3.6-flash"
 }

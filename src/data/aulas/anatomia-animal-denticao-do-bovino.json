@@ -7,11 +7,65 @@
   "data": "",
   "views": null,
   "duracao": 79,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula prática de anatomia veterinária sobre a dentição do bovino, detalhando a arcada superior e a arcada inferior.",
+  "resumo": [
+    {
+      "rotulo": "Arcada superior",
+      "texto": "Na arcada dentária superior do bovino, observa-se a ausência de dentes incisivos e de caninos."
+    },
+    {
+      "rotulo": "Pré-molares e molares superiores",
+      "texto": "A arcada superior possui três pré-molares e três molares. Devido à ausência do primeiro pré-molar, identificam-se o segundo, terceiro e quarto pré-molares."
+    },
+    {
+      "rotulo": "Incisivos inferiores",
+      "texto": "Na arcada dentária inferior, observam-se quatro dentes incisivos a cada lado."
+    },
+    {
+      "rotulo": "Pré-molares e molares inferiores",
+      "texto": "A arcada inferior também não apresenta o primeiro pré-molar, contando com o segundo, terceiro e quarto pré-molares, além de três molares."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "O que caracteriza a porção anterior da arcada dentária superior nos bovinos?",
+      "opcoes": [
+        "Presença de dentes incisivos e ausência de caninos.",
+        "Ausência total de dentes incisivos e de caninos.",
+        "Presença de caninos proeminentes e incisivos reduzidos.",
+        "Presença de incisivos de ambos os lados e ausência de molares."
+      ],
+      "correta": 2,
+      "explicacao": "Na arcada dentária superior do bovino, há total ausência de dentes incisivos e de caninos."
+    },
+    {
+      "pergunta": "Quais pré-molares estão presentes na arcada superior do bovino?",
+      "opcoes": [
+        "2º, 3º e 4º pré-molares.",
+        "Apenas 1º e 2º pré-molares.",
+        "1º, 2º e 3º pré-molares.",
+        "1º, 3º e 4º pré-molares."
+      ],
+      "correta": 1,
+      "explicacao": "Como o bovino não possui o primeiro pré-molar superior, os dentes presentes nessa arcada são o 2º, 3º e 4º pré-molares."
+    },
+    {
+      "pergunta": "Quantos dentes incisivos inferiores são observados a cada lado na arcada inferior do bovino?",
+      "opcoes": [
+        "Quatro dentes incisivos.",
+        "Três dentes incisivos.",
+        "Dois dentes incisivos.",
+        "Seis dentes incisivos."
+      ],
+      "correta": 1,
+      "explicacao": "Na arcada inferior do bovino, observam-se quatro dentes incisivos inferiores a cada lado."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-27",
+  "iaModelo": "gemini-3.6-flash"
 }

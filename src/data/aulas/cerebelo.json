@@ -6,10 +6,69 @@
   "professor": "",
   "data": "2013-06-20",
   "views": null,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula prática de anatomia veterinária demonstrando as estruturas constituintes do cerebelo e do tronco encefálico em peça encéfalica.",
+  "resumo": [
+    {
+      "rotulo": "Vermis e hemisférios cerebelares",
+      "texto": "O cerebelo apresenta uma elevação central denominada vermis e duas projeções dispostas lateralmente que correspondem aos hemisférios cerebelares."
+    },
+    {
+      "rotulo": "Fissuras cerebelares",
+      "texto": "As fissuras consistem em sulcos e ranhuras na superfície cerebelar que separam as folhas cerebelares."
+    },
+    {
+      "rotulo": "Árvore da vida e córtex",
+      "texto": "A substância branca do cerebelo forma uma estrutura ramificada em forma de galhos chamada árvore da vida, sendo envolvida pela substância cinzenta que compõe o córtex cerebelar."
+    },
+    {
+      "rotulo": "Aderência intertalâmica e hipotálamo",
+      "texto": "No tronco encefálico, a aderência intertalâmica une os tálamos, enquanto o hipotálamo localiza-se ventralmente abaixo do tálamo."
+    },
+    {
+      "rotulo": "Vias ópticas",
+      "texto": "A estrutura óptica é formada pelos nervos ópticos que convergem e se cruzam no quiasma óptico, prosseguindo anatomicamente como tratos ópticos."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual estrutura anatômica corresponde à elevação central do cerebelo demonstrada no vídeo?",
+      "opcoes": [
+        "Hemisfério cerebelar",
+        "Vermis",
+        "Aderência intertalâmica",
+        "Córtex cerebelar"
+      ],
+      "correta": 2,
+      "explicacao": "O vermis é definido na aula como a elevação central do cerebelo."
+    },
+    {
+      "pergunta": "Anatomicamente, como é formada a estrutura conhecida como 'árvore da vida' no cerebelo?",
+      "opcoes": [
+        "Pela substância branca organizada em formato de galhos",
+        "Pelas fissuras que separam as folhas cerebelares",
+        "Pelo cruzamento ventral dos tratos ópticos",
+        "Pela substância cinzenta cortical periférica"
+      ],
+      "correta": 1,
+      "explicacao": "A árvore da vida consiste na substância branca do cerebelo disposta em padrão ramificado semelhante a galhos."
+    },
+    {
+      "pergunta": "Qual designação recebe a via óptica após o ponto de cruzamento das fibras no quiasma óptico?",
+      "opcoes": [
+        "Tálamos ópticos",
+        "Tratos ópticos",
+        "Nervos ópticos",
+        "Fissuras ópticas"
+      ],
+      "correta": 2,
+      "explicacao": "As vias iniciam-se como nervos ópticos, cruzam-se no quiasma óptico e passam a ser chamadas de tratos ópticos após esse cruzamento."
+    }
+  ],
   "referencias": [],
-  "duracao": 117
+  "duracao": 117,
+  "quizRevisado": false,
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-27",
+  "iaModelo": "gemini-3.6-flash"
 }

@@ -1,17 +1,91 @@
 {
   "titulo": "Agonistas e antagonistas Colinérgicos ok",
-  "disciplina": "a-classificar",
+  "disciplina": "farmacia",
   "tema": "",
   "youtube": "hdGKpJ-ouog",
   "professor": "",
   "data": "",
   "views": null,
   "duracao": 902,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "A aula aborda a síntese, os receptores e os efeitos farmacológicos dos agonistas e antagonistas colinérgicos nos sistemas nervosos autônomo e somático.",
+  "resumo": [
+    {
+      "rotulo": "Síntese da Acetilcolina",
+      "texto": "A acetilcolina é sintetizada a partir da colina e do acetil-CoA pela ação da enzima colina acetiltransferase nas terminações nervosas."
+    },
+    {
+      "rotulo": "Receptores Colinérgicos",
+      "texto": "Os receptores dividem-se em nicotínicos, que atuam como canais iônicos, e muscarínicos (M1 a M5), acoplados a proteínas G."
+    },
+    {
+      "rotulo": "Agonistas Colinérgicos",
+      "texto": "Classificam-se em diretos, que se ligam aos receptores muscarínicos, e indiretos, que inibem a enzima acetilcolinesterase para impedir a degradação do neurotransmissor."
+    },
+    {
+      "rotulo": "Efeitos Fisiológicos Agonistas",
+      "texto": "Provocam diminuição da frequência cardíaca, contração da musculatura lisa (bronquial, intestinal e vesical), aumento das secreções e redução da pressão intraocular."
+    },
+    {
+      "rotulo": "Antagonistas Colinérgicos",
+      "texto": "Também chamados de parassimpaticolíticos, têm como protótipo a atropina, que bloqueia os receptores muscarínicos e inibe as ações parassimpáticas."
+    },
+    {
+      "rotulo": "Antagonistas Ganglionares",
+      "texto": "Atuam nas sinapses pré-ganglionares do sistema autônomo e apresentam efeitos mais amplos e menos específicos do que os fármacos antimuscarínicos."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual das alternativas descreve o mecanismo de ação dos agonistas colinérgicos de ação indireta?",
+      "opcoes": [
+        "Atuam estimulando diretamente os receptores muscarínicos e nicotínicos.",
+        "Aceleram a recaptação celular de acetilcolina para as vesículas sinápticas.",
+        "Inibem a enzima acetilcolinesterase, impedindo a degradação da acetilcolina.",
+        "Bloqueiam a síntese de acetilcolina a partir da colina e acetil-CoA."
+      ],
+      "correta": 3,
+      "explicacao": "Os agonistas de ação indireta bloqueiam a acetilcolinesterase, mantendo níveis mais elevados de acetilcolina na fenda sináptica."
+    },
+    {
+      "pergunta": "Como funcionam os receptores muscarínicos M1 e M3 quando ativados pela acetilcolina?",
+      "opcoes": [
+        "Provocam abertura direta de canais de potássio e hiperpolarização.",
+        "Inibem a adenilato ciclase, resultando em diminuição de AMP cíclico.",
+        "Acoplam-se à proteína Gq, ativando a fosfolipase C e liberando cálcio intracelular.",
+        "Ativam canais de sódio e potássio, gerando despolarização celular rápida."
+      ],
+      "correta": 3,
+      "explicacao": "Conforme apresentado, os receptores M1 e M3 estimulam a fosfolipase C por meio da proteína Gq, clivando IP3 e promovendo liberação de cálcio do retículo endoplasmático."
+    },
+    {
+      "pergunta": "Qual é o efeito do uso ocular do agonista muscarínico pilocarpina?",
+      "opcoes": [
+        "Aumento da pressão intraocular por induzir midríase.",
+        "Bloqueio permanente das glândulas lacrimais.",
+        "Redução da pressão intraocular facilitando a drenagem do humor aquoso via mioses/contração ciliar.",
+        "Vasodilatação retinal isolada sem alteração no diâmetro pupilar."
+      ],
+      "correta": 3,
+      "explicacao": "A pilocarpina induz contração pupilar e do músculo ciliar, permitindo a drenagem do humor aquoso e diminuindo a pressão intraocular no glaucoma."
+    },
+    {
+      "pergunta": "A atropina é o protótipo dos antagonistas colinérgicos. Qual é a sua principal função farmacológica?",
+      "opcoes": [
+        "Inibir a síntese de catecolaminas no sistema nervoso simpático.",
+        "Bloquear os receptores muscarínicos, reduzindo os efeitos do sistema nervoso parassimpático.",
+        "Estimular seletivamente os receptores nicotínicos na placa motora.",
+        "Aumentar a secreção salivar e causar bradicardia acentuada em doses terapêuticas baixas."
+      ],
+      "correta": 2,
+      "explicacao": "A atropina é um fármaco antimuscarínico que compete com a acetilcolina pelos seus receptores, bloqueando as respostas de mediação parassimpática."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "disciplinaPelaIA": true,
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-27",
+  "iaModelo": "gemini-3.6-flash"
 }

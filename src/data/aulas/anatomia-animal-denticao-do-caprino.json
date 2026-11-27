@@ -7,11 +7,69 @@
   "data": "",
   "views": null,
   "duracao": 104,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "A aula apresenta a anatomia dentária superior e inferior de um caprino jovem, detalhando a quantidade e identificação dos dentes incisivos, pré-molares e molares.",
+  "resumo": [
+    {
+      "rotulo": "Arcada superior",
+      "texto": "Na arcada superior da cabeça do caprino jovem, não estão presentes os dentes incisivos nem os dentes caninos."
+    },
+    {
+      "rotulo": "Pré-molares superiores",
+      "texto": "Pela ausência do primeiro pré-molar superior nos ruminantes, identificam-se três pré-molares superiores a cada lado, correspondentes ao segundo, terceiro e quarto pré-molares."
+    },
+    {
+      "rotulo": "Molares superiores",
+      "texto": "Identificam-se três dentes molares superiores, sendo o primeiro já presente, o segundo em processo de erupção (eclosão) e o terceiro ainda não eclodido."
+    },
+    {
+      "rotulo": "Arcada inferior",
+      "texto": "Na arcada inferior, observam-se quatro dentes incisivos inferiores a cada lado e a ausência completa de dentes caninos."
+    },
+    {
+      "rotulo": "Pré-molares e molares inferiores",
+      "texto": "Assim como na arcada superior, identificam-se três pré-molares inferiores (2º, 3º e 4º) e três molares inferiores, com o segundo em erupção e o terceiro ainda por eclodir."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual das seguintes características é observada na arcada superior do caprino demonstrado no vídeo?",
+      "opcoes": [
+        "Presença de quatro incisivos superiores de cada lado",
+        "Ausência total de dentes incisivos e caninos",
+        "Presença de caninos bem desenvolvidos",
+        "Presença de quatro dentes pré-molares superiores"
+      ],
+      "correta": 2,
+      "explicacao": "Na arcada superior dos ruminantes, como o caprino demonstrado, não são encontrados dentes incisivos nem dentes caninos."
+    },
+    {
+      "pergunta": "Por que os três pré-molares presentes em cada lado das arcadas do caprino são identificados como 2º, 3º e 4º pré-molares?",
+      "opcoes": [
+        "Pela ausência do último pré-molar no caprino jovem",
+        "Porque o quarto pré-molar se funde ao primeiro molar",
+        "Porque o primeiro pré-molar só se desenvolve na fase adulta",
+        "Pela ausência do primeiro pré-molar nos ruminantes"
+      ],
+      "correta": 4,
+      "explicacao": "Devido à ausência do primeiro pré-molar nos ruminantes, os três pré-molares existentes são classificados anatomicamente como o segundo, o terceiro e o quarto pré-molares."
+    },
+    {
+      "pergunta": "Quantos dentes incisivos a cada lado foram identificados na arcada inferior do caprino jovem?",
+      "opcoes": [
+        "Três dentes incisivos",
+        "Dois dentes incisivos",
+        "Quatro dentes incisivos",
+        "Nenhum dente incisivo"
+      ],
+      "correta": 3,
+      "explicacao": "Na arcada inferior do caprino, observam-se quatro dentes incisivos inferiores a cada lado."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-27",
+  "iaModelo": "gemini-3.6-flash"
 }

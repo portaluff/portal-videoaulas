@@ -6,10 +6,80 @@
   "professor": "",
   "data": "2013-06-20",
   "views": 30489,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula prática de neuroanatomia sobre a anatomia cerebral, abordando as faces hemisféricas, os polos cerebrais e a estrutura do corpo caloso.",
+  "resumo": [
+    {
+      "rotulo": "Corte sagital e telencéfalo",
+      "texto": "No corte sagital mediano do hemisfério cerebral, observa-se a posição superior do telencéfalo em relação ao diencéfalo e ao tronco encefálico."
+    },
+    {
+      "rotulo": "Estrutura do corpo caloso",
+      "texto": "O corpo caloso é uma comissura interhemisférica dividida em esplênio, tronco, joelho, rostro e lâmina rostral."
+    },
+    {
+      "rotulo": "Polos cerebrais",
+      "texto": "Os polos são extremidades de referência do cérebro, classificados em polo frontal (anterior e superior), polo temporal (anterior e inferior) e polo occipital (posterior e superior)."
+    },
+    {
+      "rotulo": "Face superolateral e pia-máter",
+      "texto": "A face superolateral é voltada para a calvária cranial, estando revestida pela meninge pia-máter, que penetra nos sulcos e recobre as estruturas vasculares."
+    },
+    {
+      "rotulo": "Face inferior do cérebro",
+      "texto": "A face inferior do hemisfério cerebral é a região que se apoia na base do crânio, relacionando-se com os ossos frontal e temporal."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual estrutura mediana é responsável por conectar os dois hemisférios cerebrais?",
+      "opcoes": [
+        "Fissura longitudinal do cérebro",
+        "Corpo caloso",
+        "Pia-máter",
+        "Tronco encefálico"
+      ],
+      "correta": 2,
+      "explicacao": "Conforme apresentado no vídeo, os dois hemisférios cerebrais são unidos por uma comissura de fibras interhemisféricas denominada corpo caloso."
+    },
+    {
+      "pergunta": "Quais são as divisões anatômicas do corpo caloso apresentadas na aula?",
+      "opcoes": [
+        "Dura-máter, aracnoide-máter e pia-máter",
+        "Telencéfalo, diencéfalo, mesencéfalo e ponte",
+        "Polo frontal, polo temporal, polo occipital e polo parietal",
+        "Esplênio, tronco, joelho, rostro e lâmina rostral"
+      ],
+      "correta": 4,
+      "explicacao": "O professor detalha que a divisão anatômica do corpo caloso compreende o esplênio, tronco, joelho, rostro e a lâmina rostral."
+    },
+    {
+      "pergunta": "Como é definido o polo frontal na anatomia do hemisfério cerebral?",
+      "opcoes": [
+        "Como a ponta mais inferior e anterior do hemisfério",
+        "Como a região mediana de transição entre o cérebro e o diencéfalo",
+        "Como a ponta mais anterior e superior do hemisfério",
+        "Como a ponta mais posterior e superior do hemisfério"
+      ],
+      "correta": 3,
+      "explicacao": "O polo frontal é caracterizado como a ponta ou extremidade mais anterior e superior do hemisfério cerebral."
+    },
+    {
+      "pergunta": "Qual é o papel da meninge pia-máter observada na face superolateral do cérebro?",
+      "opcoes": [
+        "Formar a comissura que conecta os dois hemisférios cerebrais",
+        "Apoiar o cérebro diretamente sobre a base óssea do crânio",
+        "Revestir a superfície cerebral e os vasos sanguíneos, penetrando nos sulcos",
+        "Dividir os hemisférios cerebrais em polo frontal e polo occipital"
+      ],
+      "correta": 3,
+      "explicacao": "A pia-máter envolve o cérebro e suas estruturas vasculares, acompanhando a anatomia cortical e penetrando até o fundo dos sulcos cerebrais."
+    }
+  ],
   "referencias": [],
-  "duracao": 268
+  "duracao": 268,
+  "quizRevisado": false,
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-27",
+  "iaModelo": "gemini-3.6-flash"
 }

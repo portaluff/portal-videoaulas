@@ -7,11 +7,69 @@
   "data": "",
   "views": null,
   "duracao": 678,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "O vídeo apresenta o processo de concepção e execução do Curso de Capacitação da Guarda Municipal de Niterói, desenvolvido pelo NUPEP/UFF sob a ótica dos Direitos Humanos e da segurança cidadã.",
+  "resumo": [
+    {
+      "rotulo": "Diagnóstico inicial",
+      "texto": "A equipe do NUPEP utilizou técnicas de grupos focais, observação de campo e entrevistas para levantar as principais demandas e dificuldades enfrentadas pelos guardas municipais no exercício de suas funções."
+    },
+    {
+      "rotulo": "Desafio de formação",
+      "texto": "A Universidade Federal Fluminense (UFF) assumiu a responsabilidade de capacitar os novos guardas municipais aprovados em concurso público, buscando estruturar um currículo adequado à nova realidade da corporação."
+    },
+    {
+      "rotulo": "Direitos Humanos e Ordem Pública",
+      "texto": "Discute-se que a ordem pública não deve ser apenas uma imposição emanada do Estado, mas sim o resultado de negociações e garantias de direitos fundamentais entre os diversos atores que ocupam o espaço público."
+    },
+    {
+      "rotulo": "Estrutura curricular integrada",
+      "texto": "O curso foi dividido em blocos temáticos inter-relacionados, englobando desde noções de sociologia da violência até aulas de defesa pessoal e técnicas de abordagem."
+    },
+    {
+      "rotulo": "Lidar com o imprevisto",
+      "texto": "Por meio de simulações práticas de situações de conflito, o curso estimula a reflexão e autoelaboração dos alunos para agirem de forma adequada e flexível diante da diversidade de eventos do cotidiano."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual metodologia foi aplicada pelo NUPEP para realizar o diagnóstico sobre os problemas enfrentados pela Guarda Municipal de Niterói?",
+      "opcoes": [
+        "Grupos focais, observação de campo e entrevistas com guardas e supervisores.",
+        "Aplicação de testes de aptidão física e exames psicológicos.",
+        "Análise estatística exclusiva de ocorrências policiais da região.",
+        "Consultoria com órgãos de segurança internacional."
+      ],
+      "correta": 1,
+      "explicacao": "A equipe do NUPEP utilizou a técnica de grupos focais, observação direta nas ruas e entrevistas com representantes da Guarda Municipal para mapear os problemas da atuação."
+    },
+    {
+      "pergunta": "De acordo com o debate sobre Direitos Humanos apresentado na aula, como a ordem pública deve ser concebida?",
+      "opcoes": [
+        "Como uma responsabilidade estritamente individual de cada cidadão.",
+        "Como fruto de negociação entre atores sociais no espaço público, garantindo cidadania e direitos essenciais.",
+        "Como um conjunto de normas rígidas impostas exclusivamente pelo poder estatal.",
+        "Como uma atribuição militar voltada unicamente para a repressão do crime."
+      ],
+      "correta": 2,
+      "explicacao": "A aula enfatiza que a ordem pública deve ser negociada entre os atores do espaço público com o objetivo de preservar os direitos humanos e a integridade de todos."
+    },
+    {
+      "pergunta": "Qual é a proposta pedagógica central da disciplina de técnicas de abordagem e simulação de conflitos?",
+      "opcoes": [
+        "Proporcionar situações simuladas para que o guarda aprenda a lidar com o imprevisto e reflita sobre sua conduta.",
+        "Padronizar o uso da força física e do armamento bélico.",
+        "Treinar procedimentos militares rígidos de combate corpo a corpo.",
+        "Selecionar os alunos com melhor desempenho em artes marciais para funções de comando."
+      ],
+      "correta": 1,
+      "explicacao": "A disciplina busca expor o guarda a simulações de situações cotidianas para que ele descubra como agir e se autoelabore diante do imprevisto."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-27",
+  "iaModelo": "gemini-3.6-flash"
 }

@@ -6,10 +6,84 @@
   "professor": "",
   "data": "2013-06-07",
   "views": 19600,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Esta aula prática de anatomia apresenta a morfologia macroscópica do estômago, incluindo suas divisões regionais, aspectos internos, relações do leito gástrico, irrigação arterial e inervação.",
+  "resumo": [
+    {
+      "rotulo": "Visão Geral e Omentos",
+      "texto": "O estômago é um órgão oco intraperitoneal localizado no andar supramesocólico do abdômen, composto por faces anterior e posterior, curvaturas maior e menor. Apresenta o omento maior preso à curvatura maior e o omento menor preso à curvatura menor."
+    },
+    {
+      "rotulo": "Regiões do Estômago",
+      "texto": "Subdivide-se nas regiões cárdia, fundo, corpo e antro pilórico. A incisura cárdica e a incisura angular delimitam suas porções, enquanto o esfíncter pilórico faz a transição para o duodeno."
+    },
+    {
+      "rotulo": "Parte Interna",
+      "texto": "Ao abrir o estômago, observam-se as pregas gástricas e o canal alimentar, localizado ao longo da curvatura menor para a passagem preferencial dos alimentos."
+    },
+    {
+      "rotulo": "Leito Gástrico",
+      "texto": "Compreende a região posterior sobre a qual o estômago repousa, sendo formado por estruturas como o pâncreas, tronco celíaco, baço, rim esquerdo e mesocolo transverso."
+    },
+    {
+      "rotulo": "Vascularização Gástrica",
+      "texto": "A irrigação deriva direta ou indiretamente do tronco celíaco através dos ramos gástrico esquerdo, hepático comum e lienal. Destacam-se as anastomoses nas curvaturas menor (artérias gástricas esquerda e direita) e maior (artérias gastromentais direita e esquerda), além das artérias gástricas curtas."
+    },
+    {
+      "rotulo": "Inervação do Estômago",
+      "texto": "A inervação gástrica é fornecida por ramos gástricos originados dos troncos vagais anterior e posterior, acompanhados por componentes do sistema nervoso autônomo."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual das alternativas descreve corretamente a localização anatômica e os limites do estômago no abdômen?",
+      "opcoes": [
+        "Localiza-se no andar inframesocólico, posicionado abaixo do mesocolo transverso.",
+        "Localiza-se na fossa ilíaca direita, em continuidade direta com o ceco.",
+        "Localiza-se totalmente no retroperitônio, posterior ao pâncreas e ao rim esquerdo.",
+        "Localiza-se no andar supramesocólico, estando posicionado acima do mesocolo transverso."
+      ],
+      "correta": 4,
+      "explicacao": "O estômago é um órgão intraperitoneal situado no andar supramesocólico do abdômen, estando posicionado acima do mesocolo transverso do intestino grosso."
+    },
+    {
+      "pergunta": "Quais artérias realizam a anastomose ao longo da curvatura menor do estômago?",
+      "opcoes": [
+        "Artéria gastromental direita e artéria gastromental esquerda.",
+        "Artérias gástricas curtas e artéria lienal.",
+        "Artéria gástrica esquerda e artéria gástrica direita.",
+        "Artéria gastroduodenal e artéria hepática própria."
+      ],
+      "correta": 3,
+      "explicacao": "A curvatura menor do estômago é irrigada pela anastomose formada entre a artéria gástrica esquerda (ramo do tronco celíaco) e a artéria gástrica direita."
+    },
+    {
+      "pergunta": "Qual acidente anatômico é formado na junção entre o esôfago abdominal e o fundo gástrico?",
+      "opcoes": [
+        "Incisura cárdica",
+        "Incisura angular",
+        "Canal alimentar",
+        "Esfíncter pilórico"
+      ],
+      "correta": 1,
+      "explicacao": "A transição entre o esôfago abdominal e o fundo do estômago forma uma reentrância denominada incisura cárdica."
+    },
+    {
+      "pergunta": "Quais das estruturas a seguir constituem o leito gástrico demonstrado no vídeo?",
+      "opcoes": [
+        "Pâncreas, tronco celíaco, baço, rim esquerdo e mesocolo transverso",
+        "Bexiga, ureter direito e cólon sigmóide",
+        "Cólon ascendente, apêndice e ileo",
+        "Fígado, vesícula biliar e ceco"
+      ],
+      "correta": 1,
+      "explicacao": "O leito gástrico é a área de repouso posterior do estômago composta por pâncreas, tronco celíaco, baço, rim esquerdo, mesocolo transverso, entre outras estruturas."
+    }
+  ],
   "referencias": [],
-  "duracao": 369
+  "duracao": 369,
+  "quizRevisado": false,
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-27",
+  "iaModelo": "gemini-3.6-flash"
 }

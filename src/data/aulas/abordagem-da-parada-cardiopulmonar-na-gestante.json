@@ -7,11 +7,80 @@
   "data": "",
   "views": null,
   "duracao": 628,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Videoaula educativa sobre os procedimentos e particularidades do atendimento da parada cardiopulmonar e da reanimação cardiopulmonar em gestantes.",
+  "resumo": [
+    {
+      "rotulo": "Causas de PCR na Gestante",
+      "texto": "As principais causas de parada cardiopulmonar em gestantes incluem hipertensão (pré-eclâmpsia e eclâmpsia), hemorragia, sepse, intoxicações e complicações circulatórias."
+    },
+    {
+      "rotulo": "Prevenção e Posicionamento",
+      "texto": "Para aliviar a compressão da veia cava inferior e da aorta pelo útero gravídico, recomenda-se realizar o desvio manual do útero para a esquerda ou posicionar a gestante em decúbito lateral esquerdo."
+    },
+    {
+      "rotulo": "Sequência de RCP (CAB)",
+      "texto": "A reanimação segue a sequência CAB, posicionando as mãos na linha intermamar (um pouco acima da referência habitual) na proporção de 30 compressões para 2 ventilações."
+    },
+    {
+      "rotulo": "Desfibrilação e Causas Reversíveis",
+      "texto": "A desfibrilação precoce é indicada para ritmos chocáveis (FV/TV sem pulso) utilizando as mesmas cargas recomendadas para adultos, devendo-se investigar também os 5 Hs e 4 Ts."
+    },
+    {
+      "rotulo": "Cesariana de Emergência",
+      "texto": "Caso não ocorra o retorno da circulação espontânea após 4 minutos de reanimação, é indicada a realização de cesariana de emergência perimortem."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual manobra de posicionamento é indicada a partir da 20ª semana de gestação para aliviar a compressão da veia cava inferior durante o atendimento à PCR?",
+      "opcoes": [
+        "Elevação dos membros inferiores em 45 graus",
+        "Desvio manual do útero para a esquerda",
+        "Compressão abdominal contínua",
+        "Posicionamento da gestante em decúbito ventral"
+      ],
+      "correta": 2,
+      "explicacao": "A partir da 20ª semana, o peso do útero comprime a veia cava inferior em decúbito dorsal, sendo necessário o desvio manual do útero para a esquerda ou a colocação em decúbito lateral esquerdo."
+    },
+    {
+      "pergunta": "Onde devem ser posicionadas as mãos do socorrista para realizar as compressões torácicas na gestante?",
+      "opcoes": [
+        "Um pouco acima da referência habitual, na linha intermamar",
+        "Sobre a borda costal esquerda",
+        "No terço inferior do abdômen",
+        "Dois dedos abaixo do apêndice xifoide"
+      ],
+      "correta": 1,
+      "explicacao": "Devido à elevação do diafragma pelo útero gravídico, as compressões devem ser feitas um pouco acima da referência habitual, na linha intermamar ou 2 dedos acima do processo xifoide."
+    },
+    {
+      "pergunta": "Em caso de parada cardiopulmonar decorrente de intoxicação por sulfato de magnésio na gestante, qual medida é recomendada?",
+      "opcoes": [
+        "Realizar choque elétrico imediato de 360 Joules",
+        "Aplicar dose adicional de ocitocina por via intravenosa",
+        "Aumentar a infusão de sulfato de magnésio",
+        "Administrar cloreto ou gluconato de cálcio"
+      ],
+      "correta": 4,
+      "explicacao": "Na intoxicação por sulfato de magnésio, o tratamento indicado é a interrupção da droga e a administração do antídoto, que é o cloreto ou gluconato de cálcio."
+    },
+    {
+      "pergunta": "Qual é o tempo limite de RCP sem retorno da circulação espontânea indicado para iniciar a cesariana de emergência (perimortem) em gestações viáveis?",
+      "opcoes": [
+        "1 minuto",
+        "4 minutos",
+        "10 minutos",
+        "15 minutos"
+      ],
+      "correta": 2,
+      "explicacao": "Se após 4 minutos de RCP não houver retorno da circulação espontânea, a cesariana de emergência deve ser iniciada para ser concluída até o 5º minuto."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-27",
+  "iaModelo": "gemini-3.6-flash"
 }

@@ -6,10 +6,80 @@
   "professor": "",
   "data": "2013-06-20",
   "views": 19897,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula sobre os princípios da homeostasia biológica, destacando a ação hormonal, os mecanismos de feedback negativo e positivo, e a regulação hídrica e osmótica.",
+  "resumo": [
+    {
+      "rotulo": "Conceito de homeostasia",
+      "texto": "A homeostasia é a tendência dos sistemas biológicos de resistirem a alterações para manterem o equilíbrio constante do meio interno. Todos os mecanismos vitais trabalham de forma integrada com a finalidade de preservar essas condições ideais de vida."
+    },
+    {
+      "rotulo": "Sistemas de controle e sinalização",
+      "texto": "Organismos mais evoluídos utilizam o sistema nervoso para o controle e o sistema endócrino para a sinalização. A sinalização endócrina ocorre por hormônios esteroides, que atravessam a membrana celular, ou por hormônios proteicos, que atuam via receptores de membrana e segundos mensageiros."
+    },
+    {
+      "rotulo": "Mecanismo de feedback negativo",
+      "texto": "O feedback negativo atua revertendo desvios do estado de equilíbrio para manter a homeostasia. Exemplos apresentados incluem o controle da secreção de hormônios tireoidianos e a regulação da pressão arterial por barorreceptores e ajuste da frequência cardíaca."
+    },
+    {
+      "rotulo": "Mecanismo de feedback positivo",
+      "texto": "Diferente do feedback negativo, o feedback positivo amplifica o estímulo inicial para alcançar um evento fisiológico específico. Na ovulação, por exemplo, o aumento nos níveis de estradiol estimula ainda mais a secreção de GnRH pelo hipotálamo."
+    },
+    {
+      "rotulo": "Regulação hídrica e osmótica",
+      "texto": "A osmolaridade e o volume de água corporais são controlados pelo mecanismo da sede e pelo hormônio antidiurético (ADH). Aves marinhas possuem ainda glândulas de sal especializadas para excretar o excesso de sódio absorvido ao ingerirem água do mar."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Segundo a videoaula, qual é a função respectiva dos sistemas nervoso e endócrino na regulação homeostática dos organismos mais evoluídos?",
+      "opcoes": [
+        "O sistema nervoso atua na sinalização e o sistema endócrino no controle.",
+        "O sistema nervoso atua no controle e o sistema endócrino na sinalização.",
+        "O sistema endócrino substitui o sistema nervoso em momentos de estresse.",
+        "Ambos atuam exclusivamente no controle genético da célula."
+      ],
+      "correta": 2,
+      "explicacao": "A aula especifica que os organismos mais evoluídos usam o sistema nervoso atuando no controle e o sistema endócrino atuando na sinalização."
+    },
+    {
+      "pergunta": "Qual das alternativas descreve corretamente o mecanismo de ação dos hormônios esteroides na célula-alvo?",
+      "opcoes": [
+        "Não conseguem atravessar a membrana celular por conta de sua estrutura proteica.",
+        "Atravessam livremente a membrana celular e ligam-se a um receptor citoplasmático, alterando a atividade gênica.",
+        "São excretados diretamente pelas glândulas de sal das narinas.",
+        "Ligam-se a receptores de membrana e ativam um segundo mensageiro no citoplasma."
+      ],
+      "correta": 2,
+      "explicacao": "Devido à sua estrutura química lipossolúvel, o hormônio esteroide passa livremente pela membrana e se liga ao receptor citoplasmático, modificando a atividade dos genes."
+    },
+    {
+      "pergunta": "O que ocorre quando há um aumento na concentração de hormônios tireoidianos (T3 e T4) na circulação geral?",
+      "opcoes": [
+        "A hipófise anterior interrompe a produção de estradiol e prolactina.",
+        "Os receptores hipotalâmicos detectam o aumento e diminuem a produção de TRH e TSH por feedback negativo.",
+        "O hipotálamo aumenta a secreção de TRH para elevar ainda mais o TSH.",
+        "O coração aumenta a frequência cardíaca para eliminar os hormônios na urina."
+      ],
+      "correta": 2,
+      "explicacao": "No feedback negativo, o aumento da concentração circulante de tiroxina é detectado pelo hipotálamo, que diminui a produção de TRH e TSH para restabelecer o equilíbrio."
+    },
+    {
+      "pergunta": "Como o organismo responde ao aumento da osmolaridade plasmática no controle hídrico?",
+      "opcoes": [
+        "Estimula os batimentos cardíacos a excretar sais pela sudorese.",
+        "Inibe a sensação de sede para evitar a ingestão de líquidos.",
+        "Diminui a produção de ADH para aumentar a perda de água na urina.",
+        "Aumenta a produção de ADH para diminuir a perda de água na diurese."
+      ],
+      "correta": 4,
+      "explicacao": "Ao detectar um aumento na osmolaridade, o hipotálamo eleva a produção do hormônio antidiurético (ADH), o que reduz a perda de água na diurese e ajuda a restaurar a homeostase."
+    }
+  ],
   "referencias": [],
-  "duracao": 368
+  "duracao": 368,
+  "quizRevisado": false,
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-27",
+  "iaModelo": "gemini-3.6-flash"
 }

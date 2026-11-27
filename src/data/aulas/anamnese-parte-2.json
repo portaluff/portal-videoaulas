@@ -7,11 +7,84 @@
   "data": "",
   "views": null,
   "duracao": 1610,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "A aula aborda os componentes essenciais da anamnese médica, englobando a análise detalhada dos sintomas, a investigação do histórico patológico e sociofisiológico, e a conduta ética do examinador durante a entrevista clínica.",
+  "resumo": [
+    {
+      "rotulo": "Caracterização dos Sintomas",
+      "texto": "A investigação da queixa principal exige detalhar forma de início, localização, qualidade, evolução, fatores agravantes ou atenuantes e intensidade. A percepção da intensidade da dor varia com o estado emocional e moduladores endógenos do paciente."
+    },
+    {
+      "rotulo": "História Patológica Pregressa",
+      "texto": "Consiste no registro sistemático de doenças da infância, imunizações, procedimentos cirúrgicos, internações, alergias e traumatismos prévios. Essas informações ajudam a contextualizar o quadro clínico atual do paciente."
+    },
+    {
+      "rotulo": "História Familiar e Social",
+      "texto": "Avaliam-se predisposições genéticas e fatores ambientais ou epidemiológicos no convívio do paciente. O perfil social e fisiológico inclui ocupação, suporte familiar, nível educacional e estilo de vida."
+    },
+    {
+      "rotulo": "Quantificação de Hábitos",
+      "texto": "O consumo de tabaco deve ser mensurado em maços-ano, multiplicando maços diários por anos de fumo. Para o álcool, quantificam-se as unidades semanais para identificar uso abusivo."
+    },
+    {
+      "rotulo": "Conduta e Postura Ética",
+      "texto": "O médico deve vesti-se adequadamente, garantir privacidade, manter escuta atenta sem interrupções precoces e empregar o silêncio de forma empática diante de temas polêmicos."
+    },
+    {
+      "rotulo": "Exame Clínico e Diagnóstico",
+      "texto": "A anamnese estruturada fornece a maior parte dos elementos para a hipótese diagnóstica, devendo ser complementada pelo exame físico completo. A meta primordial do ato médico permanece sendo o alívio do sofrimento."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Como a intensidade da dor deve ser interpretada durante a anamnese, segundo a aula?",
+      "opcoes": [
+        "Exclusivamente com base em exames laboratoriais complementares.",
+        "Desconsiderando a percepção subjetiva informada pelo paciente.",
+        "Como uma medida matemática constante e imutável.",
+        "Em correlação com o estado emocional do paciente e sinais indiretos como sudorese e palidez."
+      ],
+      "correta": 4,
+      "explicacao": "A intensidade da dor é influenciada pelo estado emocional do paciente e por moduladores endógenos como endorfinas, devendo ser avaliada também por sinais objetivos indiretos."
+    },
+    {
+      "pergunta": "Como é calculada a carga tabágica de um paciente na anamnese?",
+      "opcoes": [
+        "Dividindo o número total de cigarros fumados pela idade do paciente.",
+        "Multiplicando o número de maços fumados por dia pelo total de anos de fumo.",
+        "Contando apenas a quantidade de cigarros fumados no último mês.",
+        "Registrando apenas se o paciente fuma ou não fuma atualmente."
+      ],
+      "correta": 2,
+      "explicacao": "A carga tabágica é expressa em maços-ano, obtida da multiplicação do número de maços consumidos por dia pelos anos de duração do hábito."
+    },
+    {
+      "pergunta": "Qual é o limite semanal recomendado de unidades de álcool para homens e mulheres apresentado na aula?",
+      "opcoes": [
+        "Não há limite recomendado desde que o consumo ocorra apenas nos fins de semana.",
+        "Até 30 unidades para homens e 20 para mulheres.",
+        "Até 10 unidades para homens e 5 para mulheres.",
+        "Até 21 unidades para homens e 14 para mulheres."
+      ],
+      "correta": 4,
+      "explicacao": "A aula aponta que o consumo semanal de álcool não deve ultrapassar 21 unidades para homens e 14 unidades para mulheres."
+    },
+    {
+      "pergunta": "Diante de questões polêmicas relatadas pelo paciente durante a entrevista, qual é a postura recomendada ao médico?",
+      "opcoes": [
+        "Interromper a fala do paciente e mudar imediatamente de assunto.",
+        "Utilizar o silêncio e manter uma atitude neutra e respeitosa.",
+        "Encerrar a consulta e recusar o atendimento do paciente.",
+        "Emitir opiniões pessoais e julgar moralmente a conduta do paciente."
+      ],
+      "correta": 2,
+      "explicacao": "Em temas delicados ou polêmicos, o médico deve adotar o silêncio e a neutralidade respeitosa para preservar o vínculo de confiança e a privacidade do paciente."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-27",
+  "iaModelo": "gemini-3.6-flash"
 }

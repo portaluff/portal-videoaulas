@@ -7,11 +7,65 @@
   "data": "",
   "views": null,
   "duracao": 111,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula demonstrativa sobre a dentição da espécie equina, abordando o número de dentes, variações por sexo e a identificação dos arcos dentários superior e inferior.",
+  "resumo": [
+    {
+      "rotulo": "Variabilidade dentária nos equinos",
+      "texto": "A espécie equina apresenta uma variação de 36 a 42 dentes no total. Essa diferença decorre da presença ou ausência do dente de lobo (primeiro pré-molar superior) e do dente canino (gavião)."
+    },
+    {
+      "rotulo": "Diferenciação sexuada das fórmulas dentárias",
+      "texto": "Existem quatro fórmulas dentárias possíveis nos equinos: duas para fêmeas e duas para machos. Éguas apresentam 36 ou 38 dentes, enquanto machos possuem 40 ou 42 dentes."
+    },
+    {
+      "rotulo": "Anatomia da arcada superior",
+      "texto": "A arcada superior é composta por incisivos centrais, médios e laterais, pré-molares e molares. A ausência de caninos e do primeiro pré-molar é característica nas fêmeas sem dente de lobo."
+    },
+    {
+      "rotulo": "Anatomia da arcada inferior",
+      "texto": "Na arcada inferior, constatam-se incisivos centrais, médios e laterais, além do segundo, terceiro e quarto pré-molares e três molares. O primeiro pré-molar não ocorre na arcada inferior."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual é a amplitude de variação do número total de dentes na espécie equina?",
+      "opcoes": [
+        "32 a 38 dentes",
+        "40 a 44 dentes",
+        "36 a 42 dentes",
+        "30 a 36 dentes"
+      ],
+      "correta": 3,
+      "explicacao": "A dentição do equino varia entre 36 e 42 dentes dependendo do sexo do animal e da presença ou ausência de certos dentes."
+    },
+    {
+      "pergunta": "Quais dentes justificam a variação numérica na dentição dos equinos?",
+      "opcoes": [
+        "Primeiro incisivo e terceiro molar",
+        "Segundo pré-molar e dente incisivo lateral",
+        "Primeiro pré-molar superior (dente de lobo) e dente canino (gavião)",
+        "Terceiro pré-molar e segundo molar"
+      ],
+      "correta": 3,
+      "explicacao": "A variação ocorre devido à presença ou ausência do primeiro pré-molar superior (dente de lobo) e do dente canino (gavião)."
+    },
+    {
+      "pergunta": "Quantos dentes uma égua pode apresentar segundo a aula?",
+      "opcoes": [
+        "40 ou 42 dentes",
+        "32 ou 34 dentes",
+        "34 ou 36 dentes",
+        "36 ou 38 dentes"
+      ],
+      "correta": 4,
+      "explicacao": "A égua apresenta 36 ou 38 dentes, diferindo do macho que apresenta 40 ou 42 dentes."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-27",
+  "iaModelo": "gemini-3.6-flash"
 }

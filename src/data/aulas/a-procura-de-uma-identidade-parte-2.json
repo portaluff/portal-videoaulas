@@ -7,11 +7,65 @@
   "data": "",
   "views": null,
   "duracao": 682,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "O vídeo discute a formação profissional e o papel social da Guarda Municipal, abordando aspectos práticos de primeiros socorros, atuação no ambiente escolar e os conceitos de policiamento comunitário.",
+  "resumo": [
+    {
+      "rotulo": "Primeiros Socorros",
+      "texto": "A capacitação instrui os guardas municipais em técnicas de imobilização e atendimento de urgência para prestar suporte inicial a vítimas em vias públicas."
+    },
+    {
+      "rotulo": "Atuação nas Escolas",
+      "texto": "Debatem-se os limites de atuação da guarda no ambiente escolar, diferenciando a proteção patrimonial dos problemas internos do sistema educacional."
+    },
+    {
+      "rotulo": "Policiamento Comunitário",
+      "texto": "A disciplina aborda a filosofia da prevenção e da aproximação com a comunidade como prática extensiva a todo o corporativo da guarda municipal."
+    },
+    {
+      "rotulo": "Segurança e Espaço Público",
+      "texto": "Discute-se uma perspectiva de segurança pública não repressiva, analisando a relação entre a ordem urbana, os interesses comerciais e a ocupação informal da rua."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual é a finalidade do treinamento de primeiros socorros ministrado aos guardas municipais?",
+      "opcoes": [
+        "Restringir a assistência de urgência apenas aos acidentes de trânsito.",
+        "Treinar a corporação para a realização de cirurgias em situações de emergência.",
+        "Dar suporte inicial e transportar a vítima adequadamente sem agravar suas lesões.",
+        "Substituir o atendimento médico prestado nas unidades hospitalares."
+      ],
+      "correta": 3,
+      "explicacao": "O curso busca capacitar os guardas a darem o primeiro suporte e realizarem o transporte das vítimas com segurança até um hospital, evitando danos adicionais."
+    },
+    {
+      "pergunta": "Como é definida a limitação de atuação da Guarda Municipal em relação ao espaço escolar?",
+      "opcoes": [
+        "A guarda deve mediar diretamente todas as notas e decisões pedagógicas dos professores.",
+        "A atuação deve se focar na violência na escola (como invasões e depredações), sem interferir nas dinâmicas de exclusão internas da escola.",
+        "Não há limitação para a atuação da guarda dentro do ambiente escolar.",
+        "A guarda é responsável pelo policiamento armado e repressivo dentro das salas de aula."
+      ],
+      "correta": 2,
+      "explicacao": "A professora destaca a distinção entre a violência na escola (problemas externos que afetam o patrimônio/cotidiano) e a violência da escola (questões institucionais e pedagógicas fora da alçada do guarda)."
+    },
+    {
+      "pergunta": "Qual é a diretriz central da disciplina de Policiamento Comunitário apresentada na aula?",
+      "opcoes": [
+        "Disseminar a filosofia preventiva e de aproximação com a população para toda a corporação da guarda.",
+        "Focar a atuação dos guardas exclusivamente na fiscalização de grandes estabelecimentos comerciais.",
+        "Transferir a responsabilidade do policiamento ostensivo das forças estaduais para os moradores.",
+        "Criar um grupo restrito de elite focado em repressão violenta."
+      ],
+      "correta": 1,
+      "explicacao": "A proposta da disciplina é fazer com que todo o corpo de guardas adote a filosofia do policiamento comunitário, priorizando a prevenção e a proximidade com a comunidade."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-27",
+  "iaModelo": "gemini-3.6-flash"
 }

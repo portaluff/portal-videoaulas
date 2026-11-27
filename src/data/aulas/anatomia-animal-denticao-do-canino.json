@@ -7,11 +7,61 @@
   "data": "",
   "views": null,
   "duracao": 80,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Esta aula demonstra a fórmula e a disposição anatômica dos dentes nas arcadas superior e inferior de um cão adulto.",
+  "resumo": [
+    {
+      "rotulo": "Arcada superior",
+      "texto": "A arcada superior apresenta, em cada lado, 3 dentes incisivos, 1 canino, 4 pré-molares e 2 molares, não possuindo o terceiro molar superior."
+    },
+    {
+      "rotulo": "Arcada inferior",
+      "texto": "A arcada inferior conta, em cada lado, com 3 dentes incisivos, 1 canino, 4 pré-molares e 3 molares."
+    },
+    {
+      "rotulo": "Total de dentes",
+      "texto": "O cão adulto totaliza 42 dentes em sua dentição, o que representa a segunda maior dentição entre os animais domésticos."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Quantos dentes molares estão presentes em cada lado da arcada superior de um cão adulto?",
+      "opcoes": [
+        "4 molares",
+        "3 molares",
+        "1 molar",
+        "2 molares"
+      ],
+      "correta": 4,
+      "explicacao": "Na arcada superior, cada lado possui 2 dentes molares, visto que o cão não apresenta o terceiro molar superior."
+    },
+    {
+      "pergunta": "Qual é o total de dentes na dentição permanente de um cão adulto?",
+      "opcoes": [
+        "40 dentes",
+        "42 dentes",
+        "38 dentes",
+        "44 dentes"
+      ],
+      "correta": 2,
+      "explicacao": "O cão adulto possui 20 dentes na arcada superior e 22 na arcada inferior, totalizando 42 dentes."
+    },
+    {
+      "pergunta": "Quantos pré-molares e molares estão presentes em cada hemiarcada inferior do cão?",
+      "opcoes": [
+        "3 pré-molares e 3 molares",
+        "3 pré-molares e 2 molares",
+        "4 pré-molares e 3 molares",
+        "4 pré-molares e 2 molares"
+      ],
+      "correta": 3,
+      "explicacao": "Na arcada inferior, observam-se 4 dentes pré-molares e 3 dentes molares a cada lado."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-27",
+  "iaModelo": "gemini-3.6-flash"
 }

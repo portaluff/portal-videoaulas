@@ -7,11 +7,69 @@
   "data": "",
   "views": null,
   "duracao": 1468,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula sobre a capacitação e formação da Guarda Municipal, abordando segurança pública, cidadania, uso comedido da força e a construção da identidade profissional.",
+  "resumo": [
+    {
+      "rotulo": "Mídia e Violência",
+      "texto": "Discussão sobre como os meios de comunicação cobrem os conflitos urbanos e acabam reforçando estereótipos sobre guardas municipais e ambulantes."
+    },
+    {
+      "rotulo": "Conflitos Ambientais Urbanos",
+      "texto": "Análise das dinâmicas ambientais nas cidades e como a mediação de interesses entre diferentes grupos sociais é essencial no espaço público."
+    },
+    {
+      "rotulo": "Uso Comedido da Força",
+      "texto": "Apresentação do ensino de técnicas de defesa pessoal e imobilização focadas no controle do próprio corpo e na contenção pacífica de cidadãos."
+    },
+    {
+      "rotulo": "Inclusão no Espaço Universitário",
+      "texto": "Destaque para a importância de realizar a capacitação dos guardas em uma universidade pública, proporcionando uma formação de qualidade e sentimento de inclusão."
+    },
+    {
+      "rotulo": "Construção de Identidade",
+      "texto": "Reflexão sobre a necessidade de definir o papel da Guarda Municipal no Brasil, superando o modelo exclusivamente repressivo e focando na cidadania."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual é o objetivo principal do ensino de defesa pessoal oferecido no curso de capacitação para a Guarda Municipal?",
+      "opcoes": [
+        "Incentivar o uso da força máxima em todas as abordagens de rotina.",
+        "Desenvolver o autocontrole e aplicar técnicas de imobilização com uso comedido da força.",
+        "Transformar cada guarda em um especialista em artes marciais de combate.",
+        "Substituir totalmente a necessidade de negociação e mediação verbal de conflitos."
+      ],
+      "correta": 2,
+      "explicacao": "O treinamento busca a autoconfiança, o domínio corporal e o uso comedido da força para conter cidadãos sem causar danos físicos graves."
+    },
+    {
+      "pergunta": "Qual benefício é atribuído à realização do curso de capacitação dentro do ambiente universitário público?",
+      "opcoes": [
+        "Isentar os guardas da criação de registros e relatórios de atividades.",
+        "Promover o sentimento de inclusão e garantir acesso a um ensino crítico e de qualidade.",
+        "Promover a militarização imediata da Guarda Municipal.",
+        "Eliminar a necessidade de aulas práticas de condicionamento físico."
+      ],
+      "correta": 2,
+      "explicacao": "A vivência universitária e o convívio com os estudantes proporcionam aos guardas um sentimento de pertencimento social e uma reflexão crítica de alta qualidade."
+    },
+    {
+      "pergunta": "Segundo o vídeo, qual é o grande desafio enfrentado pelas Guardas Municipais no Brasil?",
+      "opcoes": [
+        "A obrigação legal de atuar unicamente como batalhão de choque.",
+        "A definição de uma identidade profissional própria que supere os padrões estritamente repressivos.",
+        "O excesso de contingente policial nas áreas urbanas.",
+        "A ausência completa de equipamentos de proteção individual."
+      ],
+      "correta": 2,
+      "explicacao": "O principal problema discutido é a crise de identidade da instituição, que precisa definir seu papel cidadão e mediador sem copiar modelos repressivos tradicionais."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-27",
+  "iaModelo": "gemini-3.6-flash"
 }

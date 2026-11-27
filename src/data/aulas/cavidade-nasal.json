@@ -6,10 +6,73 @@
   "professor": "",
   "data": "2013-06-07",
   "views": 35286,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula prática demonstrando as estruturas e acidentes anatômicos da parede lateral e regiões da cavidade nasal humana.",
+  "resumo": [
+    {
+      "rotulo": "Limites e Vestíbulo",
+      "texto": "A cavidade nasal estende-se das narinas às coanas, iniciando-se no vestíbulo nasal, que é recoberto por pele e pelos e limitado superiormente pelo límen do nariz."
+    },
+    {
+      "rotulo": "Conchas e Meatos Nasais",
+      "texto": "A parede lateral abriga as conchas nasais inferior, média e superior (podendo haver a concha suprema) e os espaços situados abaixo delas, denominados meatos nasais."
+    },
+    {
+      "rotulo": "Átrio e Agger Nasi",
+      "texto": "Na borda anterior da concha média situa-se a área deprimida do átrio, enquanto a projeção localizada logo acima dela é o agger nasi."
+    },
+    {
+      "rotulo": "Recesso Esfenoetmoidal",
+      "texto": "Localizado posteriormente à concha nasal superior e anteriormente ao seio esfenoidal, este recesso é a região onde se abre o seio esfenoidal."
+    },
+    {
+      "rotulo": "Meatos Inferior e Médio",
+      "texto": "No meato inferior abre-se o ducto nasolacrimal; já no meato médio encontram-se a bula etmoidal, o processo uncinado, o hiato semilunar e o infundíbulo, onde drenam o ducto nasofrontal, as células etmoidais anteriores e médias e o seio maxilar."
+    },
+    {
+      "rotulo": "Meato Superior e Área Olfatória",
+      "texto": "No meato superior abrem-se as células etmoidais posteriores; a porção teto/superior da cavidade constitui a área olfatória, contendo o sulco olfatório."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Em qual estrutura da cavidade nasal ocorre a abertura do ducto nasolacrimal?",
+      "opcoes": [
+        "Meato nasal superior",
+        "Meato nasal médio",
+        "Meato nasal inferior",
+        "Recesso esfenoetmoidal"
+      ],
+      "correta": 3,
+      "explicacao": "Ao rebatimento da concha nasal inferior, observa-se que o ducto nasolacrimal desemboca no meato nasal inferior."
+    },
+    {
+      "pergunta": "Qual estrutura corresponde à porção anterossuperior do hiato semilunar, onde se abre o ducto nasofrontal?",
+      "opcoes": [
+        "Bula etmoidal",
+        "Átrio",
+        "Infundíbulo",
+        "Processo uncinado"
+      ],
+      "correta": 3,
+      "explicacao": "A porção anterossuperior do hiato semilunar é chamada de infundíbulo, local onde drena o ducto nasofrontal."
+    },
+    {
+      "pergunta": "Onde se abre o seio esfenoidal na cavidade nasal?",
+      "opcoes": [
+        "Meato nasal médio",
+        "Recesso esfenoetmoidal",
+        "Átrio do meato médio",
+        "Meato nasal superior"
+      ],
+      "correta": 2,
+      "explicacao": "O seio esfenoidal abre-se no recesso esfenoetmoidal, região situada posterior à concha superior e anterior ao próprio seio esfenoidal."
+    }
+  ],
   "referencias": [],
-  "duracao": 204
+  "duracao": 204,
+  "quizRevisado": false,
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-27",
+  "iaModelo": "gemini-3.6-flash"
 }
