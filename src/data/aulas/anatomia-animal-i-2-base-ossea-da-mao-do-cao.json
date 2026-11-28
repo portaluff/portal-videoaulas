@@ -7,11 +7,80 @@
   "data": "",
   "views": null,
   "duracao": 139,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula de anatomia veterinária demonstrando a estrutura óssea da mão do cão, incluindo carpo, metacarpo, falanges e ossos sesamóides.",
+  "resumo": [
+    {
+      "rotulo": "Composição geral",
+      "texto": "A mão do cão é composta pelos ossos do carpo, do metacarpo, pelas falanges e pelos ossos sesamóides proximais e distais na região palmar."
+    },
+    {
+      "rotulo": "Ossos do carpo",
+      "texto": "O carpo possui sete ossos, sendo três na fileira proximal (intermédio-radial, carpo ulnar e carpo acessório) e quatro na fileira distal (do primeiro ao quarto). O osso intermédio-radial resulta da fusão do carpo radial com o carpo intermédio."
+    },
+    {
+      "rotulo": "Ossos do metacarpo",
+      "texto": "A região do metacarpo contém cinco ossos metacarpianos, sendo o primeiro pequeno e do segundo ao quinto maiores."
+    },
+    {
+      "rotulo": "Falanges",
+      "texto": "Os quatro dedos mais laterais possuem três falanges (proximal, média e distal), enquanto o primeiro dedo apresenta apenas duas falanges (proximal e distal)."
+    },
+    {
+      "rotulo": "Ossos sesamóides",
+      "texto": "Na região palmar, observam-se dois ossos sesamóides proximais na articulação metacarpofalangiana e um osso sesamóide distal na articulação interfalangiana distal."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual osso da fileira proximal do carpo canino resulta da fusão de dois ossos?",
+      "opcoes": [
+        "Osso intermédio-radial",
+        "Quarto osso carpiano",
+        "Osso carpo acessório",
+        "Osso carpo ulnar"
+      ],
+      "correta": 1,
+      "explicacao": "No cão, o osso carpo radial funde-se com o osso carpo intermédio, formando o osso intermédio-radial."
+    },
+    {
+      "pergunta": "Quantos ossos formam a fileira distal do carpo do cão?",
+      "opcoes": [
+        "Dois",
+        "Quatro",
+        "Três",
+        "Cinco"
+      ],
+      "correta": 2,
+      "explicacao": "A fileira distal do carpo é formada por quatro ossos carpianos (primeiro, segundo, terceiro e quarto)."
+    },
+    {
+      "pergunta": "Diferente dos quatro dedos mais laterais, quantas falanges possui o primeiro dedo da mão do cão?",
+      "opcoes": [
+        "Uma falange",
+        "Quatro falanges",
+        "Três falanges",
+        "Duas falanges"
+      ],
+      "correta": 4,
+      "explicacao": "O primeiro dedo possui apenas duas falanges (uma proximal e uma distal), enquanto os outros quatro dedos possuem três falanges cada."
+    },
+    {
+      "pergunta": "Quantos ossos sesamóides proximais são encontrados na articulação metacarpofalangiana da região palmar?",
+      "opcoes": [
+        "Um",
+        "Dois",
+        "Três",
+        "Quatro"
+      ],
+      "correta": 2,
+      "explicacao": "Na região palmar da articulação metacarpofalangiana encontram-se dois ossos sesamóides proximais."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

@@ -7,11 +7,69 @@
   "data": "",
   "views": null,
   "duracao": 291,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Esta aula apresenta os aspectos anatômicos da escápula nos mamíferos domésticos, detalhando suas faces, acidentes ósseos e variações morfológicas entre espécies.",
+  "resumo": [
+    {
+      "rotulo": "Generalidades da escápula",
+      "texto": "A escápula é o osso mais proximal do membro torácico dos mamíferos domésticos, ligando-se proximomedialmente às costelas por músculos e articulando-se distalmente com o úmero."
+    },
+    {
+      "rotulo": "Face lateral",
+      "texto": "A face lateral é dividida pela espinha da escápula em duas regiões: a fossa supraespinhosa, situada cranialmente, e a fossa infraespinhosa, situada caudalmente."
+    },
+    {
+      "rotulo": "Face medial",
+      "texto": "Na face medial estão presentes as faces serratas e a fossa subescapular, além de acidentes como o colo da escápula, o tubérculo infraglenóide, o tubérculo supraglenóide e o processo coracóide."
+    },
+    {
+      "rotulo": "Ângulo ventral",
+      "texto": "O ângulo ventral abriga a cavidade glenóide, estrutura côncava responsável pela articulação com o úmero, apresentando também a incisura glenóide."
+    },
+    {
+      "rotulo": "Diferenças entre espécies",
+      "texto": "Enquanto os equinos não apresentam acrômio proeminente na extremidade distal da espinha, bovinos possuem acrômio, cães possuem processo hamato e felinos apresentam tanto o processo hamato quanto o suprahamato."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual estrutura divide a face lateral da escápula em fossa supraespinhosa e fossa infraespinhosa?",
+      "opcoes": [
+        "Processo coracóide",
+        "Cavidade glenóide",
+        "Fossa subescapular",
+        "Espinha da escápula"
+      ],
+      "correta": 4,
+      "explicacao": "A espinha da escápula é uma projeção saliente na face lateral que a divide nas fossas supraespinhosa (cranial) e infraespinhosa (caudal)."
+    },
+    {
+      "pergunta": "Qual estrutura articular concava localiza-se no ângulo ventral da escápula para se articular com o úmero?",
+      "opcoes": [
+        "Fossa subescapular",
+        "Tubérculo infraglenóide",
+        "Cavidade glenóide",
+        "Incissura subescapular"
+      ],
+      "correta": 3,
+      "explicacao": "A cavidade glenóide fica no ângulo ventral da escápula e forma a articulação com a cabeça do úmero."
+    },
+    {
+      "pergunta": "Quais carnívoros apresentam, além do processo hamato, a estrutura denominada processo suprahamato na escápula?",
+      "opcoes": [
+        "Felinos",
+        "Cães",
+        "Bovinos",
+        "Equinos"
+      ],
+      "correta": 1,
+      "explicacao": "Nos felinos, a escápula possui tanto o processo hamato quanto uma segunda dilatação proximal chamada processo suprahamato."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

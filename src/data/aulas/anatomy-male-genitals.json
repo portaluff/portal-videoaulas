@@ -7,12 +7,88 @@
   "data": "",
   "views": null,
   "duracao": 396,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Esta aula prática de anatomia apresenta detalhadamente a estrutura, vascularização e inervação do aparelho genital masculino através da dissecção de peças cadavéricas.",
+  "resumo": [
+    {
+      "rotulo": "Testículo e Epidídimo",
+      "texto": "Demonstração da anatomia escrotal exteriorizando o testículo e o epidídimo, divididos em cabeça, corpo e cauda que continua com o ducto deferente. Destacam-se as lâminas parietal e visceral da túnica vaginal."
+    },
+    {
+      "rotulo": "Corte Sagital Testicular",
+      "texto": "Visualização da túnica albugínea enviando septos para dividir o parênquima testicular em lóbulos contendo túbulos seminíferos contorcidos. Observa-se a drenagem para o mediastino do testículo em direção à cabeça do epidídimo."
+    },
+    {
+      "rotulo": "Raiz do Pênis",
+      "texto": "Identificação da fixação da raiz do pênis no trígono urogenital, destacando os ramos (origem dos corpos cavernosos) cobertos pelo músculo isquiocavernoso e o bulbo (origem do corpo esponjoso) coberto pelo músculo bulboesponjoso."
+    },
+    {
+      "rotulo": "Corte Transversal Peniano",
+      "texto": "Diferenciação anatômica dos dois corpos cavernosos e do corpo esponjoso envolvente da uretra. Demonstram-se os envoltórios vasculares e fasciais, incluindo a túnica albugínea, a fáscia profunda de Buck e a fáscia superficial ou túnica dartos."
+    },
+    {
+      "rotulo": "Glande e Prepúcio",
+      "texto": "Exposição da glande como expansão do corpo esponjoso, contendo o óstio externo da uretra, o freio do prepúcio, a corona e o colo da glande. O prepúcio é detalhado como reflexão da pele e da túnica dartos."
+    },
+    {
+      "rotulo": "Vascularização e Inervação",
+      "texto": "Dissecção dorsal do pênis mostrando a veia dorsal superficial na túnica dartos e, profundamente à fáscia de Buck, a veia dorsal profunda, as artérias dorsais e os nervos dorsais do pênis."
+    },
+    {
+      "rotulo": "Canal Inguinal",
+      "texto": "Análise do trajeto do funículo espermático desde o anel inguinal profundo ao superficial, com rebate da fáscia espermática interna para evidenciar o ducto deferente, a artéria testicular, o plexo pampiniforme e o ramo genital do nervo genitofemoral."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Quais estruturas eréteis se originam dos ramos e do bulbo do pênis, respectivamente?",
+      "opcoes": [
+        "Corpo esponjoso e corpos cavernosos",
+        "Glande e túnica albugínea",
+        "Ducto deferente e epidídimo",
+        "Corpos cavernosos e corpo esponjoso"
+      ],
+      "correta": 4,
+      "explicacao": "Na aula é demonstrado que os ramos da raiz do pênis dão origem aos corpos cavernosos, enquanto o bulbo central dá origem ao corpo esponjoso."
+    },
+    {
+      "pergunta": "Qual camada fascial envolve diretamente a veia dorsal profunda, as artérias dorsais e os nervos dorsais do pênis?",
+      "opcoes": [
+        "Fáscia profunda do pênis (fáscia de Buck)",
+        "Túnica dartos (fáscia superficial)",
+        "Túnica albugínea",
+        "Fáscia espermática externa"
+      ],
+      "correta": 1,
+      "explicacao": "Ao rebater a fáscia superficial (túnica dartos), observa-se sob a fáscia profunda do pênis (fáscia de Buck) o feixe vasculonervoso dorsal composto pela veia dorsal profunda, artérias dorsais e nervos dorsais."
+    },
+    {
+      "pergunta": "O que compõe internamente o funículo espermático após o rebate da fáscia espermática interna?",
+      "opcoes": [
+        "Apenas a veia dorsal superficial e nervos cutâneos",
+        "Ducto deferente com sua artéria, artéria testicular, plexo pampiniforme e ramo genital do nervo genitofemoral",
+        "Túbulos seminíferos contorcidos e septos testiculares",
+        "Músculo isquiocavernoso e corpo esponjoso"
+      ],
+      "correta": 2,
+      "explicacao": "Na dissecção do funículo espermático são mostrados o ducto deferente acompanhado da artéria deferencial, a artéria testicular envolvida pelo plexo pampiniforme venoso e as fibras do ramo genital do nervo genitofemoral."
+    },
+    {
+      "pergunta": "Qual estrutura testicular divide o parênquima glandular em lóbulos contendo os túbulos seminíferos?",
+      "opcoes": [
+        "A lâmina parietal da túnica vaginal",
+        "Os septos derivados da túnica albugínea",
+        "O músculo bulboesponjoso",
+        "A fáscia de Scarpa"
+      ],
+      "correta": 2,
+      "explicacao": "O corte sagital do testículo demonstra que a túnica albugínea envia septos para o interior do testículo, dividindo o parênquima em lóbulos."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
   "origem": "youtube",
-  "idioma": "en"
+  "idioma": "en",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

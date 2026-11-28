@@ -7,11 +7,76 @@
   "data": "",
   "views": null,
   "duracao": 90,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "AULA demonstrativa sobre a base óssea da perna e do pé da galinha, destacando as fusões ósseas e a contagem de falanges.",
+  "resumo": [
+    {
+      "rotulo": "Características do Esqueleto",
+      "texto": "O esqueleto das aves se caracteriza por uma grande fusão óssea, a qual confere às estruturas resistência e leveza."
+    },
+    {
+      "rotulo": "Formação do Tibiotarso",
+      "texto": "A base óssea da perna da galinha contém o tibiotarso e a fíbula, sendo o tibiotarso formado pela fusão da tíbia com a fileira proximal do tarso."
+    },
+    {
+      "rotulo": "Formação do Tarso-metatarso",
+      "texto": "A fileira distal do tarso se ossifica aos ossos metatarsianos 2, 3 e 4, formando o osso tarso-metatarso, enquanto o primeiro metatarsiano se articula a ele."
+    },
+    {
+      "rotulo": "Número de Falanges",
+      "texto": "A quantidade de falanges varia de acordo com o dedo, apresentando 2 falanges no primeiro dedo, 3 no segundo, 4 no terceiro e 5 no quinto dedo."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Quais características a fusão óssea confere ao esqueleto das aves?",
+      "opcoes": [
+        "Fragilidade e elasticidade.",
+        "Flexibilidade e peso elevado.",
+        "Rigidez e densidade aumentada.",
+        "Resistência e leveza."
+      ],
+      "correta": 4,
+      "explicacao": "A grande fusão óssea no esqueleto das aves confere a ele resistência e leveza."
+    },
+    {
+      "pergunta": "Como é formado o osso tibiotarso na galinha?",
+      "opcoes": [
+        "Pela fusão da tíbia com a fileira proximal do tarso.",
+        "Pela fusão dos metatarsianos com a fileira proximal do tarso.",
+        "Pela fusão da fíbula com a fileira distal do tarso.",
+        "Pela fusão da tíbia com a fíbula."
+      ],
+      "correta": 1,
+      "explicacao": "O tibiotarso é formado pela fusão da tíbia com a fileira proximal do tarso."
+    },
+    {
+      "pergunta": "O osso tarso-metatarso é formado pela fusão de quais estruturas?",
+      "opcoes": [
+        "Fíbula e os quatro ossos metatarsianos.",
+        "Fileira distal do tarso e o 2º, 3º e 4º metatarsianos.",
+        "Fileira proximal do tarso e o 1º, 2º e 3º metatarsianos.",
+        "Tíbia e a fileira distal do tarso."
+      ],
+      "correta": 2,
+      "explicacao": "O tarso-metatarso resulta da ossificação da fileira distal do tarso com o 2º, 3º e 4º ossos metatarsianos."
+    },
+    {
+      "pergunta": "Quantas falanges estão presentes no terceiro dedo do pé da galinha?",
+      "opcoes": [
+        "Três falanges.",
+        "Cinco falanges.",
+        "Quatro falanges.",
+        "Duas falanges."
+      ],
+      "correta": 3,
+      "explicacao": "Segundo a aula, observam-se duas falanges para o 1º dedo, três para o 2º, quatro para o 3º e cinco para o 5º dedo."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

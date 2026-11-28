@@ -7,11 +7,65 @@
   "data": "",
   "views": null,
   "duracao": 82,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Esta videoaula apresenta a dentição de um suíno adulto, detalhando a quantidade e a disposição dos dentes nas arcadas superior e inferior.",
+  "resumo": [
+    {
+      "rotulo": "Dentição do suíno adulto",
+      "texto": "O suíno é a espécie doméstica que possui a maior dentição, somando um total de 44 dentes em um indivíduo adulto."
+    },
+    {
+      "rotulo": "Incisivos e caninos superiores",
+      "texto": "Na arcada superior, identificam-se três dentes incisivos (central, médio e lateral) e um dente canino em cada lado."
+    },
+    {
+      "rotulo": "Pré-molares e molares superiores",
+      "texto": "A sequência molar superior em cada hemicadeia é composta por quatro dentes pré-molares e três dentes molares."
+    },
+    {
+      "rotulo": "Composição da arcada inferior",
+      "texto": "A arcada inferior segue o mesmo padrão da superior, apresentando três incisivos, um canino, quatro pré-molares e três molares em cada lado."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual é a quantidade total de dentes apresentada por um suíno adulto?",
+      "opcoes": [
+        "44 dentes",
+        "40 dentes",
+        "36 dentes",
+        "42 dentes"
+      ],
+      "correta": 1,
+      "explicacao": "O suíno é a espécie doméstica com a maior dentição, totalizando 44 dentes na fase adulta."
+    },
+    {
+      "pergunta": "Como são denominados os três dentes incisivos presentes em cada hemicadeia das arcadas do suíno?",
+      "opcoes": [
+        "Incisivo primário, secundário e terciário",
+        "Incisivo central, médio e lateral",
+        "Incisivo anterior, médio e posterior",
+        "Incisivo medial, intermediário e distal"
+      ],
+      "correta": 2,
+      "explicacao": "Tanto na arcada superior quanto na inferior, identificam-se os dentes incisivos central, médio e lateral."
+    },
+    {
+      "pergunta": "Quantos pré-molares e molares existem em cada lado da arcada (hemicadeia) do suíno adulto?",
+      "opcoes": [
+        "4 pré-molares e 4 molares",
+        "3 pré-molares e 3 molares",
+        "4 pré-molares e 3 molares",
+        "3 pré-molares e 4 molares"
+      ],
+      "correta": 3,
+      "explicacao": "Em cada lado de ambas as arcadas, o suíno possui 4 dentes pré-molares seguidos por 3 dentes molares."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

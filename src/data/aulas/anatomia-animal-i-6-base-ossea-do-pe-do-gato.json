@@ -7,11 +7,80 @@
   "data": "",
   "views": null,
   "duracao": 84,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula sobre a anatomia da base óssea do pé direito de um gato em visão dorsal, detalhando tarso, metatarso, falanges e sesamoides.",
+  "resumo": [
+    {
+      "rotulo": "Visão Geral do Pé",
+      "texto": "Apresentação da estrutura óssea do pé direito de gato em visão dorsal, constituída por tarso, metatarso, falanges e ossos sesamoides."
+    },
+    {
+      "rotulo": "Ossos do Tarso",
+      "texto": "O tarso é composto por 7 ossos distribuídos em duas fileiras: a proximal, com 3 ossos, e a distal, com 4 ossos."
+    },
+    {
+      "rotulo": "Fileiras do Tarso",
+      "texto": "A fileira proximal contém os ossos tarso fibular, tarso tibial e tarso central. A fileira distal é composta do primeiro ao quarto ossos tarsianos."
+    },
+    {
+      "rotulo": "Ossos Metatarsianos",
+      "texto": "São observados 4 ossos metatarsianos, sendo o terceiro e o quarto visivelmente maiores que o segundo e o quinto."
+    },
+    {
+      "rotulo": "Falanges e Sesamoides",
+      "texto": "Cada metatarsiano articula-se com 3 falanges (proximal, média e distal), além de sesamoides proximais e distais localizados na região plantar."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Quantos ossos compõem a região do tarso no pé do gato e como estão distribuídos entre as fileiras?",
+      "opcoes": [
+        "5 ossos, sendo 2 na fileira proximal e 3 na fileira distal.",
+        "8 ossos, sendo 4 na fileira proximal e 4 na fileira distal.",
+        "6 ossos, sendo 3 na fileira proximal e 3 na fileira distal.",
+        "7 ossos, sendo 3 na fileira proximal e 4 na fileira distal."
+      ],
+      "correta": 4,
+      "explicacao": "O tarso do gato é composto por 7 ossos dispostos em duas fileiras: 3 ossos na fileira proximal e 4 na fileira distal."
+    },
+    {
+      "pergunta": "Quais ossos constituem a fileira proximal do tarso no gato?",
+      "opcoes": [
+        "Osso tarso fibular, osso tarso tibial e osso tarso central.",
+        "Osso tarsiano medial, intermédio e lateral.",
+        "1º, 2º e 3º ossos tarsianos.",
+        "2º, 3º e 4º ossos metatarsianos."
+      ],
+      "correta": 1,
+      "explicacao": "A fileira proximal do tarso é formada pelos ossos tarso fibular, tarso tibial e tarso central."
+    },
+    {
+      "pergunta": "Qual é a relação de tamanho descrita entre os ossos metatarsianos do gato?",
+      "opcoes": [
+        "O 3º e o 4º metatarsianos são maiores do que o 2º e o 5º.",
+        "O 1º e o 2º metatarsianos são predominantemente maiores.",
+        "O 2º e o 5º metatarsianos são maiores que o 3º e o 4º.",
+        "Todos os quatro metatarsianos possuem tamanho idêntico."
+      ],
+      "correta": 1,
+      "explicacao": "Na anatomia do pé do gato, o 3º e o 4º ossos metatarsianos são maiores que o 2º e o 5º."
+    },
+    {
+      "pergunta": "Quantas falanges estão associadas a cada osso metatarsiano?",
+      "opcoes": [
+        "Quatro falanges ao todo.",
+        "Três falanges: proximal, média e distal.",
+        "Duas falanges: proximal e distal.",
+        "Uma única falange distal."
+      ],
+      "correta": 2,
+      "explicacao": "Para cada osso metatarsiano, há 3 falanges correspondentes: a proximal, a média e a distal."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

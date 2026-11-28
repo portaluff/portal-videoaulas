@@ -7,11 +7,76 @@
   "data": "",
   "views": null,
   "duracao": 94,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula prática que apresenta a anatomia da base óssea da mão da galinha e suas características de fusão e articulação.",
+  "resumo": [
+    {
+      "rotulo": "Características do esqueleto",
+      "texto": "O esqueleto das aves se caracteriza por uma grande fusão óssea. Essa adaptação confere à estrutura óssea resistência e leveza."
+    },
+    {
+      "rotulo": "Fileira proximal do carpo",
+      "texto": "A fileira proximal é formada por apenas dois ossos. São eles o osso carpo radial, em formato quadrilátero, e o osso carpo ulnar, em formato de U."
+    },
+    {
+      "rotulo": "Formação do carpometacarpo",
+      "texto": "A fileira distal dos ossos do carpo se ossifica com os metacarpianos. Essa fusão engloba o segundo, terceiro e quarto metacarpianos, originando o osso carpometacarpo."
+    },
+    {
+      "rotulo": "Disposição das falanges",
+      "texto": "O segundo e o quarto metacarpianos possuem apenas uma falange cada. O terceiro metacarpiano apresenta duas falanges, uma proximal e uma distal."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Quais propriedades a grande fusão óssea confere ao esqueleto das aves?",
+      "opcoes": [
+        "Mobilidade e fragilidade",
+        "Flexibilidade e densidade",
+        "Elasticidade e peso elevado",
+        "Resistência e leveza"
+      ],
+      "correta": 4,
+      "explicacao": "A fusão de diversos ossos no esqueleto aviário proporciona uma estrutura leve e ao mesmo tempo resistente para o voo e movimentação."
+    },
+    {
+      "pergunta": "Quais são os dois ossos pertencentes à fileira proximal do carpo na galinha?",
+      "opcoes": [
+        "Carpo radial (formato em U) e carpo ulnar (formato quadrilátero)",
+        "Metacarpo radial e metacarpo ulnar",
+        "Carpo radial (formato quadrilátero) e carpo ulnar (formato em U)",
+        "Carpo distal e carpo proximal"
+      ],
+      "correta": 3,
+      "explicacao": "A fileira proximal dos ossos do carpo possui apenas o carpo radial, que é quadrilátero, e o carpo ulnar, que tem formato em U."
+    },
+    {
+      "pergunta": "Quais metacarpianos participam da formação do osso carpometacarpo?",
+      "opcoes": [
+        "Terceiro e quinto metacarpianos",
+        "Primeiro, terceiro e quinto metacarpianos",
+        "Segundo, terceiro e quarto metacarpianos",
+        "Primeiro e segundo metacarpianos"
+      ],
+      "correta": 3,
+      "explicacao": "A fusão da fileira distal do carpo ocorre com o 2º (pequeno), 3º (grande) e 4º metacarpianos."
+    },
+    {
+      "pergunta": "Quantas falanges se articulam ao terceiro metacarpiano na mão da galinha?",
+      "opcoes": [
+        "Uma falange",
+        "Três falanges",
+        "Duas falanges (proximal e distal)",
+        "Quatro falanges"
+      ],
+      "correta": 3,
+      "explicacao": "Ao terceiro metacarpiano associam-se duas falanges: uma falange proximal e uma falange distal."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

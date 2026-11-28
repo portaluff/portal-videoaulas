@@ -7,11 +7,84 @@
   "data": "",
   "views": null,
   "duracao": 105,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "A videoaula descreve a constituição da base óssea do pé do suíno, englobando os ossos do tarso, metatarso e as falanges.",
+  "resumo": [
+    {
+      "rotulo": "Divisão anatômica do pé",
+      "texto": "A base óssea do pé do suíno é dividida nas regiões do tarso, do metatarso e das falanges."
+    },
+    {
+      "rotulo": "Fileira proximal do tarso",
+      "texto": "A fileira proximal da região tarsiana é composta pelos ossos tarso fibular, tarso tibial e tarso central."
+    },
+    {
+      "rotulo": "Fileira distal do tarso",
+      "texto": "A fileira distal do tarso é formada por quatro ossos tarsianos, identificados do primeiro ao quarto."
+    },
+    {
+      "rotulo": "Ossos do metatarso e dedos",
+      "texto": "O pé do suíno possui quatro ossos metatarsianos e quatro dedos, com ausência do primeiro dedo e do primeiro metatarso."
+    },
+    {
+      "rotulo": "Diferenciação de tamanho dos dígitos",
+      "texto": "Os ossos metatarsianos e os dedos de número três e quatro são maiores, enquanto o segundo e o quinto são de menor tamanho."
+    },
+    {
+      "rotulo": "Organização das falanges",
+      "texto": "Cada um dos quatro dedos da pata posterior é constituído por três falanges: proximal, média e distal."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Quais ossos constituem a fileira proximal do tarso do suíno?",
+      "opcoes": [
+        "Ossos metatarsianos central, medial e lateral",
+        "Ossos tarso fibular, tarso tibial e tarso central",
+        "Falanges proximal, média e distal",
+        "Primeiro, segundo, terceiro e quarto ossos tarsianos"
+      ],
+      "correta": 2,
+      "explicacao": "A fileira proximal do tarso no pé do suíno é formada por três ossos: tarso fibular, tarso tibial e tarso central."
+    },
+    {
+      "pergunta": "Qual estrutura óssea e digital não está presente na анатоmia do pé do suíno?",
+      "opcoes": [
+        "O primeiro dedo e o primeiro osso metatarsiano",
+        "O terceiro dedo e o terceiro osso metatarsiano",
+        "O quinto dedo e o quinto osso metatarsiano",
+        "O segundo dedo e o segundo osso metatarsiano"
+      ],
+      "correta": 1,
+      "explicacao": "O suíno não possui o primeiro dedo nem o primeiro osso metatarsiano, contando apenas com quatro metatarsos e quatro dedos."
+    },
+    {
+      "pergunta": "Quais dígitos e ossos metatarsianos são predominantemente maiores no pé do suíno?",
+      "opcoes": [
+        "O segundo e o terceiro",
+        "O quarto e o quinto",
+        "O segundo e o quinto",
+        "O terceiro e o quarto"
+      ],
+      "correta": 4,
+      "explicacao": "Segundo a aula, o terceiro e o quarto ossos metatarsianos (e seus respectivos dedos) são maiores do que o segundo e o quinto."
+    },
+    {
+      "pergunta": "Quantas falanges compõem cada um dos dedos no pé do suíno?",
+      "opcoes": [
+        "Duas falanges (proximal e distal)",
+        "Quatro falanges (proximal, média, distal e acessória)",
+        "Três falanges (proximal, média e distal)",
+        "Apenas uma falange proximal"
+      ],
+      "correta": 3,
+      "explicacao": "Cada dedo do pé do suíno é constituído por três falanges: uma proximal, uma média e uma distal."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

@@ -7,11 +7,65 @@
   "data": "",
   "views": null,
   "duracao": 168,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "A videoaula apresenta a anatomia comparada dos ossos do carpo em equinos, ruminantes e carnívoros, detalhando suas fileiras proximal e distal.",
+  "resumo": [
+    {
+      "rotulo": "Organização geral do carpo",
+      "texto": "Os ossos do carpo são classificados como ossos curtos e organizam-se em duas fileiras principais em todas as espécies analisadas: a fileira proximal e a fileira distal."
+    },
+    {
+      "rotulo": "Carpo em equinos",
+      "texto": "A fileira proximal é formada pelos ossos carpo radial, intermédio do carpo, carpo ulnar e acessório do carpo. A fileira distal possui o segundo, o terceiro (sendo este o maior) e o quarto ossos carpianos."
+    },
+    {
+      "rotulo": "Carpo em ruminantes",
+      "texto": "Apresenta um total de seis ossos, com quatro na fileira proximal e dois na distal. Na fileira distal, destaca-se a fusão do segundo e terceiro ossos carpianos junto ao quarto osso carpiano."
+    },
+    {
+      "rotulo": "Carpo em carnívoros",
+      "texto": "Possui sete ossos no total, destacando-se na fileira proximal a fusão do osso intermédio com o carpo radial, formando o osso intermédio-radial. Na fileira distal, observam-se do primeiro ao quarto ossos carpianos."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual a particularidade do terceiro osso carpiano na fileira distal do carpo do equino?",
+      "opcoes": [
+        "Está ausente na espécie equina.",
+        "Articula-se diretamente com o osso acessório do carpo.",
+        "É o maior osso da fileira distal.",
+        "Ele se funde com o osso carpiano II."
+      ],
+      "correta": 3,
+      "explicacao": "Na fileira distal do carpo dos equinos, o terceiro osso carpiano destaca-se por ser o maior entre os ossos carpianos presentes (II, III e IV)."
+    },
+    {
+      "pergunta": "Quantos ossos compõem o carpo dos ruminantes e como estão distribuídos?",
+      "opcoes": [
+        "8 ossos, sendo 4 na fileira proximal e 4 na distal.",
+        "7 ossos, sendo 4 na fileira proximal e 3 na distal.",
+        "6 ossos, sendo 3 na fileira proximal e 3 na distal.",
+        "6 ossos, sendo 4 na fileira proximal e 2 na distal."
+      ],
+      "correta": 4,
+      "explicacao": "Nos ruminantes, o carpo é composto por seis ossos no total: quatro presentes na fileira proximal e dois na fileira distal."
+    },
+    {
+      "pergunta": "Qual fusão óssea caracteriza a fileira proximal do carpo nos carnívoros?",
+      "opcoes": [
+        "Fusão do osso intermédio do carpo com o osso carpo radial.",
+        "Fusão do osso carpo radial com a ulna.",
+        "Fusão do segundo e terceiro ossos carpianos.",
+        "Fusão do osso carpo ulnar com o acessório do carpo."
+      ],
+      "correta": 1,
+      "explicacao": "Nos carnívoros, o osso intermédio e o osso carpo radial se fundem na fileira proximal, formando o osso intermédio-radial do carpo."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

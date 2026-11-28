@@ -1,17 +1,87 @@
 {
   "titulo": "Anatomia Veterinária UFF - Vascularização cerebral, Meninges e Rinencéfalo",
-  "disciplina": "a-classificar",
+  "disciplina": "anatomia-veterinaria",
   "tema": "",
   "youtube": "YLXpdCqsgbk",
   "professor": "",
   "data": "",
   "views": null,
   "duracao": 163,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Esta vídeo-aula aborda a anatomia macroscópica da vascularização cerebral, das meninges e do rinencéfalo em peças anatômicas veterinárias.",
+  "resumo": [
+    {
+      "rotulo": "Ramos da carótida interna",
+      "texto": "A artéria carótida interna origina três ramos principais: a artéria cerebral rostral, a artéria cerebral média e a artéria comunicante caudal."
+    },
+    {
+      "rotulo": "Artéria basilar e ramos",
+      "texto": "A artéria comunicante caudal anastomosa-se com a artéria basilar, emitindo como ramos a artéria cerebral caudal e a artéria cerebelar rostral."
+    },
+    {
+      "rotulo": "Pregas da duramáter",
+      "texto": "A duramáter apresenta a foice do cérebro, que separa os dois hemisférios cerebrais, e a tenda do cerebelo, que separa o cérebro do cerebelo."
+    },
+    {
+      "rotulo": "Meninges e veia cerebral",
+      "texto": "Entre a duramáter e a piamáter situa-se o ligamento denticulado, destacando-se também a veia cerebral magna embutida na duramáter como a maior veia do encéfalo."
+    },
+    {
+      "rotulo": "Estruturas do rinencéfalo",
+      "texto": "O rinencéfalo é demonstrado com o bulbo olfatório na extremidade, o pedúnculo olfatório no segmento intermediário e o lóbulo piriforme na porção mais espessa."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Quais são os três ramos originados diretamente a partir da artéria carótida interna?",
+      "opcoes": [
+        "Artéria cerebral rostral, artéria cerebral média e artéria comunicante caudal",
+        "Artéria cerebral rostral, pedúnculo olfatório e lóbulo piriforme",
+        "Artéria cerebral média, foice do cérebro e veia cerebral magna",
+        "Artéria basilar, artéria cerebral caudal e artéria cerebelar rostral"
+      ],
+      "correta": 1,
+      "explicacao": "Conforme apresentado no vídeo, a carótida interna dá origem à artéria cerebral rostral, à artéria cerebral média e à artéria comunicante caudal."
+    },
+    {
+      "pergunta": "Qual estrutura de duramáter tem a função de separar os dois hemisférios cerebrais?",
+      "opcoes": [
+        "Tenda do cerebelo",
+        "Foice do cérebro",
+        "Ligamento denticulado",
+        "Lóbulo piriforme"
+      ],
+      "correta": 2,
+      "explicacao": "A foice do cérebro é a prega de duramáter que se projeta na fissura longitudinal para separar os dois hemisférios cerebrais."
+    },
+    {
+      "pergunta": "Qual é a maior veia do encéfalo descrita na aula, a qual se encontra embutida na duramáter?",
+      "opcoes": [
+        "Veia comunicante caudal",
+        "Veia cerebral média",
+        "Veia basilar",
+        "Veia cerebral magna"
+      ],
+      "correta": 4,
+      "explicacao": "A veia cerebral magna fica embutida na duramáter e é identificada como a maior veia do encéfalo."
+    },
+    {
+      "pergunta": "Quais estruturas anatômicas compõem o rinencéfalo demonstrado na vídeo-aula?",
+      "opcoes": [
+        "Artéria cerebral rostral, artéria basilar e artéria cerebelar rostral",
+        "Bulbo olfatório, pedúnculo olfatório e lóbulo piriforme",
+        "Duramáter, piamáter e veia cerebral magna",
+        "Foice do cérebro, tenda do cerebelo e ligamento denticulado"
+      ],
+      "correta": 2,
+      "explicacao": "O rinencéfalo é formado pelo bulbo olfatório (na extremidade rostral), pelo pedúnculo olfatório e pelo lóbulo piriforme."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "disciplinaPelaIA": true,
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

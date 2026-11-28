@@ -7,11 +7,80 @@
   "data": "",
   "views": null,
   "duracao": 126,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula prática de anatomia sobre a constituição e divisão dos ossos que formam a base óssea do pé do bovino.",
+  "resumo": [
+    {
+      "rotulo": "Visão geral da estrutura",
+      "texto": "A base óssea do pé direito do bovino é composta pelos ossos do tarso, metatarso, falanges e ossos sesamóides na região plantar."
+    },
+    {
+      "rotulo": "Ossos do tarso",
+      "texto": "Na fileira proximal encontram-se o tarsofibular, o tarsotibial e o osso quarto central (fusão do quarto tarsiano com o tarso central). Na fileira distal estão o primeiro tarsiano e o segundo e terceiro tarsianos fundidos."
+    },
+    {
+      "rotulo": "Ossos do metatarso",
+      "texto": "O metatarso do bovino apresenta dois ossos: o grande metatarso, resultante da fusão do terceiro e quarto metatarsianos, e o pequeno metatarso, correspondente ao segundo metatarsiano."
+    },
+    {
+      "rotulo": "Falanges e dedos",
+      "texto": "O bovino possui dois dedos (o terceiro e o quarto), apresentando em cada um as falanges proximal, média e distal."
+    },
+    {
+      "rotulo": "Ossos sesamóides",
+      "texto": "Na região plantar encontram-se dois ossos sesamóides proximais por dedo na articulação metatarso-sesamóide-falangiana e um sesamóide distal por dedo na articulação interfalangiana distal."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Como é constituído o osso quarto central no tarso do bovino?",
+      "opcoes": [
+        "Pela unão do osso tarsotibial com o segundo metatarsiano.",
+        "Pela fusão do quarto tarsiano com o osso tarso central.",
+        "Pela fusão do primeiro e segundo tarsianos.",
+        "Pela articulação entre o tarsofibular e o tarsotibial."
+      ],
+      "correta": 2,
+      "explicacao": "Segundo a aula, o osso quarto central é formado pela fusão do quarto tarsiano com o osso tarso central."
+    },
+    {
+      "pergunta": "O grande osso metatarsiano do bovino é formado pela fusão de quais estruturas?",
+      "opcoes": [
+        "Do terceiro e quarto metatarsianos.",
+        "Do segundo e terceiro metatarsianos.",
+        "Do quarto e quinto metatarsianos.",
+        "Do primeiro e segundo metatarsianos."
+      ],
+      "correta": 1,
+      "explicacao": "O grande osso metatarsiano do bovino resulta da fusão do terceiro e do quarto ossos metatarsianos."
+    },
+    {
+      "pergunta": "Quais dedos estão presentes no membro pélvico do bovino?",
+      "opcoes": [
+        "O primeiro e o segundo dedos.",
+        "O segundo, terceiro e quarto dedos.",
+        "Apenas o terceiro dedo.",
+        "O terceiro e o quarto dedos."
+      ],
+      "correta": 4,
+      "explicacao": "O bovino apresenta dois dedos funcionais no pé: o terceiro e o quarto dedo."
+    },
+    {
+      "pergunta": "Quantos ossos sesamóides proximais e distais existem por dedo no bovino?",
+      "opcoes": [
+        "Um proximal e um distal para cada dedo.",
+        "Dois proximais e dois distais para cada dedo.",
+        "Um proximal e dois distais para cada dedo.",
+        "Dois proximais e um distal para cada dedo."
+      ],
+      "correta": 4,
+      "explicacao": "Na região plantar, encontram-se dois ossos sesamóides proximais e um osso sesamóide distal para cada dedo."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

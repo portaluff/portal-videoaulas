@@ -7,11 +7,76 @@
   "data": "",
   "views": null,
   "duracao": 99,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula prática de anatomia veterinária demonstrando a estrutura do osso esterno e a classificação das costelas em cães e gatos.",
+  "resumo": [
+    {
+      "rotulo": "Formato do esterno",
+      "texto": "Em cães e gatos, o osso esterno apresenta formato cilíndrico, diferindo de suínos e ruminantes, em que o esterno é achatado dorsoventralmente."
+    },
+    {
+      "rotulo": "Esternébras",
+      "texto": "Caninos e felinos possuem oito esternébras. A primeira é chamada de manúbrio e a oitava é denominada apêndice xifoide, à qual se associa a cartilagem xifoide."
+    },
+    {
+      "rotulo": "Costelas esternais",
+      "texto": "Cães e gatos possuem treze costelas, das quais nove se articulam diretamente ao osso esterno por meio das cartilagens costais, recebendo o nome de costelas esternais."
+    },
+    {
+      "rotulo": "Costelas asternais",
+      "texto": "As quatro últimas costelas não se conectam diretamente ao osso esterno, articulando-se na cartilagem costal anterior, motivo pelo qual são chamadas de costelas asternais."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual é o formato do osso esterno em cães e gatos, em comparação ao de suínos e ruminantes?",
+      "opcoes": [
+        "Triangular e plano",
+        "Laminar e curvo",
+        "Achatado dorsoventralmente",
+        "Cilíndrico"
+      ],
+      "correta": 4,
+      "explicacao": "No cão e no gato, o osso esterno tem formato cilíndrico, enquanto nos suínos e ruminantes ele é achatado dorsoventralmente."
+    },
+    {
+      "pergunta": "Quantas esternébras compõem o osso esterno em cães e gatos?",
+      "opcoes": [
+        "8 esternébras",
+        "7 esternébras",
+        "9 esternébras",
+        "6 esternébras"
+      ],
+      "correta": 1,
+      "explicacao": "No cão e no gato são encontradas 8 esternébras, sendo a primeira o manúbrio e a oitava o apêndice xifoide."
+    },
+    {
+      "pergunta": "Quantas costelas de cães e gatos são classificadas como costelas esternais?",
+      "opcoes": [
+        "7 costelas",
+        "4 costelas",
+        "13 costelas",
+        "9 costelas"
+      ],
+      "correta": 4,
+      "explicacao": "Das 13 costelas presentes em cães e gatos, 9 articulam-se diretamente com o osso esterno através das cartilagens costais, sendo denominadas esternais."
+    },
+    {
+      "pergunta": "Por que as quatro últimas costelas em cães e gatos são chamadas de asternais?",
+      "opcoes": [
+        "Porque não se articulam diretamente com o esterno, mas com a cartilagem costal anterior.",
+        "Porque se unem diretamente ao apêndice xifoide.",
+        "Porque não possuem nenhuma ligação cartilaginosa ou ossea com a caixa torácica.",
+        "Porque se articulam diretamente com a primeira esternébra ou manúbrio."
+      ],
+      "correta": 1,
+      "explicacao": "As 4 últimas costelas são chamadas de asternais porque não se articulam diretamente com o osso esterno, e sim com a cartilagem costal anterior."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

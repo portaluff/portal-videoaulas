@@ -7,11 +7,91 @@
   "data": "",
   "views": null,
   "duracao": 132,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Videoaula sobre a estrutura da coluna vertebral do pato e da galinha, abordando as características e fusões ósseas como o notário, o sinsacro e o pigóstilo.",
+  "resumo": [
+    {
+      "rotulo": "Características gerais",
+      "texto": "O esqueleto das aves apresenta grande fusão óssea, o que confere resistência e leveza ao conjunto."
+    },
+    {
+      "rotulo": "Vértebras cervicais",
+      "texto": "Tanto a galinha quanto o pato possuem 14 vértebras cervicais, diferentemente dos mamíferos, que possuem apenas 7."
+    },
+    {
+      "rotulo": "Notário",
+      "texto": "Na galinha, ocorre a fusão da segunda à quinta vértebra torácica, formando uma estrutura chamada notário."
+    },
+    {
+      "rotulo": "Sinsacro",
+      "texto": "O sinsacro é formado pela ossificação e fusão de todas as vértebras lombares, sacrais e primeiras caudais ao ílio."
+    },
+    {
+      "rotulo": "Pigóstilo",
+      "texto": "Na extremidade caudal, a fusão de 4 a 8 vértebras caudais forma o osso conhecido como pigóstilo."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual característica do esqueleto aviário confere resistência e leveza ao animal?",
+      "opcoes": [
+        "Grande fusão entre os ossos",
+        "Presença de 7 vértebras cervicais espessas",
+        "Elevado número de articulações móveis na coluna",
+        "Ausência de ossificação nas vértebras caudais"
+      ],
+      "correta": 1,
+      "explicacao": "O professor destaca que o esqueleto das aves se caracteriza por uma grande fusão óssea, a qual confere às estruturas resistência e leveza."
+    },
+    {
+      "pergunta": "Quantas vértebras cervicais são encontradas na coluna vertebral do pato e da galinha?",
+      "opcoes": [
+        "14 vértebras",
+        "21 vértebras",
+        "7 vértebras",
+        "12 vértebras"
+      ],
+      "correta": 1,
+      "explicacao": "Tanto o pato quanto a galinha apresentam 14 vértebras cervicais, diferente dos mamíferos, que apresentam 7."
+    },
+    {
+      "pergunta": "Na galinha, a fusão da 2ª à 5ª vértebra torácica forma qual estrutura óssea?",
+      "opcoes": [
+        "Sinsacro",
+        "Notário",
+        "Pigóstilo",
+        "Ílio"
+      ],
+      "correta": 2,
+      "explicacao": "Na região torácica da galinha, a fusão da segunda à quinta vértebra torácica é chamada de notário."
+    },
+    {
+      "pergunta": "O sinsacro é resultante da fusão do ílio com quais regiões da coluna vertebral?",
+      "opcoes": [
+        "Apenas vértebras caudais livres",
+        "Vértebras lombares, sacrais e primeiras caudais",
+        "Vértebras cervicais e torácicas",
+        "Apenas vértebras torácicas e lombares"
+      ],
+      "correta": 2,
+      "explicacao": "O sinsacro é formado pela fusão de todas as vértebras lombares, sacrais e as primeiras caudais ao osso ílio."
+    },
+    {
+      "pergunta": "Como é denominado o grande osso final formado pela fusão de 4 a 8 vértebras caudais terminais?",
+      "opcoes": [
+        "Pigóstilo",
+        "Púbis",
+        "Notário",
+        "Sinsacro"
+      ],
+      "correta": 1,
+      "explicacao": "As últimas 4 a 8 vértebras caudais ossificadas e fundidas formam a estrutura denominada pigóstilo."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

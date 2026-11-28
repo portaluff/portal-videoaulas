@@ -1,17 +1,72 @@
 {
   "titulo": "Anatomia do tronco encefálico e corpo caloso do cérebro.",
-  "disciplina": "a-classificar",
+  "disciplina": "anatomia-veterinaria",
   "tema": "",
   "youtube": "jJYLDpf_VUk",
   "professor": "",
   "data": "",
   "views": null,
   "duracao": 91,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "A aula apresenta a identificação prática das estruturas anatômicas da superfície ventral do tronco encefálico e das subdivisões do corpo caloso.",
+  "resumo": [
+    {
+      "rotulo": "Tronco encefálico ventral",
+      "texto": "Identificação visual e delimitativa das principais estruturas presentes na porção ventral do tronco encefálico."
+    },
+    {
+      "rotulo": "Acidentes anatômicos bulbares",
+      "texto": "Demonstração do sulco bulbo-pontino, da fissura mediana ventral longitudinal, da pirâmide bulbar e do corpo trapezoide."
+    },
+    {
+      "rotulo": "Pedúnculos cerebrais",
+      "texto": "Localização dos pedúnculos cerebrais e da fossa interpeduncular situada entre eles."
+    },
+    {
+      "rotulo": "Estrutura do corpo caloso",
+      "texto": "Apresentação das três regiões do corpo caloso no cérebro: o joelho, o tronco (ou corpo) e o esplênio."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual estrutura corresponde à linha longitudinal mediana observada na face ventral do tronco encefálico?",
+      "opcoes": [
+        "Corpo trapezoide",
+        "Fissura mediana ventral",
+        "Sulco bulbo-pontino",
+        "Fossa interpeduncular"
+      ],
+      "correta": 2,
+      "explicacao": "A linha longitudinal na face ventral é identificada como a fissura mediana ventral."
+    },
+    {
+      "pergunta": "Onde está localizada a fossa interpeduncular no tronco encefálico?",
+      "opcoes": [
+        "Entre os dois pedúnculos cerebrais",
+        "Entre o joelho e o esplênio do corpo caloso",
+        "Entre a pirâmide bulbar e o corpo trapezoide",
+        "Ao longo do sulco bulbo-pontino"
+      ],
+      "correta": 1,
+      "explicacao": "A fossa interpeduncular situa-se no espaço compreendido entre os pedúnculos cerebrais."
+    },
+    {
+      "pergunta": "Quais são as partes componentes do corpo caloso demonstradas na videoaula?",
+      "opcoes": [
+        "Pedúnculos cerebrais, fossa interpeduncular e esplênio",
+        "Pirâmide bulbar, corpo trapezoide e sulco bulbo-pontino",
+        "Fissura mediana ventral, joelho e corpo trapezoide",
+        "Joelho, tronco (ou corpo) e esplênio"
+      ],
+      "correta": 4,
+      "explicacao": "O corpo caloso é composto pelo joelho, pelo tronco (ou corpo) e pelo esplênio."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "disciplinaPelaIA": true,
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

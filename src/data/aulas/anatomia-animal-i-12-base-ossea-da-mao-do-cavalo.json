@@ -7,11 +7,80 @@
   "data": "",
   "views": null,
   "duracao": 199,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula demonstrativa sobre a base óssea e as articulações da mão esquerda do cavalo, detalhando o carpo, metacarpo, falanges e ossos sesamoides.",
+  "resumo": [
+    {
+      "rotulo": "Regiões da mão",
+      "texto": "A mão do cavalo é dividida nas regiões do carpo, do metacarpo e das falanges, que formam a base óssea dos dedos."
+    },
+    {
+      "rotulo": "Ossos do carpo",
+      "texto": "O carpo possui duas fileiras de ossos: a proximal (carpo radial, intermédio, ulnar e acessório) e a distal (na peça apresentada, identificam-se o 2º, 3º e 4º ossos do carpo)."
+    },
+    {
+      "rotulo": "Ossos do metacarpo",
+      "texto": "O metacarpo do cavalo apresenta três ossos metacarpianos, compostos por um maior (3º metacarpiano) e dois menores (2º e 4º metacarpianos)."
+    },
+    {
+      "rotulo": "Falanges do único dedo",
+      "texto": "O cavalo apresenta apenas o terceiro dedo, constituído pelas falanges proximal, média e distal."
+    },
+    {
+      "rotulo": "Articulações e sesamoides",
+      "texto": "São apresentadas as articulações antebraquiocárpica, intercárpica, carpometacárpica, intermetacarpianas, metacarpofalangiana e interfalangianas (proximal e distal), além dos dois ossos sesamoides proximais e do sesamoide distal na face palmar."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Quais são os ossos presentes na fileira proximal do carpo do cavalo?",
+      "opcoes": [
+        "Falange proximal, falange média e falange distal",
+        "Carpo radial, carpo intermédio, carpo ulnar e carpo acessório",
+        "Ossos 1º, 2º, 3º e 4º do carpo",
+        "2º, 3º e 4º metacarpianos"
+      ],
+      "correta": 2,
+      "explicacao": "Na fileira proximal do carpo identificam-se os ossos carpo radial, carpo intermédio, carpo ulnar e o carpo acessório, localizado mais lateralmente."
+    },
+    {
+      "pergunta": "Como estão estruturados os ossos metacarpianos na mão do cavalo?",
+      "opcoes": [
+        "Apresenta três ossos metacarpianos: o maior (3º) e dois menores (2º e 4º)",
+        "Apresenta um único osso metacarpiano fusiforme sem subdivisões",
+        "Apresenta cinco ossos metacarpianos de tamanhos iguais",
+        "Apresenta apenas dois ossos metacarpianos principais"
+      ],
+      "correta": 1,
+      "explicacao": "O cavalo possui três ossos metacarpianos: um osso maior denominado 3º metacarpiano e dois pequenos metacarpianos, o 2º e o 4º."
+    },
+    {
+      "pergunta": "Qual número corresponde ao único dedo funcional presente no cavalo?",
+      "opcoes": [
+        "Primeiro dedo",
+        "Segundo dedo",
+        "Terceiro dedo",
+        "Quarto dedo"
+      ],
+      "correta": 3,
+      "explicacao": "O cavalo apresenta apenas um dedo na mão, correspondente ao terceiro dedo."
+    },
+    {
+      "pergunta": "Quais ossos sesamoides são encontrados na face palmar do dedo do cavalo?",
+      "opcoes": [
+        "Dois ossos sesamoides proximais e um osso sesamoide distal",
+        "Apenas um osso sesamoide proximal",
+        "Um osso sesamoide proximal e dois ossos sesamoides distais",
+        "Três ossos sesamoides proximais e dois distais"
+      ],
+      "correta": 1,
+      "explicacao": "Na face palmar, são identificados dois ossos sesamoides proximais na articulação metacarpofalangiana e um osso sesamoide distal na articulação interfalangiana distal."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

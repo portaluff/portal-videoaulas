@@ -7,11 +7,69 @@
   "data": "",
   "views": null,
   "duracao": 114,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Esta videoaula apresenta os componentes ósseos da mão esquerda do bovino, destacando o carpo, metacarpo, falanges e ossos sesamóides.",
+  "resumo": [
+    {
+      "rotulo": "Estrutura geral",
+      "texto": "A mão esquerda óssea do bovino é constituída pelos ossos do carpo, do metacarpo, pelas falanges e pelos ossos sesamóides."
+    },
+    {
+      "rotulo": "Região do carpo",
+      "texto": "Possui duas fileiras de ossos, sendo a proximal formada pelos ossos carpo radial, intermédio, ulnar e acessório, e a distal composta pelos ossos carpianos segundo e terceiro fundidos e pelo quarto."
+    },
+    {
+      "rotulo": "Região do metacarpo",
+      "texto": "É formada pela fusão do terceiro e quarto ossos metacarpianos, acompanhados pelo pequeno quinto metacarpiano."
+    },
+    {
+      "rotulo": "Dedos e falanges",
+      "texto": "Apresenta o terceiro e quarto dedos, onde se observam em sua base óssea as falanges proximais, médias e distais."
+    },
+    {
+      "rotulo": "Ossos sesamóides",
+      "texto": "Na articulação metacarpofalangiana há dois ossos sesamóides proximais para cada dedo, e na articulação interfalangiana distal localizam-se os sesamóides distais."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Quais ossos formam a fileira proximal da região do carpo na mão do bovino?",
+      "opcoes": [
+        "Osso carpo radial, osso carpo intermédio, osso carpo ulnar e osso carpo acessório",
+        "Segundo, terceiro e quarto ossos carpianos",
+        "Terceiro e quarto ossos metacarpianos fundidos e quinto metacarpiano",
+        "Falange proximal, falange média e falange distal"
+      ],
+      "correta": 1,
+      "explicacao": "A fileira proximal da região do carpo é composta, no sentido de medial para lateral, pelos ossos carpo radial, carpo intermédio, carpo ulnar e carpo acessório."
+    },
+    {
+      "pergunta": "Quais ossos metacarpianos encontram-se fundidos na mão do bovino?",
+      "opcoes": [
+        "O quarto e o quinto ossos metacarpianos",
+        "O segundo e o terceiro ossos metacarpianos",
+        "O primeiro e o segundo ossos metacarpianos",
+        "O terceiro e o quarto ossos metacarpianos"
+      ],
+      "correta": 4,
+      "explicacao": "Na região metacarpiana do bovino, o terceiro e o quarto ossos metacarpianos encontram-se fundidos em uma única estrutura principal."
+    },
+    {
+      "pergunta": "Quantos ossos sesamóides proximais existem por dedo na articulação metacarpofalangiana do bovino?",
+      "opcoes": [
+        "Três ossos sesamóides proximais",
+        "Dois ossos sesamóides proximais",
+        "Quatro ossos sesamóides proximais",
+        "Um osso sesamóide proximal"
+      ],
+      "correta": 2,
+      "explicacao": "Para cada um dos dedos (terceiro e quarto), encontram-se dois ossos sesamóides proximais na articulação metacarpofalangiana."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

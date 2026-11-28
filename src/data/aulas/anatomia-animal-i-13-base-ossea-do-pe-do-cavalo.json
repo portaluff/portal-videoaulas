@@ -7,11 +7,65 @@
   "data": "",
   "views": null,
   "duracao": 111,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Apresentação e descrição anatômica das regiões e ossos que compõem a base óssea do pé do cavalo.",
+  "resumo": [
+    {
+      "rotulo": "Componentes do pé",
+      "texto": "O pé direito ósseo do cavalo é constituído pelos ossos do tarso, metatarso, falanges e ossos sesamoides."
+    },
+    {
+      "rotulo": "Região do tarso",
+      "texto": "O tarso possui uma fileira proximal com os ossos tarso fibular, tarso tibial e tarso central, e uma fileira distal com o primeiro e segundo tarsianos fusificados, o terceiro e o quarto osso tarsiano."
+    },
+    {
+      "rotulo": "Região do metatarso",
+      "texto": "O metatarso é composto por três ossos: o grande metatarsiano (terceiro) e dois pequenos metatarsianos (segundo e quarto)."
+    },
+    {
+      "rotulo": "Falanges e sesamoides",
+      "texto": "Possui falanges proximal, média e distal, acompanhadas por dois ossos sesamoides proximais na articulação metatarsosesamoidofalangiana e um osso sesamoide distal na articulação interfalangiana distal."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Quais são os ossos que constituem a fileira proximal do tarso no cavalo?",
+      "opcoes": [
+        "Primeiro, segundo e terceiro ossos tarsianos",
+        "Osso tarso fibular, osso tarso tibial e osso tarso central",
+        "Segundo, terceiro e quarto ossos metatarsianos",
+        "Osso sesamoide proximal, médio e distal"
+      ],
+      "correta": 2,
+      "explicacao": "Na fileira proximal do tarso encontram-se três ossos: o osso tarso fibular (mais lateral), o osso tarso tibial e o osso tarso central."
+    },
+    {
+      "pergunta": "Qual osso corresponde ao grande osso metatarsiano no pé do cavalo?",
+      "opcoes": [
+        "O terceiro osso metatarsiano",
+        "O segundo osso metatarsiano",
+        "O quarto osso metatarsiano",
+        "O primeiro osso metatarsiano"
+      ],
+      "correta": 1,
+      "explicacao": "O metatarso é formado por três ossos metatarsianos: o segundo e o quarto (pequenos) e o terceiro osso metatarsiano, que é o maior."
+    },
+    {
+      "pergunta": "Quantos ossos sesamoides proximais existem na articulação metatarsosesamoidofalangiana?",
+      "opcoes": [
+        "3 ossos sesamoides",
+        "2 ossos sesamoides",
+        "1 osso sesamoide",
+        "4 ossos sesamoides"
+      ],
+      "correta": 2,
+      "explicacao": "Na articulação metatarsosesamoidofalangiana encontram-se exatamente dois ossos sesamoides proximais."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

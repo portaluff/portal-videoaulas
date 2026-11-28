@@ -7,11 +7,69 @@
   "data": "",
   "views": null,
   "duracao": 291,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula prática descritiva sobre os acidentes anatômicos e as diferenças comparativas da escápula em mamíferos domésticos.",
+  "resumo": [
+    {
+      "rotulo": "Visão geral e conexões",
+      "texto": "A escápula é o osso mais proximal do membro torácico nos mamíferos domésticos. Articula-se distalmente com o úmero e conecta-se proximalmente aos arcos costais por meio da musculatura do cíngulo escapular."
+    },
+    {
+      "rotulo": "Face lateral",
+      "texto": "Contém a espinha da escápula e o tubérculo da espinha, que dividem a face lateral em fossa supraespinhosa (cranial) e fossa infraespinhosa (caudal)."
+    },
+    {
+      "rotulo": "Face medial",
+      "texto": "Apresenta as faces serratas para inserção do músculo serrático ventral, a fossa subescapular, o colo da escápula e os tubérculos supraglenóide, infraglenóide e o processo coracóide."
+    },
+    {
+      "rotulo": "Ângulo ventral",
+      "texto": "No ângulo ventral encontra-se a cavidade glenóide, uma estrutura côncava que se articula com o úmero e apresenta a incisura glenóide."
+    },
+    {
+      "rotulo": "Diferenças anatômicas entre espécies",
+      "texto": "Equinos possuem término suave da espinha, enquanto bovinos possuem acrômio; carnívoros apresentam acrômio com processo hamato nos cães e processos hamato e suprahamato nos felinos."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual estrutura divide a face lateral da escápula nas fossas supraespinhosa e infraespinhosa?",
+      "opcoes": [
+        "Tubérculo infraglenóide",
+        "Espinha da escápula",
+        "Face serrata",
+        "Processo coracóide"
+      ],
+      "correta": 2,
+      "explicacao": "A espinha da escápula é uma projeção saliente na face lateral que a divide na parte cranial (fossa supraespinhosa) e caudal (fossa infraespinhosa)."
+    },
+    {
+      "pergunta": "Qual estrutura articular concava no ângulo ventral da escápula articula-se com a cabeça do úmero?",
+      "opcoes": [
+        "Cavidade glenóide",
+        "Incisura glenóide",
+        "Fossa subescapular",
+        "Processo hamato"
+      ],
+      "correta": 1,
+      "explicacao": "A cavidade glenóide é a estrutura lisa e côncava localizada no ângulo ventral da escápula encarregada da articulação com o osso úmero."
+    },
+    {
+      "pergunta": "Qual acidente anatômico exclusivo dos felinos está presente no acrômio além do processo hamato?",
+      "opcoes": [
+        "Tubérculo da espinha",
+        "Tubérculo supraglenóide",
+        "Processo coracóide",
+        "Processo suprahamato"
+      ],
+      "correta": 4,
+      "explicacao": "Nos felinos, além do processo hamato (comum aos cães), ocorre uma segunda dilatação proximal no acrômio denominada processo suprahamato."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
-  "origem": "youtube"
+  "origem": "youtube",
+  "idioma": "pt",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

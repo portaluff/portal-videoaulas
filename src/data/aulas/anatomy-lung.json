@@ -7,12 +7,80 @@
   "data": "",
   "views": null,
   "duracao": 826,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula prática sobre a anatomia macroscópica dos pulmões, abordando revestimento pleural, morfologia externa, segmentação broncopulmonar, árvore brônquica e vascularização pulmonar.",
+  "resumo": [
+    {
+      "rotulo": "Visão geral e pleuras",
+      "texto": "Os pulmões são órgãos intratorácicos revestidos pelas pleuras visceral e parietal. O pulmão esquerdo é formado por dois lobos e o direito por três lobos."
+    },
+    {
+      "rotulo": "Anatomia do pulmão esquerdo",
+      "texto": "Apresenta os lobos superior e inferior separados pela fissura oblíqua, além de estruturas como a língula, incisura e impressão cardíaca."
+    },
+    {
+      "rotulo": "Árvore brônquica e vascularização à esquerda",
+      "texto": "O brônquio principal esquerdo divide-se em lobares superior e inferior. As artérias pulmonares seguem o padrão dos brônquios, enquanto as veias dividem-se em intra e intersegmentares."
+    },
+    {
+      "rotulo": "Anatomia do pulmão direito",
+      "texto": "Possui três lobos (superior, médio e inferior) divididos pelas fissuras horizontal e oblíqua, apresentando faces costal, mediastinal e diafragmática."
+    },
+    {
+      "rotulo": "Árvore brônquica e vascularização à direita",
+      "texto": "O brônquio principal direito origina o brônquio lobar superior e o brônquio intermediário, o qual se divide nos brônquios lobares médio e inferior."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual característica anatômica diferencia o pulmão direito do pulmão esquerdo?",
+      "opcoes": [
+        "Presença da língula e divisão em três lobos no pulmão esquerdo.",
+        "Presença da fissura horizontal e divisão em três lobos no pulmão direito.",
+        "Ausência de fissura oblíqua no pulmão direito.",
+        "Presença de pleura parietal apenas no pulmão direito."
+      ],
+      "correta": 2,
+      "explicacao": "O pulmão direito apresenta três lobos (superior, médio e inferior) separados pelas fissuras oblíqua e horizontal, enquanto o pulmão esquerdo possui apenas dois lobos e a fissura oblíqua."
+    },
+    {
+      "pergunta": "Em relação à sensibilidade dolorosa das pleuras, qual afirmação está correta segundo a aula?",
+      "opcoes": [
+        "As dores pleuríticas são de responsabilidade da pleura parietal, pois a visceral não possui terminações dolorosas.",
+        "A dor pleurítica origina-se exclusivamente nos alvéolos pulmonares.",
+        "Ambas as pleuras possuem a mesma quantidade de terminações nervosas para dor.",
+        "A pleura visceral possui abundantes receptores de dor."
+      ],
+      "correta": 1,
+      "explicacao": "Conforme explicado no vídeo, a pleura visceral não possui terminações nervosas para dor; assim, as dores de origem pleurítica derivam da pleura parietal."
+    },
+    {
+      "pergunta": "Como se caracteriza o arranjo das veias pulmonares em relação aos segmentos pulmonares?",
+      "opcoes": [
+        "As veias dividem-se em ramos intrasegmentares (que acompanham a tríade) e intersegmentares (localizados entre os segmentos).",
+        "Todas as veias pulmonares caminham estritamente no interior dos brônquios principais.",
+        "As veias pulmonares caminham exclusivamente no centro de cada segmento.",
+        "As veias pulmonares acompanham as artérias apenas no pulmão esquerdo."
+      ],
+      "correta": 1,
+      "explicacao": "A vascularização venosa pulmonar apresenta veias intrasegmentares, que acompanham a tríade broncoarterial, e veias intersegmentares, localizadas entre os segmentos pulmonares."
+    },
+    {
+      "pergunta": "No pulmão direito, em quais ramos se divide o brônquio intermediário (ou interlobar)?",
+      "opcoes": [
+        "Brônquios segmentares apical e posterior.",
+        "Brônquios lobares superior e médio.",
+        "Brônquio principal esquerdo e traqueia.",
+        "Brônquios lobares médio e inferior."
+      ],
+      "correta": 4,
+      "explicacao": "O brônquio intermediário dá origem ao brônquio lobar médio e ao brônquio lobar inferior no pulmão direito."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
   "origem": "youtube",
-  "idioma": "en"
+  "idioma": "en",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

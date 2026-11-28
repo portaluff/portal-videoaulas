@@ -7,12 +7,84 @@
   "data": "",
   "views": null,
   "duracao": 962,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula prática demonstrativa sobre a anatomia macroscópica do coração, abordando sua morfologia externa, cavidades internas, esqueleto fibroso e vascularização coronariana em peça anatômica.",
+  "resumo": [
+    {
+      "rotulo": "O Pericárdio",
+      "texto": "O coração está localizado no mediastino médio e envolvido pelo pericárdio, composto pelo pericárdio fibroso externo e pelo pericárdio seroso. Este último possui uma lâmina parietal fixada à face interna do fibroso e uma lâmina visceral (epicárdio) que cobre a superfície do órgão."
+    },
+    {
+      "rotulo": "Regiões do Coração",
+      "texto": "O órgão apresenta base, ápice, faces (esterno-costal, diafragmática, direita e esquerda) e margens (direita, esquerda e inferior). O eixo longitudinal da base ao ápice é direcionado para a esquerda, para baixo e para frente."
+    },
+    {
+      "rotulo": "Átrio e Ventrículo Direitos",
+      "texto": "O átrio direito recebe as veias cavas e o óstio do seio coronário, apresentando a crista terminal que separa a porção lisa da rugosa (músculos pectinados), além da fossa oval no septo interatrial. O ventrículo direito possui formato em C, crista supraventricular, trabéculas cárneas, três músculos papilares ligados à valva tricúspide e a trabécula septomarginal."
+    },
+    {
+      "rotulo": "Átrio e Ventrículo Esquerdos",
+      "texto": "O átrio esquerdo recebe as quatro veias pulmonares na sua face posterior e comunica-se com o ventrículo esquerdo pelo óstio atrioventricular esquerdo, protegido pela valva mitral (bicúspide). O ventrículo esquerdo possui miocárdio de maior espessura, trabéculas cárneas mais delgadas, dois músculos papilares e a via de saída direcionada ao óstio aórtico."
+    },
+    {
+      "rotulo": "Esqueleto Fibroso e Septo",
+      "texto": "O septo interventricular é composto por uma porção muscular espessa e uma porção membranosa delgada. O esqueleto fibroso sustentador é formado pelos anéis fibrosos das valvas atrioventriculares e arteriais e pelos trígonos fibrosos direito e esquerdo."
+    },
+    {
+      "rotulo": "Vascularização Cardíaca",
+      "texto": "As artérias coronárias direita e esquerda se originam nos seios de Valsalva da aorta e suprem o miocárdio através de ramos como o interventricular anterior, circumflexo e interventricular posterior. A drenagem venosa ocorre principalmente pelas veias cardíacas magna, média e parva, que desembocam no seio coronário."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual estrutura anatômica divide a porção lisa (seio das veias cavas) da porção rugosa no interior do átrio direito?",
+      "opcoes": [
+        "Crista supraventricular",
+        "Trabécula septomarginal",
+        "Crista terminal",
+        "Fossa oval"
+      ],
+      "correta": 3,
+      "explicacao": "Conforme demonstrado na aula, a crista terminal é uma prega na parede do átrio direito que separa a região posterior lisa da região anterior rugosa contendo os músculos pectinados."
+    },
+    {
+      "pergunta": "Qual a importância funcional da trabécula septomarginal localizada no ventrículo direito?",
+      "opcoes": [
+        "Proteger o óstio do seio coronário contra o refluxo sanguíneo.",
+        "Fixar diretamente as cúspides da valva pulmonar ao septo interventricular.",
+        "Conduzir o ramo direito do feixe de His do sistema de condução cardíaco.",
+        "Separar a via de entrada da via de saída do ventrículo direito."
+      ],
+      "correta": 3,
+      "explicacao": "A trabécula septomarginal é uma projeção muscular especializada que vai do septo interventricular até a parede anterior do ventrículo direito, conduzindo o ramo direito do feixe de His."
+    },
+    {
+      "pergunta": "As artérias coronárias direita e esquerda têm sua origem em qual das seguintes estruturas?",
+      "opcoes": [
+        "Nos seios de Valsalva, localizados na base da aorta ascendente.",
+        "No seio coronário, localizado na parede posterior do átrio direito.",
+        "Diretamente do arco aórtico, ao lado do tronco braquiocefálico.",
+        "No tronco pulmonar, logo acima da valva pulmonar."
+      ],
+      "correta": 1,
+      "explicacao": "Segundo a explicação do vídeo, a artéria coronária direita origina-se no seio de Valsalva direito e a coronária esquerda no seio de Valsalva esquerdo, na aorta ascendente."
+    },
+    {
+      "pergunta": "Qual das alternativas indica a veia cardíaca que acompanha a artéria interventricular anterior e ajuda a formar o seio coronário?",
+      "opcoes": [
+        "Veia cardíaca magna",
+        "Veia cardíaca média",
+        "Veia cardíaca parva",
+        "Veia oblíqua do átrio esquerdo"
+      ],
+      "correta": 1,
+      "explicacao": "A veia cardíaca magna corre ao longo do sulco interventricular anterior junto com a artéria interventricular anterior, contornando o coração para formar o seio coronário."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
   "origem": "youtube",
-  "idioma": "en"
+  "idioma": "en",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

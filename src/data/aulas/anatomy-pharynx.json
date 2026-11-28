@@ -7,12 +7,84 @@
   "data": "",
   "views": null,
   "duracao": 1183,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula prática de anatomia descritiva sobre a estrutura, limites, divisões, musculatura, vascularização e inervação da faringe.",
+  "resumo": [
+    {
+      "rotulo": "Conceito e limites",
+      "texto": "A faringe é um canal fibromuscular estendido da base do crânio até a borda inferior da cartilagem cricoide (nível C6), servindo de via comum aos sistemas respiratório e digestório."
+    },
+    {
+      "rotulo": "Camadas musculares",
+      "texto": "A musculatura da faringe é dividida em uma camada circular externa (músculos constritores superior, médio e inferior) e uma camada longitudinal interna (estilofaríngeo, salpingofaríngeo e palatofaríngeo)."
+    },
+    {
+      "rotulo": "Divisões anatômicas",
+      "texto": "Internamente, a faringe divide-se em nasofaringe, orofaringe e laringofaringe, cada uma com acidentes anatômicos e comunicações específicas."
+    },
+    {
+      "rotulo": "Anel de Waldeyer",
+      "texto": "O conjunto de tecido linfoide formado pelas tonsilas faríngea, tubárias, palatinas e linguais constitui o anel linfático da faringe."
+    },
+    {
+      "rotulo": "Hiatos e conteúdo",
+      "texto": "Espaços entre os músculos constritores permitem a passagem de estruturas nervosas e vasculares importantes, como o nervo glossofaríngeo, os vasos e nervos laríngeos superiores e os laríngeos recorrentes."
+    },
+    {
+      "rotulo": "Vascularização e inervação",
+      "texto": "A irrigação arterial provém de ramos das carótidas externas e subclávias, a drenagem venosa é feita pelo plexo venoso faríngeo e a inervação ocorre através do plexo faríngeo."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual músculo da faringe constitui o esfíncter esofágico superior?",
+      "opcoes": [
+        "Músculo constritor superior",
+        "Músculo estilofaríngeo",
+        "Músculo salpingofaríngeo",
+        "Músculo cricofaríngeo"
+      ],
+      "correta": 4,
+      "explicacao": "As fibras mais inferiores da parte cricoide do músculo constritor inferior formam o músculo cricofaríngeo, que atua como o esfíncter esofágico superior."
+    },
+    {
+      "pergunta": "Quais tonsilas, quando hipertrofiadas, constituem as chamadas adenoides?",
+      "opcoes": [
+        "Tonsilas palatinas e faríngea",
+        "Tonsilas linguais e tubárias",
+        "Tonsilas faríngea e tubárias",
+        "Tonsilas palatinas e linguais"
+      ],
+      "correta": 3,
+      "explicacao": "Conforme apresentado no vídeo, o hipertrofiamento das tonsilas faríngea e tubárias recebe o nome clínico de adenoides."
+    },
+    {
+      "pergunta": "Quais estruturas passam pelo hiato localizado entre os músculos constritores médio e inferior da faringe?",
+      "opcoes": [
+        "Nervo glossofaríngeo e artéria palatina ascendente",
+        "Nervo laríngeo recorrente e vasos laríngeos inferiores",
+        "Tuba auditiva e artéria faríngea ascendente",
+        "Ramo interno do nervo laríngeo superior e vasos laríngeos superiores"
+      ],
+      "correta": 4,
+      "explicacao": "Através do hiato entre os constritores médio e inferior passam o ramo interno do nervo laríngeo superior e os vasos laríngeos superiores."
+    },
+    {
+      "pergunta": "Qual músculo da faringe NÃO recebe inervação motora vinda do plexo faríngeo?",
+      "opcoes": [
+        "Músculo estilofaríngeo",
+        "Músculo palatofaríngeo",
+        "Músculo salpingofaríngeo",
+        "Músculo constritor inferior"
+      ],
+      "correta": 1,
+      "explicacao": "O músculo estilofaríngeo é uma exceção à regra do plexo faríngeo, sendo inervado diretamente pelo nervo glossofaríngeo (NC IX)."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
   "origem": "youtube",
-  "idioma": "en"
+  "idioma": "en",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }

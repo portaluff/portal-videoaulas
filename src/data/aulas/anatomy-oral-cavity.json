@@ -7,12 +7,80 @@
   "data": "",
   "views": null,
   "duracao": 523,
-  "descricao": "",
-  "resumo": [],
+  "descricao": "Aula sobre a anatomia macroscópica da cavidade bucal, abordando lábios, bochechas, vestíbulo bucal, dentes, palato, língua e inervação.",
+  "resumo": [
+    {
+      "rotulo": "Lábios e limites",
+      "texto": "A cavidade bucal é delimitada pelos lábios, bochechas, assoalho e palato, comunicando-se posteriormente com a faringe. Os lábios contêm o músculo orbicular da boca, vasos, nervos, glândulas salivares labiais e o frênulo labial."
+    },
+    {
+      "rotulo": "Vestíbulo e bochechas",
+      "texto": "O vestíbulo bucal situa-se entre lábios/bochechas e gengivas/dentes. As bochechas contêm o músculo bucinador e abrigam a papila do ducto parotídeo oposta ao segundo molar superior."
+    },
+    {
+      "rotulo": "Arcos alveolares e dentes",
+      "texto": "A cavidade bucal propriamente dita é limitada pelos arcos alveolares, que na dentição permanente abrigam 32 dentes divididos em incisivos, caninos, pré-molares e molares."
+    },
+    {
+      "rotulo": "Palato duro e mole",
+      "texto": "O teto da cavidade bucal é formado pelo palato duro anteriormente e pelo palato mole posteriormente, o qual apresenta a úvula centralizada e os arcos palatoglosso e palatofaríngeo lateralmente."
+    },
+    {
+      "rotulo": "Língua e inervação",
+      "texto": "A língua é constituída por músculos intrínsecos e papilas gustativas em seu dorso. Sua inervação é realizada pelos nervos lingual, hipoglosso e glossofaríngeo."
+    }
+  ],
   "resumoRevisado": false,
-  "quiz": [],
+  "quiz": [
+    {
+      "pergunta": "Qual estrutura desemboque na mucosa da bochecha na altura do segundo molar superior?",
+      "opcoes": [
+        "Ducto da glândula submandibular",
+        "Ducto da glândula sublingual",
+        "Forame cego",
+        "Ducto da glândula parótida"
+      ],
+      "correta": 4,
+      "explicacao": "Na face interna da bochecha, na direção do segundo molar superior, há uma papila contendo a abertura do ducto da glândula salivar parótida."
+    },
+    {
+      "pergunta": "Quantos dentes molares estão presentes no total em uma dentição humana adulta completa?",
+      "opcoes": [
+        "12 dentes",
+        "8 dentes",
+        "10 dentes",
+        "16 dentes"
+      ],
+      "correta": 1,
+      "explicacao": "A dentição permanente completa possui 6 molares superiores e 6 molares inferiores, somando 12 molares no total."
+    },
+    {
+      "pergunta": "Qual dos seguintes nervos é o responsável pela motricidade dos músculos da língua?",
+      "opcoes": [
+        "Nervo glossofaríngeo",
+        "Nervo hipoglosso",
+        "Nervo facial",
+        "Nervo lingual"
+      ],
+      "correta": 2,
+      "explicacao": "Conforme apresentado na peça anatômica, a motricidade muscular da língua é promovida pelo nervo hipoglosso."
+    },
+    {
+      "pergunta": "Quais estruturas formam os arcos palatofaciais descendentes a partir do palato mole?",
+      "opcoes": [
+        "Frênulo labial e frênulo lingual",
+        "Arcos palatoglosso e palatofaríngeo",
+        "Papila incisiva e filtro labial",
+        "Cristas laterais e sulco mediano"
+      ],
+      "correta": 2,
+      "explicacao": "O palato mole projeta lateralmente duas pregas de mucosa contendo músculos: o arco palatoglosso anterior e o arco palatofaríngeo posterior."
+    }
+  ],
   "quizRevisado": false,
   "referencias": [],
   "origem": "youtube",
-  "idioma": "en"
+  "idioma": "en",
+  "iaGeradoEm": "2026-11-28",
+  "iaModelo": "gemini-3.6-flash"
 }
